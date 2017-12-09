@@ -1,326 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20130524" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>OSX Tips:  Setting-up a new Mac from an old one or its Backups
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20130524" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>OSX Tips:  Setting-up a new Mac from an old one or its Backups
  Transferring  Home  Folders  not  on  a  Startup  volume</title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="SetupOther_files/SetupOther.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='SetupOther_files/SetupOtherIE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="SetupOther_files/SetupOther.js"></script>
-  </head>
-  <body style="background: rgb(255, 223, 205); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 134px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 17px; position: absolute; top: 67px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style">OSX Tips:  Setting-up a new Mac from an old one or its Backups<span style="line-height: 27px; " class="style_1"><br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1"> Transferring  Home  Folders  not  on  a  Startup  volume</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 37px; left: 40px; position: absolute; top: 12px; width: 724px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_722_35" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"><span class="style_2">   </span><a title="TransferApps.html" href="TransferApps.html">Previous</a><span class="style_2">                </span><a title="Home.html" href="Home.html">Home</a><span class="style_2">                  </span><a title="Setup.html" href="Setup.html">Setting up a new Mac</a><span class="style_2">               </span><a title="TipsContact.html" href="TipsContact.html">Contact</a><span class="style_2">             </span> <a title="MigrationProblems.html" href="MigrationProblems.html">Next</a><span class="style_2"> </span>Next</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 537px; left: 17px; position: absolute; top: 1089px; width: 770px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_770_537" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_3">The <span class="style_3">Transfer Your Information</span> or <span class="style_3">Select Items to Migrate </span>window will look like this when the <span class="style_4">Main Admin Account </span>is on the Startup volume, but <span class="style_4">testaccount's</span> is not:<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <div class="paragraph paragraph_style_3" style="padding-bottom: 0pt; "><div style="height: 453px; width: 651px;  clear: right; float: right; height: 453px; margin: 6px 0px 6px 6px; position: relative; width: 651px; " class="tinyText style_SkipStroke_2 inline-block stroke_2"><img src="SetupOther_files/MultiVolumes%201%20Item%20List.jpg" alt="" style="border: none; height: 453px; width: 652px; " /></div></div>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 39px; left: 11px; position: absolute; top: 5502px; width: 771px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_3">
-            <div class="text-content style_External_769_37 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style_5 vertical-align-middle-innerbox">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"><span class="style_2">      </span><a title="TransferApps.html" href="TransferApps.html">Previous</a><span class="style_2">                  </span><a title="Home.html" href="Home.html">Home</a><span class="style_2">                     </span><a title="Setup.html" href="Setup.html">Setting up a new Mac</a><span class="style_2">                 </span><a title="TipsContact.html" href="TipsContact.html">Contact</a><span class="style_2">             </span><a title="MigrationProblems.html" href="MigrationProblems.html">Next</a><span class="style_2"> </span></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id5" style="height: 385px; left: 31px; position: absolute; top: 2978px; width: 743px; z-index: 1; " class="style_SkipStroke_4 shape-with-text stroke_4">
-            <div class="text-content style_External_741_383" style="padding: 1px; ">
-              <div class="style_6">
-                <p style="padding-top: 0pt; " class="paragraph_style_4"><span class="style_7">Restoring</span> the home folder volume via Disk Utility:<br /></p>
-                <p style="padding-top: 0px; " class="paragraph_style_5">If you're transferring from another Mac or &quot;clone,&quot; this may be your best bet.  You can only transfer the entire volume (disk or partition) this way, though -- you can't omit anything. <br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>If you're transferring to another separate volume on the new Mac, you can do this either before or after migrating the OSX volume.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>If you're transferring to the OSX volume, it's probably best to do this <span class="style_3">after</span> migrating the OSX volume.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>On Snow Leopard or earlier, if you're restoring a home folder volume to a startup volume (to consolidate the home folders there), be <span class="style_3">sure</span> to<span class="style_3"> remove the check</span> from the <span class="style_4">Erase destination</span> box!  On Lion and later, you cannot do this - - the destination is erased automatically.<br /></p>
-                  </li>
-                </ol>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_5">Depending on the circumstances, you can do this while logged on to either Mac, or, if there are no accounts with home folders available, by starting the new Mac from its Install disc.  See  <a title="DU7.html" href="DU7.html">Copying a volume via the Restore tab</a>.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id6" style="height: 690px; left: 31px; position: absolute; top: 3418px; width: 743px; z-index: 1; " class="style_SkipStroke_5 shape-with-text stroke_5">
-            <div class="text-content style_External_741_688" style="padding: 1px; ">
-              <div class="style_6">
-                <p style="padding-top: 0pt; " class="paragraph_style_7"><span class="style_7">Copying</span> a home folder via the Finder:<br /></p>
-                <p style="padding-top: 0px; " class="paragraph_style_5">If you're transferring only selected User Account(s) from another Mac or &quot;clone,&quot; you can drag the desired home folder(s) to the new volume via the Finder to copy it/them.  <br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_8"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_8">You must be logged on to the </span><span class="style_9">User Account being moved</span><span class="style_8">, to preserve the ownership and permissions.  So the volume the home folder is on must be accessible at the same &quot;path.&quot;  If it's on an external HD that used to be connected to the old Mac, and you want it on the internal HD of the new Mac, connect the external to the new Mac, log on the the account and copy the home folder, then change the location per the </span><span class="style_10">blue</span><span class="style_8"> box above.  <br /></span></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_8"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_8">If the home folder is on an internal HD in the old Mac, it's </span><span class="style_9">not</span><span class="style_8"> at the same &quot;path&quot; yet -- OSX expects it on an internal HD in the </span><span class="style_9">new</span><span class="style_8"> Mac.  In such cases, you can't log on to the transferred account;  you must </span><span class="style_9">restore</span><span class="style_8"> the old volume to the new one via Disk Utility, per the </span><span class="style_11">green</span><span class="style_8"> box above, or restore the home folder via Time Machine, per the </span><span class="style_12">tan</span><span class="style_8"> box below.<br /></span></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_9"><span class="style_8"><br /></span></p>
-                <div class="paragraph paragraph_style_9"><span class="style_8">Because OSX is extra-careful with</span><div style="height: 154px; width: 422px;  clear: right; float: right; height: 154px; margin: 6px 0px 6px 6px; position: relative; width: 422px; " class="tinyText inline-block stroke_2"><div style="position: relative; width: 422px; "><img src="SetupOther_files/shapeimage_1.png" alt="" style="height: 154px; left: 0px; position: absolute; top: 0px; width: 422px; " /></div></div><span class="style_8"> home folders,  you may get this prompt;  click </span><span class="style_13">Authenticate</span><span class="style_8">.  <br /></span></div>
-                <p class="paragraph_style_10"><span class="style_8"><br /></span></p>
-                <p class="paragraph_style_10"><br /></p>
-                <p class="paragraph_style_11">Then a prompt for your Admin password. <br /></p>
-                <p class="paragraph_style_11">                                       <br /></p>
-                <div class="paragraph paragraph_style_11"><div style="height: 121px; width: 401px;  clear: right; float: right; height: 121px; margin: 6px 0px 6px 6px; position: relative; width: 401px; " class="tinyText inline-block stroke_2"><div style="position: relative; width: 401px; "><img src="SetupOther_files/shapeimage_2.png" alt="" style="height: 121px; left: 0px; position: absolute; top: 0px; width: 401px; " /></div></div>                                             <br /></div>
-                <p class="paragraph_style_11">                                         <br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_11">Then click <span class="style_4">Continue</span> on the warning message that follows.</p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id7" style="height: 750px; left: 18px; position: absolute; top: 1648px; width: 769px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_769_750" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_5">That may not be as dire as it sounds;  you just have to transfer the home folder(s) <span class="style_3">separately</span>.  There are three ways to do that, depending on the particular circumstances. <br /></p>
-                <p class="paragraph_style_5">In most cases, you can transfer the Startup volume first with <span class="style_4">Setup Assistant </span>or <span class="style_4">Migration Assistant</span>, and the other volume second with one of the procedures below.<br /></p>
-                <p class="paragraph_style_5">But if there are <span class="style_3">no</span> home folders on the Startup volume, and you're using <span class="style_4">Setup Assistant</span>, you must <span class="style_14">create</span> an Admin User account, and you won't be able to transfer your data into that account.  Worse, the accounts you do transfer may lose permission to their files on other volumes, especially Time Machine backups.<br /></p>
-                <p class="paragraph_style_5">You may be able to do some complex transfers, such as &quot;consolidating&quot; a Mac with two volumes into a single Startup volume on the new Mac, but in most cases it's best to transfer the old Mac's configuration to the new one if at all possible.  (If there isn't room, see scenario A in the <span class="style_3">gray</span> box below for some workaround techniques.)  Make sure everything was moved and is working properly <span class="style_3">before</span> changing things more than necessary.  <br /></p>
-                <p class="paragraph_style_5">In some cases, you may have to tell OSX that a User account's home folder is in a different place.  See the <span class="style_15">blue</span> box below.<br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_12"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>An entire volume can be copied, via the <span class="style_4">Restore</span> tab of Disk Utility.  In many cases, that's the best way.  See the <span class="style_16">green</span> box below.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_12"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Individual home folders can be copied to the new volume via the Finder, but to preserve ownership and permissions, it must be done while logged-on to the account being moved.  See the <span class="style_17">pink</span> box.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_12"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Time Machine backups can be restored to an &quot;alternate&quot; location.  See the <span class="style_18">tan</span> box.<br /></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_13">There are too many combinations of setups, etc., to detail here.  But see the <span class="style_3">gray</span> box below for outlines of two common ones.  The information here should allow you to figure out how to do what you want.  If not, post a thread, containing details of what setup you want to transfer from, and how you want the new Mac set up, in the appropriate Apple Discussions forum:<br /></p>
-                <p class="paragraph_style_14"><a title="https://discussions.apple.com/community/mac_os/os_x_mountain_lion" href="https://discussions.apple.com/community/mac_os/os_x_mountain_lion">OSX Mountain Lion 10.8</a><br /></p>
-                <p class="paragraph_style_15"><a title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion" href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion">Mac OS X v 10.7 Lion</a><br /></p>
-                <p class="paragraph_style_15"><a title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.6_snow_leopard" href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.6_snow_leopard">Mac OS X v.10.6 Snow Leopard</a><br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_15"><a title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.5_leopard" href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.5_leopard">Mac OSX v.10.5 Leopard</a></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id8" style="height: 500px; left: 31px; position: absolute; top: 2433px; width: 743px; z-index: 1; " class="style_SkipStroke_6 shape-with-text stroke_6">
-            <div class="text-content style_External_741_498" style="padding: 1px; ">
-              <div class="style_6">
-                <p style="padding-top: 0pt; " class="paragraph_style_16">Changing the location of a home folder:<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="1">
-                    <p style="text-indent: -20px; " class="paragraph_style_17"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">1.</span><span style="width: 7px; " class="inline-block"></span>Go to <span class="style_4">System Preferences &gt; Users &amp; Groups (System Preferences &gt; Accounts</span><span class="style_19"> on Snow Leopard &amp; Leopard)</span><span class="style_4">,</span> click the padlock at the bottom, and enter your Admin password.<br /></p>
-                  </li>
-                </ol>
-                <div class="paragraph paragraph_style_3"><div style="height: 362px; width: 449px;  clear: right; float: right; height: 362px; margin: 6px 0px 6px 6px; position: relative; width: 449px; " class="tinyText inline-block stroke_2"><div style="position: relative; width: 449px; "><img src="SetupOther_files/shapeimage_3.png" alt="" style="height: 362px; left: 0px; position: absolute; top: 0px; width: 449px; " /></div></div><br /></div>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="2">
-                    <p style="text-indent: -20px; " class="paragraph_style_17"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">2.</span><span style="width: 7px; " class="inline-block"></span>In the sidebar, <span class="style_20">control-click (right-click)</span> the account being moved and select <span class="style_4">Advanced Options, </span>bringing up this window.  Read the  <span class="style_17">WARNING</span> carefully!<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="3">
-                    <p style="text-indent: -20px; " class="paragraph_style_18"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">3.</span><span style="width: 7px; " class="inline-block"></span>Change <span class="style_21">ONLY</span> the <span class="style_4">Home directory</span>;  click the <span class="style_4">Choose</span> button, locate the copy of the user's home directory and select it.  The &quot;path&quot; will change automatically.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="4">
-                    <p style="padding-bottom: 0pt; text-indent: -20px; " class="paragraph_style_18"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">4.</span><span style="width: 7px; " class="inline-block"></span>You may have to Restart to log on to that account.</p>
-                  </li>
-                </ol>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id9" style="height: 276px; left: 31px; position: absolute; top: 4149px; width: 743px; z-index: 1; " class="style_SkipStroke_7 shape-with-text stroke_7">
-            <div class="text-content style_External_741_274" style="padding: 1px; ">
-              <div class="style_6">
-                <p style="padding-top: 0pt; " class="paragraph_style_7"><span class="style_7">Restoring </span>home folders via Time Machine:<br /></p>
-                <p style="padding-top: 0px; " class="paragraph_style_5">If there's an Admin user account on the Startup volume, do the transfer normally.  Then log on to that account and use Time Machine's &quot;Star Wars&quot; display to restore the home folders that are on a different volume, one at a time, to the new Mac.<br /></p>
-                <p class="paragraph_style_5">Since you're on a different Mac from the one the backups were made on, you'll need the <span class="style_4">Browse Other Time Machine Disks</span> option to view the backups from the old Mac.  See <a title="../TM/17.html" href="../TM/17.html">Time Machine FAQ #17</a> for details.  As noted there, you'll need to restore the folders to an &quot;alternate location&quot; (the new Mac), not the place they were backed-up from.   See <a title="../TM/16.html" href="../TM/16.html">FAQ #16</a> for that.<br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_5">Then associate the restored home folder(s) with the account(s), per the <span class="style_15">blue</span> box above.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id10" style="height: 975px; left: 31px; position: absolute; top: 4467px; width: 743px; z-index: 1; " class="style_SkipStroke_8 shape-with-text stroke_8">
-            <div class="text-content style_External_741_973" style="padding: 1px; ">
-              <div class="style_6">
-                <p style="padding-top: 0pt; " class="paragraph_style_19">Some common scenarios:<br /></p>
-                <p style="padding-top: 0px; " class="paragraph_style_5"><span class="style_22">A.  Transferring from one volume to two</span>, such as from a Mac with everything on its HD to a new Mac with a solid state drive (SSD) and traditional rotating hard drive (HD):  <br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="1">
-                    <p style="text-indent: -20px; " class="paragraph_style_20"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">1.</span><span style="width: 7px; " class="inline-block"></span>Use <span class="style_4">Setup Assistant</span> to transfer apps (if desired) and all user accounts to the SSD, but <span class="style_23">omit</span> the contents of the sub-folders (Desktop, Documents, etc.) in the user home folders that you want to end up on the HD.  That is, leave the<span class="style_14"> account</span> checked, but un-check some or all of the <span class="style_14">folders</span> inside it.  These are temporary, but necessary to preserve permissions.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 30px; text-indent: -30px; " class="full-width">
-                    <p style="text-indent: -30px; " class="paragraph_style_21"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 30px; " class="inline-block"></span><span class="style_24">If you have one or more relatively-small home folders, it may be easier to let </span><span class="style_25">Setup Assistant </span><span class="style_24">copy the entire folder to the SSD;  then in step 2, copy it from the SSD to the HD</span>.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="2">
-                    <p style="text-indent: -20px; " class="paragraph_style_20"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">2.</span><span style="width: 7px; " class="inline-block"></span>When your Mac restarts, log on to each account to be moved to the HD and copy its &quot;real&quot; home folder (or contents of the sub-folders you want to move) from the old Mac to the HD (or, if you have Time Machine backups, <span class="style_26">restore</span> them, per the tan box above).<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="3">
-                    <p style="text-indent: -20px; " class="paragraph_style_20"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">3.</span><span style="width: 7px; " class="inline-block"></span>If you copied the whole home folder(s), change the location of those to the HD, per the <span class="style_15">blue</span> box above.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="4">
-                    <p style="text-indent: -20px; " class="paragraph_style_20"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">4.</span><span style="width: 7px; " class="inline-block"></span>Restart your Mac. <br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="5">
-                    <p style="text-indent: -20px; " class="paragraph_style_20"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">5.</span><span style="width: 7px; " class="inline-block"></span>Log on to each user account.  Verify that everything was transferred properly, then delete the temporary home folder on the SSD.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 10px; text-indent: -10px; " class="full-width">
-                    <p style="text-indent: -10px; " class="paragraph_style_22"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 10px; " class="inline-block"></span>If you use Time Machine to back up your Mac, see <a title="../TM/32.html" href="../TM/32.html">Time Machine FAQ #32</a> for information and considerations with multiple volumes.<br /></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_23"><span class="style_22">B.  Transferring from two volumes to one</span>, such as from a Mac with Solid State Drive  (SSD) and hard drive to one with just a HD:<br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width">
-                    <p style="text-indent: -20px; " class="paragraph_style_24"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 20px; " class="inline-block"></span><span class="style_3">Note:</span>  There<span class="style_3"> must</span> be a user account with a home folder on the old Mac's Startup volume.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 41px; text-indent: -21px; " class="full-width" value="1">
-                    <p style="text-indent: -21px; " class="paragraph_style_25"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">1.</span><span style="width: 8px; " class="inline-block"></span>Transfer the user accounts (and Apps, etc.) normally.  <br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 41px; text-indent: -21px; " class="full-width" value="2">
-                    <p style="text-indent: -21px; " class="paragraph_style_25"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">2.</span><span style="width: 8px; " class="inline-block"></span>You cannot use Disk Utility to <span class="style_21">Restore</span> the home folder volume to the Startup volume while you're running from the Startup volume.  So either:<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 60px; text-indent: -20px; " class="full-width" value="1">
-                    <p style="text-indent: -20px; " class="paragraph_style_26"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">a.</span><span style="width: 8px; " class="inline-block"></span>On Snow Leopard or earlier, start the new Mac from it's Install disc, and restore the home folder volume to the new Startup volume, per the <span class="style_16">green</span> box above.  Be sure to un-check the <span class="style_4">Erase destination</span> box when you set up the <span class="style_21">Restore</span>.  Then restore the home folder(s) from the Time Machine backups, to the <span class="style_26">Users </span>folder, per the <span class="style_18">tan</span> box<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 60px; text-indent: -20px; " class="full-width" value="2">
-                    <p style="text-indent: -20px; " class="paragraph_style_26"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">b.</span><span style="width: 7px; " class="inline-block"></span>On Lion or later, use Time Machine to restore (<span class="style_18">tan</span> box) or the Finder (<span class="style_27">pink </span>box) to copy the home folder(s), to the <span class="style_26">Users </span>folder.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 41px; text-indent: -21px; " class="full-width" value="3">
-                    <p style="padding-bottom: 0pt; text-indent: -21px; " class="paragraph_style_25"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">3.</span><span style="width: 8px; " class="inline-block"></span>Log on to the user account whose home folder was on the old Mac's Startup volume. and change the location(s) of the other home folder(s) per the <span class="style_15">blue</span> box above.</p>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id11" style="height: 715px; left: 31px; position: absolute; top: 311px; width: 743px; z-index: 1; " class="style_SkipStroke_9 shape-with-text stroke_9">
-            <div class="text-content style_External_741_713" style="padding: 1px; ">
-              <div class="style_28">
-                <p style="padding-top: 0pt; " class="paragraph_style_5">In most cases, OSX, apps, and all user home folders should be in a <span class="style_3">single volume</span>.<br /></p>
-                <p class="paragraph_style_5">Putting them in different volumes on the same physical drive usually will not make things easier, and will <span class="style_21">degrade</span> performance, not improve it.<br /></p>
-                <p class="paragraph_style_5">There are times when putting some user <span class="style_3">data</span> on a different <span class="style_14">device</span> makes sense, such as a large iPhoto library, or a &quot;scratch&quot; disk for photo or video editing.  <br /></p>
-                <p class="paragraph_style_5">Or, if you have a<span class="style_4"> solid state drive</span> <span class="style_3">and</span> a hard drive, the SSD may not be large enough.  In that case, it may be best to put <span class="style_26">some</span> home folders on the HD.  <br /></p>
-                <p class="paragraph_style_5">Otherwise, it's usually best to keep the<span class="style_3"> home folders</span> on the main OSX volume.  Put only the large sub-folders (such as <span class="style_4">Pictures, Movies, Music</span>, and/or <span class="style_4">Documents,</span> but<span class="style_4"> </span><span class="style_3">not</span><span class="style_4"> Library</span>), or the contents (such as <span class="style_4">iPhoto Library, iTunes,</span> and/or<span class="style_4"> iMovie</span>) on the secondary drive.  <br /></p>
-                <p class="paragraph_style_5">See these Apple articles for help moving <span class="style_4">iLife</span> data:<br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 55px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_27"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="http://support.apple.com/kb/HT1449" href="http://support.apple.com/kb/HT1449">Moving your iTunes Music folder</a> <br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 55px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_27"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="http://support.apple.com/kb/PH2506" href="http://support.apple.com/kb/PH2506">Moving your iPhoto '11 library</a><br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 55px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_28"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="http://support.apple.com/kb/HT1229" href="http://support.apple.com/kb/HT1229">Moving your iPhoto '08 or earlier library<br /></a></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_3"><br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 55px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_28"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="http://support.apple.com/kb/PH2289" href="http://support.apple.com/kb/PH2289">Moving iMovie '11 footage to another drive</a><br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 55px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_28"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="http://support.apple.com/kb/HT1026" href="http://support.apple.com/kb/HT1026">Moving iMovie '08 footage to another drive<br /></a></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_29">If you do put home folders on a separate volume,  it's <span class="style_21">strongly recommended</span> that an Admin account and its home folder remain on the Startup volume.  If there isn't one, and you have a problem with the separate home folder volume, you <span class="style_21">cannot log on to your Mac!</span>  And in some cases it will <span class="style_21">greatly complicate</span> transferring to a new Mac.<br /></p>
-                <p class="paragraph_style_30">So if you're transferring from an available Mac that doesn't have an Admin account on its Startup volume, <span class="style_3">create one</span> via <span class="style_4">System Preferences &gt; Accounts</span> before starting.<br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_5">If you have multiple internal drives and/or partitions, and use Time Machine to back up your Mac, see <a title="../TM/32.html" href="../TM/32.html">Time Machine FAQ #32</a> for information and considerations.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id12" style="height: 242px; left: 17px; position: absolute; top: 24px; width: 769px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_769_242" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_5">This page applies to transferring apps, user accounts, and/or data to a Mac running <span class="style_3">Leopard</span> or later, via either <span class="style_4">Setup Assistant </span>or <span class="style_4">Migration Assistant</span>, when either or both have, or will have, one or more home folders <span class="style_3">not </span>on the Startup drive.  It assumes familiarity with the general functioning of the Assistant you'll be using.  If you're not familiar with them, it's best to review them first.  See <a title="SetupLion.html" href="SetupLion.html">Using Setup Assistant on Mountain Lion or Lion</a>, <a title="MigrateLion.html" href="MigrateLion.html">Using Migration Assistant on Mountain Lion or Lion</a>,  <a title="SetupAsst.html" href="SetupAsst.html">Using Setup Assistant on Snow Leopard or Leopard</a>,  or  <a title="Migrate.html" href="Migrate.html">Using Migration Assistant on Snow Leopard or Leopard</a>  for details.<br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_13">Those apps only transfer <span class="style_3">from</span> <span class="style_4">Startup volumes</span> (such as another Mac's Startup disk or partition, or a backup of it, containing OSX),  <span class="style_3">to</span> the volume they're running on.  If you transfer from a Startup volume that has user accounts on a different volume, any such <span class="style_21">accounts</span> you select will be transferred, but their <span class="style_21">home folders</span> on other volumes won't.</p>
-              </div>
-            </div>
-          </div>
-          <div style="height: 5541px; line-height: 5541px; " class="spacer"> </div>
-        </div>
-        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id13" style="height: 27px; left: 727px; position: absolute; top: 7px; width: 62px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_31">5/24/13</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id14" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_32">Copyright © 2013 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<link href="SetupOther_files/SetupOther.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='SetupOther_files/SetupOtherIE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="SetupOther_files/SetupOther.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(255, 223, 205); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 134px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 17px; position: absolute; top: 67px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; ">OSX Tips:  Setting-up a new Mac from an old one or its Backups<span class="style_1" style="line-height: 27px; "><br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; "> Transferring  Home  Folders  not  on  a  Startup  volume</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 37px; left: 40px; position: absolute; top: 12px; width: 724px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_722_35" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "><span class="style_2">   </span><a href="TransferApps.html" title="TransferApps.html">Previous</a><span class="style_2">                </span><a href="Home.html" title="Home.html">Home</a><span class="style_2">                  </span><a href="Setup.html" title="Setup.html">Setting up a new Mac</a><span class="style_2">               </span><a href="TipsContact.html" title="TipsContact.html">Contact</a><span class="style_2">             </span> <a href="MigrationProblems.html" title="MigrationProblems.html">Next</a><span class="style_2"> </span>Next</p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_3 shape-with-text" id="id3" style="height: 537px; left: 17px; position: absolute; top: 1089px; width: 770px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_770_537" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_3" style="padding-top: 0pt; ">The <span class="style_3">Transfer Your Information</span> or <span class="style_3">Select Items to Migrate </span>window will look like this when the <span class="style_4">Main Admin Account </span>is on the Startup volume, but <span class="style_4">testaccount's</span> is not:<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<div class="paragraph paragraph_style_3" style="padding-bottom: 0pt; "><div class="tinyText style_SkipStroke_2 inline-block stroke_2" style="height: 453px; width: 651px;  clear: right; float: right; height: 453px; margin: 6px 0px 6px 6px; position: relative; width: 651px; "><img alt="" src="SetupOther_files/MultiVolumes%201%20Item%20List.jpg" style="border: none; height: 453px; width: 652px; "/></div></div>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_3" id="id4" style="height: 39px; left: 11px; position: absolute; top: 5502px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_37 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style_5 vertical-align-middle-innerbox">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "><span class="style_2">      </span><a href="TransferApps.html" title="TransferApps.html">Previous</a><span class="style_2">                  </span><a href="Home.html" title="Home.html">Home</a><span class="style_2">                     </span><a href="Setup.html" title="Setup.html">Setting up a new Mac</a><span class="style_2">                 </span><a href="TipsContact.html" title="TipsContact.html">Contact</a><span class="style_2">             </span><a href="MigrationProblems.html" title="MigrationProblems.html">Next</a><span class="style_2"> </span></p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_4 shape-with-text stroke_4" id="id5" style="height: 385px; left: 31px; position: absolute; top: 2978px; width: 743px; z-index: 1; ">
+<div class="text-content style_External_741_383" style="padding: 1px; ">
+<div class="style_6">
+<p class="paragraph_style_4" style="padding-top: 0pt; "><span class="style_7">Restoring</span> the home folder volume via Disk Utility:<br/></p>
+<p class="paragraph_style_5" style="padding-top: 0px; ">If you're transferring from another Mac or "clone," this may be your best bet.  You can only transfer the entire volume (disk or partition) this way, though -- you can't omit anything. <br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 15px; text-indent: -15px; ">
+<p class="paragraph_style_6" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>If you're transferring to another separate volume on the new Mac, you can do this either before or after migrating the OSX volume.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 15px; text-indent: -15px; ">
+<p class="paragraph_style_6" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>If you're transferring to the OSX volume, it's probably best to do this <span class="style_3">after</span> migrating the OSX volume.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 15px; text-indent: -15px; ">
+<p class="paragraph_style_6" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>On Snow Leopard or earlier, if you're restoring a home folder volume to a startup volume (to consolidate the home folders there), be <span class="style_3">sure</span> to<span class="style_3"> remove the check</span> from the <span class="style_4">Erase destination</span> box!  On Lion and later, you cannot do this - - the destination is erased automatically.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_5" style="padding-bottom: 0pt; ">Depending on the circumstances, you can do this while logged on to either Mac, or, if there are no accounts with home folders available, by starting the new Mac from its Install disc.  See  <a href="DU7.html" title="DU7.html">Copying a volume via the Restore tab</a>.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_5 shape-with-text stroke_5" id="id6" style="height: 690px; left: 31px; position: absolute; top: 3418px; width: 743px; z-index: 1; ">
+<div class="text-content style_External_741_688" style="padding: 1px; ">
+<div class="style_6">
+<p class="paragraph_style_7" style="padding-top: 0pt; "><span class="style_7">Copying</span> a home folder via the Finder:<br/></p>
+<p class="paragraph_style_5" style="padding-top: 0px; ">If you're transferring only selected User Account(s) from another Mac or "clone," you can drag the desired home folder(s) to the new volume via the Finder to copy it/them.  <br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 15px; text-indent: -15px; ">
+<p class="paragraph_style_8" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_8">You must be logged on to the </span><span class="style_9">User Account being moved</span><span class="style_8">, to preserve the ownership and permissions.  So the volume the home folder is on must be accessible at the same "path."  If it's on an external HD that used to be connected to the old Mac, and you want it on the internal HD of the new Mac, connect the external to the new Mac, log on the the account and copy the home folder, then change the location per the </span><span class="style_10">blue</span><span class="style_8"> box above.  <br/></span></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 15px; text-indent: -15px; ">
+<p class="paragraph_style_8" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_8">If the home folder is on an internal HD in the old Mac, it's </span><span class="style_9">not</span><span class="style_8"> at the same "path" yet -- OSX expects it on an internal HD in the </span><span class="style_9">new</span><span class="style_8"> Mac.  In such cases, you can't log on to the transferred account;  you must </span><span class="style_9">restore</span><span class="style_8"> the old volume to the new one via Disk Utility, per the </span><span class="style_11">green</span><span class="style_8"> box above, or restore the home folder via Time Machine, per the </span><span class="style_12">tan</span><span class="style_8"> box below.<br/></span></p>
+</li>
+</ol>
+<p class="paragraph_style_9"><span class="style_8"><br/></span></p>
+<div class="paragraph paragraph_style_9"><span class="style_8">Because OSX is extra-careful with</span><div class="tinyText inline-block stroke_2" style="height: 154px; width: 422px;  clear: right; float: right; height: 154px; margin: 6px 0px 6px 6px; position: relative; width: 422px; "><div style="position: relative; width: 422px; "><img alt="" src="SetupOther_files/shapeimage_1.png" style="height: 154px; left: 0px; position: absolute; top: 0px; width: 422px; "/></div></div><span class="style_8"> home folders,  you may get this prompt;  click </span><span class="style_13">Authenticate</span><span class="style_8">.  <br/></span></div>
+<p class="paragraph_style_10"><span class="style_8"><br/></span></p>
+<p class="paragraph_style_10"><br/></p>
+<p class="paragraph_style_11">Then a prompt for your Admin password. <br/></p>
+<p class="paragraph_style_11">                                       <br/></p>
+<div class="paragraph paragraph_style_11"><div class="tinyText inline-block stroke_2" style="height: 121px; width: 401px;  clear: right; float: right; height: 121px; margin: 6px 0px 6px 6px; position: relative; width: 401px; "><div style="position: relative; width: 401px; "><img alt="" src="SetupOther_files/shapeimage_2.png" style="height: 121px; left: 0px; position: absolute; top: 0px; width: 401px; "/></div></div>                                             <br/></div>
+<p class="paragraph_style_11">                                         <br/></p>
+<p class="paragraph_style_11" style="padding-bottom: 0pt; ">Then click <span class="style_4">Continue</span> on the warning message that follows.</p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text" id="id7" style="height: 750px; left: 18px; position: absolute; top: 1648px; width: 769px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_769_750" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_5" style="padding-top: 0pt; ">That may not be as dire as it sounds;  you just have to transfer the home folder(s) <span class="style_3">separately</span>.  There are three ways to do that, depending on the particular circumstances. <br/></p>
+<p class="paragraph_style_5">In most cases, you can transfer the Startup volume first with <span class="style_4">Setup Assistant </span>or <span class="style_4">Migration Assistant</span>, and the other volume second with one of the procedures below.<br/></p>
+<p class="paragraph_style_5">But if there are <span class="style_3">no</span> home folders on the Startup volume, and you're using <span class="style_4">Setup Assistant</span>, you must <span class="style_14">create</span> an Admin User account, and you won't be able to transfer your data into that account.  Worse, the accounts you do transfer may lose permission to their files on other volumes, especially Time Machine backups.<br/></p>
+<p class="paragraph_style_5">You may be able to do some complex transfers, such as "consolidating" a Mac with two volumes into a single Startup volume on the new Mac, but in most cases it's best to transfer the old Mac's configuration to the new one if at all possible.  (If there isn't room, see scenario A in the <span class="style_3">gray</span> box below for some workaround techniques.)  Make sure everything was moved and is working properly <span class="style_3">before</span> changing things more than necessary.  <br/></p>
+<p class="paragraph_style_5">In some cases, you may have to tell OSX that a User account's home folder is in a different place.  See the <span class="style_15">blue</span> box below.<br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_12" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>An entire volume can be copied, via the <span class="style_4">Restore</span> tab of Disk Utility.  In many cases, that's the best way.  See the <span class="style_16">green</span> box below.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_12" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Individual home folders can be copied to the new volume via the Finder, but to preserve ownership and permissions, it must be done while logged-on to the account being moved.  See the <span class="style_17">pink</span> box.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_12" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Time Machine backups can be restored to an "alternate" location.  See the <span class="style_18">tan</span> box.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_13">There are too many combinations of setups, etc., to detail here.  But see the <span class="style_3">gray</span> box below for outlines of two common ones.  The information here should allow you to figure out how to do what you want.  If not, post a thread, containing details of what setup you want to transfer from, and how you want the new Mac set up, in the appropriate Apple Discussions forum:<br/></p>
+<p class="paragraph_style_14"><a href="https://discussions.apple.com/community/mac_os/os_x_mountain_lion" title="https://discussions.apple.com/community/mac_os/os_x_mountain_lion">OSX Mountain Lion 10.8</a><br/></p>
+<p class="paragraph_style_15"><a href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion" title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion">Mac OS X v 10.7 Lion</a><br/></p>
+<p class="paragraph_style_15"><a href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.6_snow_leopard" title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.6_snow_leopard">Mac OS X v.10.6 Snow Leopard</a><br/></p>
+<p class="paragraph_style_15" style="padding-bottom: 0pt; "><a href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.5_leopard" title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.5_leopard">Mac OSX v.10.5 Leopard</a></p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_6 shape-with-text stroke_6" id="id8" style="height: 500px; left: 31px; position: absolute; top: 2433px; width: 743px; z-index: 1; ">
+<div class="text-content style_External_741_498" style="padding: 1px; ">
+<div class="style_6">
+<p class="paragraph_style_16" style="padding-top: 0pt; ">Changing the location of a home folder:<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 20px; text-indent: -20px; " value="1">
+<p class="paragraph_style_17" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">1.</span><span class="inline-block" style="width: 7px; "></span>Go to <span class="style_4">System Preferences &gt; Users &amp; Groups (System Preferences &gt; Accounts</span><span class="style_19"> on Snow Leopard &amp; Leopard)</span><span class="style_4">,</span> click the padlock at the bottom, and enter your Admin password.<br/></p>
+</li>
+</ol>
+<div class="paragraph paragraph_style_3"><div class="tinyText inline-block stroke_2" style="height: 362px; width: 449px;  clear: right; float: right; height: 362px; margin: 6px 0px 6px 6px; position: relative; width: 449px; "><div style="position: relative; width: 449px; "><img alt="" src="SetupOther_files/shapeimage_3.png" style="height: 362px; left: 0px; position: absolute; top: 0px; width: 449px; "/></div></div><br/></div>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 20px; text-indent: -20px; " value="2">
+<p class="paragraph_style_17" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">2.</span><span class="inline-block" style="width: 7px; "></span>In the sidebar, <span class="style_20">control-click (right-click)</span> the account being moved and select <span class="style_4">Advanced Options, </span>bringing up this window.  Read the  <span class="style_17">WARNING</span> carefully!<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 20px; text-indent: -20px; " value="3">
+<p class="paragraph_style_18" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">3.</span><span class="inline-block" style="width: 7px; "></span>Change <span class="style_21">ONLY</span> the <span class="style_4">Home directory</span>;  click the <span class="style_4">Choose</span> button, locate the copy of the user's home directory and select it.  The "path" will change automatically.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 20px; text-indent: -20px; " value="4">
+<p class="paragraph_style_18" style="padding-bottom: 0pt; text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">4.</span><span class="inline-block" style="width: 7px; "></span>You may have to Restart to log on to that account.</p>
+</li>
+</ol>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_7 shape-with-text stroke_7" id="id9" style="height: 276px; left: 31px; position: absolute; top: 4149px; width: 743px; z-index: 1; ">
+<div class="text-content style_External_741_274" style="padding: 1px; ">
+<div class="style_6">
+<p class="paragraph_style_7" style="padding-top: 0pt; "><span class="style_7">Restoring </span>home folders via Time Machine:<br/></p>
+<p class="paragraph_style_5" style="padding-top: 0px; ">If there's an Admin user account on the Startup volume, do the transfer normally.  Then log on to that account and use Time Machine's "Star Wars" display to restore the home folders that are on a different volume, one at a time, to the new Mac.<br/></p>
+<p class="paragraph_style_5">Since you're on a different Mac from the one the backups were made on, you'll need the <span class="style_4">Browse Other Time Machine Disks</span> option to view the backups from the old Mac.  See <a href="../TM/17.html" title="../TM/17.html">Time Machine FAQ #17</a> for details.  As noted there, you'll need to restore the folders to an "alternate location" (the new Mac), not the place they were backed-up from.   See <a href="../TM/16.html" title="../TM/16.html">FAQ #16</a> for that.<br/></p>
+<p class="paragraph_style_5" style="padding-bottom: 0pt; ">Then associate the restored home folder(s) with the account(s), per the <span class="style_15">blue</span> box above.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_8 shape-with-text stroke_8" id="id10" style="height: 975px; left: 31px; position: absolute; top: 4467px; width: 743px; z-index: 1; ">
+<div class="text-content style_External_741_973" style="padding: 1px; ">
+<div class="style_6">
+<p class="paragraph_style_19" style="padding-top: 0pt; ">Some common scenarios:<br/></p>
+<p class="paragraph_style_5" style="padding-top: 0px; "><span class="style_22">A.  Transferring from one volume to two</span>, such as from a Mac with everything on its HD to a new Mac with a solid state drive (SSD) and traditional rotating hard drive (HD):  <br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 30px; text-indent: -20px; " value="1">
+<p class="paragraph_style_20" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">1.</span><span class="inline-block" style="width: 7px; "></span>Use <span class="style_4">Setup Assistant</span> to transfer apps (if desired) and all user accounts to the SSD, but <span class="style_23">omit</span> the contents of the sub-folders (Desktop, Documents, etc.) in the user home folders that you want to end up on the HD.  That is, leave the<span class="style_14"> account</span> checked, but un-check some or all of the <span class="style_14">folders</span> inside it.  These are temporary, but necessary to preserve permissions.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 30px; text-indent: -30px; ">
+<p class="paragraph_style_21" style="text-indent: -30px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 30px; "></span><span class="style_24">If you have one or more relatively-small home folders, it may be easier to let </span><span class="style_25">Setup Assistant </span><span class="style_24">copy the entire folder to the SSD;  then in step 2, copy it from the SSD to the HD</span>.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 30px; text-indent: -20px; " value="2">
+<p class="paragraph_style_20" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">2.</span><span class="inline-block" style="width: 7px; "></span>When your Mac restarts, log on to each account to be moved to the HD and copy its "real" home folder (or contents of the sub-folders you want to move) from the old Mac to the HD (or, if you have Time Machine backups, <span class="style_26">restore</span> them, per the tan box above).<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 30px; text-indent: -20px; " value="3">
+<p class="paragraph_style_20" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">3.</span><span class="inline-block" style="width: 7px; "></span>If you copied the whole home folder(s), change the location of those to the HD, per the <span class="style_15">blue</span> box above.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 30px; text-indent: -20px; " value="4">
+<p class="paragraph_style_20" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">4.</span><span class="inline-block" style="width: 7px; "></span>Restart your Mac. <br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 30px; text-indent: -20px; " value="5">
+<p class="paragraph_style_20" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">5.</span><span class="inline-block" style="width: 7px; "></span>Log on to each user account.  Verify that everything was transferred properly, then delete the temporary home folder on the SSD.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 10px; text-indent: -10px; ">
+<p class="paragraph_style_22" style="text-indent: -10px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 10px; "></span>If you use Time Machine to back up your Mac, see <a href="../TM/32.html" title="../TM/32.html">Time Machine FAQ #32</a> for information and considerations with multiple volumes.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_23"><span class="style_22">B.  Transferring from two volumes to one</span>, such as from a Mac with Solid State Drive  (SSD) and hard drive to one with just a HD:<br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 20px; text-indent: -20px; ">
+<p class="paragraph_style_24" style="text-indent: -20px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 20px; "></span><span class="style_3">Note:</span>  There<span class="style_3"> must</span> be a user account with a home folder on the old Mac's Startup volume.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 41px; text-indent: -21px; " value="1">
+<p class="paragraph_style_25" style="text-indent: -21px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">1.</span><span class="inline-block" style="width: 8px; "></span>Transfer the user accounts (and Apps, etc.) normally.  <br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 41px; text-indent: -21px; " value="2">
+<p class="paragraph_style_25" style="text-indent: -21px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">2.</span><span class="inline-block" style="width: 8px; "></span>You cannot use Disk Utility to <span class="style_21">Restore</span> the home folder volume to the Startup volume while you're running from the Startup volume.  So either:<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 60px; text-indent: -20px; " value="1">
+<p class="paragraph_style_26" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">a.</span><span class="inline-block" style="width: 8px; "></span>On Snow Leopard or earlier, start the new Mac from it's Install disc, and restore the home folder volume to the new Startup volume, per the <span class="style_16">green</span> box above.  Be sure to un-check the <span class="style_4">Erase destination</span> box when you set up the <span class="style_21">Restore</span>.  Then restore the home folder(s) from the Time Machine backups, to the <span class="style_26">Users </span>folder, per the <span class="style_18">tan</span> box<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 60px; text-indent: -20px; " value="2">
+<p class="paragraph_style_26" style="text-indent: -20px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">b.</span><span class="inline-block" style="width: 7px; "></span>On Lion or later, use Time Machine to restore (<span class="style_18">tan</span> box) or the Finder (<span class="style_27">pink </span>box) to copy the home folder(s), to the <span class="style_26">Users </span>folder.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 41px; text-indent: -21px; " value="3">
+<p class="paragraph_style_25" style="padding-bottom: 0pt; text-indent: -21px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">3.</span><span class="inline-block" style="width: 8px; "></span>Log on to the user account whose home folder was on the old Mac's Startup volume. and change the location(s) of the other home folder(s) per the <span class="style_15">blue</span> box above.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_9 shape-with-text stroke_9" id="id11" style="height: 715px; left: 31px; position: absolute; top: 311px; width: 743px; z-index: 1; ">
+<div class="text-content style_External_741_713" style="padding: 1px; ">
+<div class="style_28">
+<p class="paragraph_style_5" style="padding-top: 0pt; ">In most cases, OSX, apps, and all user home folders should be in a <span class="style_3">single volume</span>.<br/></p>
+<p class="paragraph_style_5">Putting them in different volumes on the same physical drive usually will not make things easier, and will <span class="style_21">degrade</span> performance, not improve it.<br/></p>
+<p class="paragraph_style_5">There are times when putting some user <span class="style_3">data</span> on a different <span class="style_14">device</span> makes sense, such as a large iPhoto library, or a "scratch" disk for photo or video editing.  <br/></p>
+<p class="paragraph_style_5">Or, if you have a<span class="style_4"> solid state drive</span> <span class="style_3">and</span> a hard drive, the SSD may not be large enough.  In that case, it may be best to put <span class="style_26">some</span> home folders on the HD.  <br/></p>
+<p class="paragraph_style_5">Otherwise, it's usually best to keep the<span class="style_3"> home folders</span> on the main OSX volume.  Put only the large sub-folders (such as <span class="style_4">Pictures, Movies, Music</span>, and/or <span class="style_4">Documents,</span> but<span class="style_4"> </span><span class="style_3">not</span><span class="style_4"> Library</span>), or the contents (such as <span class="style_4">iPhoto Library, iTunes,</span> and/or<span class="style_4"> iMovie</span>) on the secondary drive.  <br/></p>
+<p class="paragraph_style_5">See these Apple articles for help moving <span class="style_4">iLife</span> data:<br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 55px; text-indent: -15px; ">
+<p class="paragraph_style_27" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><a href="http://support.apple.com/kb/HT1449" title="http://support.apple.com/kb/HT1449">Moving your iTunes Music folder</a> <br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 55px; text-indent: -15px; ">
+<p class="paragraph_style_27" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><a href="http://support.apple.com/kb/PH2506" title="http://support.apple.com/kb/PH2506">Moving your iPhoto '11 library</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 55px; text-indent: -15px; ">
+<p class="paragraph_style_28" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><a href="http://support.apple.com/kb/HT1229" title="http://support.apple.com/kb/HT1229">Moving your iPhoto '08 or earlier library<br/></a></p>
+</li>
+</ol>
+<p class="paragraph_style_3"><br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 55px; text-indent: -15px; ">
+<p class="paragraph_style_28" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><a href="http://support.apple.com/kb/PH2289" title="http://support.apple.com/kb/PH2289">Moving iMovie '11 footage to another drive</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 55px; text-indent: -15px; ">
+<p class="paragraph_style_28" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><a href="http://support.apple.com/kb/HT1026" title="http://support.apple.com/kb/HT1026">Moving iMovie '08 footage to another drive<br/></a></p>
+</li>
+</ol>
+<p class="paragraph_style_29">If you do put home folders on a separate volume,  it's <span class="style_21">strongly recommended</span> that an Admin account and its home folder remain on the Startup volume.  If there isn't one, and you have a problem with the separate home folder volume, you <span class="style_21">cannot log on to your Mac!</span>  And in some cases it will <span class="style_21">greatly complicate</span> transferring to a new Mac.<br/></p>
+<p class="paragraph_style_30">So if you're transferring from an available Mac that doesn't have an Admin account on its Startup volume, <span class="style_3">create one</span> via <span class="style_4">System Preferences &gt; Accounts</span> before starting.<br/></p>
+<p class="paragraph_style_5" style="padding-bottom: 0pt; ">If you have multiple internal drives and/or partitions, and use Time Machine to back up your Mac, see <a href="../TM/32.html" title="../TM/32.html">Time Machine FAQ #32</a> for information and considerations.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text" id="id12" style="height: 242px; left: 17px; position: absolute; top: 24px; width: 769px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_769_242" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_5" style="padding-top: 0pt; ">This page applies to transferring apps, user accounts, and/or data to a Mac running <span class="style_3">Leopard</span> or later, via either <span class="style_4">Setup Assistant </span>or <span class="style_4">Migration Assistant</span>, when either or both have, or will have, one or more home folders <span class="style_3">not </span>on the Startup drive.  It assumes familiarity with the general functioning of the Assistant you'll be using.  If you're not familiar with them, it's best to review them first.  See <a href="SetupLion.html" title="SetupLion.html">Using Setup Assistant on Mountain Lion or Lion</a>, <a href="MigrateLion.html" title="MigrateLion.html">Using Migration Assistant on Mountain Lion or Lion</a>,  <a href="SetupAsst.html" title="SetupAsst.html">Using Setup Assistant on Snow Leopard or Leopard</a>,  or  <a href="Migrate.html" title="Migrate.html">Using Migration Assistant on Snow Leopard or Leopard</a>  for details.<br/></p>
+<p class="paragraph_style_13" style="padding-bottom: 0pt; ">Those apps only transfer <span class="style_3">from</span> <span class="style_4">Startup volumes</span> (such as another Mac's Startup disk or partition, or a backup of it, containing OSX),  <span class="style_3">to</span> the volume they're running on.  If you transfer from a Startup volume that has user accounts on a different volume, any such <span class="style_21">accounts</span> you select will be transferred, but their <span class="style_21">home folders</span> on other volumes won't.</p>
+</div>
+</div>
+</div>
+<div class="spacer" style="height: 5541px; line-height: 5541px; "> </div>
+</div>
+<div id="footer_layer" style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_3 shape-with-text" id="id13" style="height: 27px; left: 727px; position: absolute; top: 7px; width: 62px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_31" style="padding-bottom: 0pt; padding-top: 0pt; ">5/24/13</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text" id="id14" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_32" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2013 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-

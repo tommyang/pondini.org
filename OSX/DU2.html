@@ -1,231 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20130420" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>OSX Tips:  Using Disk Utility 
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20130420" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>OSX Tips:  Using Disk Utility 
 2.  Erase a  Partition</title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="DU2_files/DU2.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='DU2_files/DU2IE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="DU2_files/DU2.js"></script>
-  </head>
-  <body style="background: rgb(255, 223, 205); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 126px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 59px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">OSX Tips:  Using Disk Utility</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1">2.  Erase a  Partition</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 37px; left: 36px; position: absolute; top: 11px; width: 724px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_722_35" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"><span class="style_3">     </span><a title="DU1.html" href="DU1.html">Previous</a><span class="style_3">               </span><a title="Home.html" href="Home.html">Home</a><span class="style_3">             </span><a title="DU.html" href="DU.html">Using Disk Utility: Contents</a><span class="style_3">              </span><a title="TipsContact.html" href="TipsContact.html">Contact</a><span class="style_3">            </span><a title="DU3.html" href="DU3.html">Next</a> </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 295px; left: 60px; position: absolute; top: 44px; width: 703px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_703_295" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_3">Most disk drives have a single <span class="style_4">partition</span>.  Your Mac came with an internal hard drive containing one partition, named <span class="style_5">Macintosh HD.  </span>But internal or external HDs can contain multiple partitions (also called <span class="style_4">volumes</span>) if desired.  <br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">Each partition occupies <span class="style_6">contiguous physical space</span> on the disk, and for most purposes is treated as a separate drive.   Each one has a different name, and by default will appear on your desktop and Finder sidebars as if they were separate drives.<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">This procedure will erase and, optionally, reformat one partition on a hard drive, <span class="style_4">erasing all the contents</span> of the selected partition, leaving all others untouched.  Use the <span class="style_5">Disk Utility</span> app, in your Applications/Utilities folder.<br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_4">If your disk doesn't appear in the sidebar, see <a title="DU10.html" href="DU10.html">If a disk doesn't appear in the sidebar</a>.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 983px; left: 22px; position: absolute; top: 2608px; width: 755px; z-index: 1; " class="style_SkipStroke_3 shape-with-text stroke_2">
-            <div class="text-content style_External_753_981" style="padding: 1px; ">
-              <div class="style_7">
-                <p style="padding-top: 0pt; " class="paragraph_style_5"><span style="line-height: 27px; " class="style_8">Erase Free Space</span> <span class="style_9">is a security feature only.  It overwrites all the free space on the disk with zeros, similar to the </span><span class="style_10">Security Options</span><span class="style_9"> above.<br /></span></p>
-                <p class="paragraph_style_5"><span class="style_9"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_9">The windows below are different, but the function is the same.<br /></span></p>
-                <p class="paragraph_style_6"><span class="style_9">It does </span>not<span class="style_9"> delete any active files or free up any additional space.<br /></span></p>
-                <p class="paragraph_style_6"><span class="style_9">It does take quite a while, of course, and it can cause problems  if interrupted, especially if performed on your startup volume while running from it.<br /></span></p>
-                <p class="paragraph_style_6"><span class="style_9">This is because it &quot;gathers&quot; all the free space into a folder before starting to overwrite it.  So you’ll see the free space on your disk disappearing at an </span>alarming<span class="style_9"> rate,  all the way to </span>zero<span class="style_9">.  If your Mac is trying to do much of anything else, it will slow down, apps may crash, data may be lost, etc.<br /></span></p>
-                <p class="paragraph_style_6"><span class="style_9">Worse, if the process is interrupted or fails, or your Mac is shut down or crashes, the space will </span>not<span class="style_9"> be returned when you start up again (</span>if<span class="style_9"> you can start up again).<br /></span></p>
-                <p class="paragraph_style_7"><span class="style_9"><br /></span></p>
-                <p class="paragraph_style_8"><span class="style_9">Thus it is </span>not recommended<span class="style_9"> to do this on your startup volume while running normally.  <br /></span></p>
-                <p class="paragraph_style_6"><span class="style_9">If you really need to do it, start up from another source:  either your OSX Install disc (see the </span>yellow<span class="style_9"> box in</span><a title="DU1.html" href="DU1.html" class="style_9"> section #1</a><span class="style_9">) or a different disk that has OSX installed on it.  Be sure you use a compatible version of OSX -- if you’re running Leopard, use a Leopard disc;  if you’re running Snow Leopard, use a Snow Leopard disc.<br /></span></p>
-                <p class="paragraph_style_6"><span class="style_9"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_9">                </span><span style="line-height: 27px; " class="style_11">Lion 10.7.x and later</span><span class="style_9">                  </span><span style="line-height: 27px; " class="style_11">Snow Leopard 10.6.x and earlier<br /></span></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id5" style="height: 39px; left: 14px; position: absolute; top: 3638px; width: 772px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_3">
-            <div class="text-content style_External_770_37 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style_12 vertical-align-middle-innerbox">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_9"> <span class="style_3">   </span><a title="DU1.html" href="DU1.html">Previous</a><span class="style_3">                </span><a title="Home.html" href="Home.html">Home</a><span class="style_3">                 </span><a title="DU.html" href="DU.html">Using Disk Utility: Contents</a><span class="style_3">                  </span><a title="TipsContact.html" href="TipsContact.html">Contact</a><span class="style_3">                </span><a title="DU3.html" href="DU3.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id6" style="height: 736px; left: 41px; position: absolute; top: 1143px; width: 703px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_703_736" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <div class="paragraph paragraph_style_3" style="padding-top: 0pt; "><div style="height: 419px; width: 506px;  clear: right; float: right; height: 419px; margin: 6px 0px 6px 6px; position: relative; width: 506px; " class="tinyText style_SkipStroke_4 inline-block stroke_4"><img src="DU2_files/DU%202a%20Erase%3AReformat%20partition.jpg" alt="" style="border: none; height: 419px; width: 506px; " /></div>Select the desired<br /></div>
-                <p class="paragraph_style_3">partition in the sidebar, and click the <span class="style_5">Erase </span>tab.<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">The current <span class="style_4">Format</span> will be shown in the pop-up;  select a different one if desired.  (See <a title="DU8.html" href="DU8.html">Disk Formats</a> for details.)<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">You can also change the <span class="style_4">Name </span>if you want.<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">For most purposes, that’s all you need.   <br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">But in some cases, you may want to take the time to do a <span class="style_4">Secure Erase</span><span class="style_13"> </span><span class="style_14">writing zeros to the entire disk or partition selected (unless it’s an SSD)</span>.  <br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">Click <span class="style_5">Security Options</span> and you’ll see a prompt like the one in the <span class="style_15">green</span> box below.<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">See the <span class="style_16">pink</span> box below for the <span class="style_5">Erase Free Space</span> button.<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <div class="paragraph paragraph_style_3"><div style="height: 153px; width: 423px;  clear: right; float: right; height: 153px; margin: 6px 0px 6px 6px; position: relative; width: 423px; " class="tinyText style_SkipStroke_4 inline-block stroke_4"><img src="DU2_files/DU%202c%20Confirmation.jpg" alt="" style="border: none; height: 153px; width: 423px; " /></div><br /></div>
-                <p class="paragraph_style_3">When ready, click the Erase button on the main window.  You’ll then see a confirmation prompt:<br /></p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id7" style="height: 694px; left: 64px; position: absolute; top: 397px; width: 657px; z-index: 1; " class="style_SkipStroke_5 shape-with-text stroke_5">
-            <div class="text-content style_External_655_692" style="padding: 1px; ">
-              <div class="style_7">
-                <p style="padding-top: 0pt; " class="paragraph_style_3">To format, erase, or reformat your Startup volume (the OSX volume <span class="style_4">on your internal HD)</span>,  you must start your Mac up from a different source:  <br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_4">On Lion</span><span class="style_14"> or later</span>, the <a title="RecoveryHD.html" href="RecoveryHD.html">Recovery HD</a> or OSX USB thumb drive.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_4">On Snow Leopard </span><span class="style_14">or earlier</span>, your OSX Install disc (or OSX USB thumb drive on a MacBookAir).<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_4">Or</span>, a different disk that has OSX installed on it.  Be sure you use a compatible version of OSX -- if you’re running Leopard, use a Leopard disc;  if you’re running Snow Leopard, use a Snow Leopard disc.<br /></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_4">(If you're not sure what version of OSX you're running, see <a title="OSXversion.html" href="OSXversion.html">OSX Versions</a>).<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">To start up from your OSX Install disc, insert it in the SuperDrive (or insert the Software Reinstall drive on a MacBook Air).   Then:<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -10px; " class="full-width">
-                    <p style="text-indent: -10px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 4px; " class="inline-block"></span>Either wait for the Mac OS X Install DVD window and double-click the <span class="style_5">Install</span> icon;  or power down, then start up while holding down the &quot;C&quot; key.  Either way, that takes a few minutes.<br /><br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -10px; " class="full-width">
-                    <p style="text-indent: -10px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 4px; " class="inline-block"></span>Select your language when prompted.<br /></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_3"><br /></p>
-                <div class="paragraph paragraph_style_3"><div style="height: 198px; width: 495px;  clear: right; float: right; height: 198px; margin: 6px 0px 6px 6px; position: relative; width: 495px; " class="tinyText style_SkipStroke_4 inline-block stroke_4"><img src="DU2_files/DU%201a%20Utilities%20Menu.jpg" alt="" style="border: none; height: 199px; width: 496px; " /></div><br /></div>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -10px; " class="full-width">
-                    <p style="text-indent: -10px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 4px; " class="inline-block"></span>On the next screen, select <span class="style_5">Utilities</span> in the Menubar, then <span class="style_5">Disk Utility</span>.<br /></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_3"><br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_3">  </p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div style="height: 396px; width: 368px;  height: 396px; left: 393px; position: absolute; top: 3187px; width: 368px; z-index: 1; " class="tinyText style_SkipStroke_6 stroke_4">
-            <img src="DU2_files/DU%202e%20SL,%20Leo%20Erase%20Free%20Space.jpg" alt="" style="border: none; height: 396px; width: 369px; " />
-          </div>
-          
-
-
-          <div style="height: 279px; width: 347px;  height: 279px; left: 36px; position: absolute; top: 3187px; width: 347px; z-index: 1; " class="tinyText style_SkipStroke_6 stroke_4">
-            <img src="DU2_files/DU%202e%20Lion+%20Erase%20Free%20Space.jpg" alt="" style="border: none; height: 279px; width: 348px; " />
-          </div>
-          
-
-
-          <div id="id8" style="height: 584px; left: 22px; position: absolute; top: 1946px; width: 755px; z-index: 1; " class="style_SkipStroke_7 shape-with-text stroke_6">
-            <div class="text-content style_External_753_582" style="padding: 1px; ">
-              <div class="style_7">
-                <p style="padding-top: 0pt; " class="paragraph_style_12"><span style="line-height: 27px; " class="style_17">Security Options</span> <span class="style_9">can overwrite the disk with zeros, to prevent recovery of erased files.<br /></span></p>
-                <p class="paragraph_style_12"><span class="style_9"><br /></span></p>
-                <p class="paragraph_style_13"><span class="style_9">The windows below are different, but the function is the same.<br /></span></p>
-                <p class="paragraph_style_13"><span class="style_9">In most cases, a single pass is plenty.  <br /></span></p>
-                <p class="paragraph_style_13"><span class="style_9">                </span><span style="line-height: 27px; " class="style_11">Lion 10.7.x and later</span><span class="style_9">                  </span><span style="line-height: 27px; " class="style_11">Snow Leopard 10.6.x and earlier<br /></span></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div style="height: 296px; width: 363px;  height: 296px; left: 33px; position: absolute; top: 2132px; width: 363px; z-index: 1; " class="tinyText style_SkipStroke_6 stroke_4">
-            <img src="DU2_files/DU%201e%20Lion+%20security%20options%20.jpg" alt="" style="border: none; height: 297px; width: 363px; " />
-          </div>
-          
-
-
-          <div style="height: 386px; width: 367px;  height: 386px; left: 402px; position: absolute; top: 2132px; width: 367px; z-index: 1; " class="tinyText style_SkipStroke_6 stroke_4">
-            <img src="DU2_files/DU%201f%20SL,%20Leo%20Secure%20Erase%20options.jpg" alt="" style="border: none; height: 387px; width: 367px; " />
-          </div>
-          <div style="height: 3677px; line-height: 3677px; " class="spacer"> </div>
-        </div>
-        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id9" style="height: 27px; left: 726px; position: absolute; top: 8px; width: 60px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_60_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_14">4/20/13</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id10" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_15">Copyright © 2013 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<link href="DU2_files/DU2.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='DU2_files/DU2IE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="DU2_files/DU2.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(255, 223, 205); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 126px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 14px; position: absolute; top: 59px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; "><span class="style_1" style="line-height: 21px; ">OSX Tips:  Using Disk Utility</span><span class="style_2" style="line-height: 27px; "> <br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; ">2.  Erase a  Partition</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 37px; left: 36px; position: absolute; top: 11px; width: 724px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_722_35" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "><span class="style_3">     </span><a href="DU1.html" title="DU1.html">Previous</a><span class="style_3">               </span><a href="Home.html" title="Home.html">Home</a><span class="style_3">             </span><a href="DU.html" title="DU.html">Using Disk Utility: Contents</a><span class="style_3">              </span><a href="TipsContact.html" title="TipsContact.html">Contact</a><span class="style_3">            </span><a href="DU3.html" title="DU3.html">Next</a> </p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id3" style="height: 295px; left: 60px; position: absolute; top: 44px; width: 703px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_703_295" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_3" style="padding-top: 0pt; ">Most disk drives have a single <span class="style_4">partition</span>.  Your Mac came with an internal hard drive containing one partition, named <span class="style_5">Macintosh HD.  </span>But internal or external HDs can contain multiple partitions (also called <span class="style_4">volumes</span>) if desired.  <br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">Each partition occupies <span class="style_6">contiguous physical space</span> on the disk, and for most purposes is treated as a separate drive.   Each one has a different name, and by default will appear on your desktop and Finder sidebars as if they were separate drives.<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">This procedure will erase and, optionally, reformat one partition on a hard drive, <span class="style_4">erasing all the contents</span> of the selected partition, leaving all others untouched.  Use the <span class="style_5">Disk Utility</span> app, in your Applications/Utilities folder.<br/></p>
+<p class="paragraph_style_4" style="padding-bottom: 0pt; ">If your disk doesn't appear in the sidebar, see <a href="DU10.html" title="DU10.html">If a disk doesn't appear in the sidebar</a>.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text stroke_2" id="id4" style="height: 983px; left: 22px; position: absolute; top: 2608px; width: 755px; z-index: 1; ">
+<div class="text-content style_External_753_981" style="padding: 1px; ">
+<div class="style_7">
+<p class="paragraph_style_5" style="padding-top: 0pt; "><span class="style_8" style="line-height: 27px; ">Erase Free Space</span> <span class="style_9">is a security feature only.  It overwrites all the free space on the disk with zeros, similar to the </span><span class="style_10">Security Options</span><span class="style_9"> above.<br/></span></p>
+<p class="paragraph_style_5"><span class="style_9"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_9">The windows below are different, but the function is the same.<br/></span></p>
+<p class="paragraph_style_6"><span class="style_9">It does </span>not<span class="style_9"> delete any active files or free up any additional space.<br/></span></p>
+<p class="paragraph_style_6"><span class="style_9">It does take quite a while, of course, and it can cause problems  if interrupted, especially if performed on your startup volume while running from it.<br/></span></p>
+<p class="paragraph_style_6"><span class="style_9">This is because it "gathers" all the free space into a folder before starting to overwrite it.  So you’ll see the free space on your disk disappearing at an </span>alarming<span class="style_9"> rate,  all the way to </span>zero<span class="style_9">.  If your Mac is trying to do much of anything else, it will slow down, apps may crash, data may be lost, etc.<br/></span></p>
+<p class="paragraph_style_6"><span class="style_9">Worse, if the process is interrupted or fails, or your Mac is shut down or crashes, the space will </span>not<span class="style_9"> be returned when you start up again (</span>if<span class="style_9"> you can start up again).<br/></span></p>
+<p class="paragraph_style_7"><span class="style_9"><br/></span></p>
+<p class="paragraph_style_8"><span class="style_9">Thus it is </span>not recommended<span class="style_9"> to do this on your startup volume while running normally.  <br/></span></p>
+<p class="paragraph_style_6"><span class="style_9">If you really need to do it, start up from another source:  either your OSX Install disc (see the </span>yellow<span class="style_9"> box in</span><a class="style_9" href="DU1.html" title="DU1.html"> section #1</a><span class="style_9">) or a different disk that has OSX installed on it.  Be sure you use a compatible version of OSX -- if you’re running Leopard, use a Leopard disc;  if you’re running Snow Leopard, use a Snow Leopard disc.<br/></span></p>
+<p class="paragraph_style_6"><span class="style_9"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_9">                </span><span class="style_11" style="line-height: 27px; ">Lion 10.7.x and later</span><span class="style_9">                  </span><span class="style_11" style="line-height: 27px; ">Snow Leopard 10.6.x and earlier<br/></span></p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_3" id="id5" style="height: 39px; left: 14px; position: absolute; top: 3638px; width: 772px; z-index: 1; ">
+<div class="text-content style_External_770_37 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style_12 vertical-align-middle-innerbox">
+<p class="paragraph_style_9" style="padding-bottom: 0pt; padding-top: 0pt; "> <span class="style_3">   </span><a href="DU1.html" title="DU1.html">Previous</a><span class="style_3">                </span><a href="Home.html" title="Home.html">Home</a><span class="style_3">                 </span><a href="DU.html" title="DU.html">Using Disk Utility: Contents</a><span class="style_3">                  </span><a href="TipsContact.html" title="TipsContact.html">Contact</a><span class="style_3">                </span><a href="DU3.html" title="DU3.html">Next</a></p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id6" style="height: 736px; left: 41px; position: absolute; top: 1143px; width: 703px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_703_736" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<div class="paragraph paragraph_style_3" style="padding-top: 0pt; "><div class="tinyText style_SkipStroke_4 inline-block stroke_4" style="height: 419px; width: 506px;  clear: right; float: right; height: 419px; margin: 6px 0px 6px 6px; position: relative; width: 506px; "><img alt="" src="DU2_files/DU%202a%20Erase%3AReformat%20partition.jpg" style="border: none; height: 419px; width: 506px; "/></div>Select the desired<br/></div>
+<p class="paragraph_style_3">partition in the sidebar, and click the <span class="style_5">Erase </span>tab.<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">The current <span class="style_4">Format</span> will be shown in the pop-up;  select a different one if desired.  (See <a href="DU8.html" title="DU8.html">Disk Formats</a> for details.)<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">You can also change the <span class="style_4">Name </span>if you want.<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">For most purposes, that’s all you need.   <br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">But in some cases, you may want to take the time to do a <span class="style_4">Secure Erase</span><span class="style_13"> </span><span class="style_14">writing zeros to the entire disk or partition selected (unless it’s an SSD)</span>.  <br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">Click <span class="style_5">Security Options</span> and you’ll see a prompt like the one in the <span class="style_15">green</span> box below.<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">See the <span class="style_16">pink</span> box below for the <span class="style_5">Erase Free Space</span> button.<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<div class="paragraph paragraph_style_3"><div class="tinyText style_SkipStroke_4 inline-block stroke_4" style="height: 153px; width: 423px;  clear: right; float: right; height: 153px; margin: 6px 0px 6px 6px; position: relative; width: 423px; "><img alt="" src="DU2_files/DU%202c%20Confirmation.jpg" style="border: none; height: 153px; width: 423px; "/></div><br/></div>
+<p class="paragraph_style_3">When ready, click the Erase button on the main window.  You’ll then see a confirmation prompt:<br/></p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_5 shape-with-text stroke_5" id="id7" style="height: 694px; left: 64px; position: absolute; top: 397px; width: 657px; z-index: 1; ">
+<div class="text-content style_External_655_692" style="padding: 1px; ">
+<div class="style_7">
+<p class="paragraph_style_3" style="padding-top: 0pt; ">To format, erase, or reformat your Startup volume (the OSX volume <span class="style_4">on your internal HD)</span>,  you must start your Mac up from a different source:  <br/></p>
+<p class="paragraph_style_3"><br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 15px; text-indent: -15px; ">
+<p class="paragraph_style_10" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_4">On Lion</span><span class="style_14"> or later</span>, the <a href="RecoveryHD.html" title="RecoveryHD.html">Recovery HD</a> or OSX USB thumb drive.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 15px; text-indent: -15px; ">
+<p class="paragraph_style_10" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_4">On Snow Leopard </span><span class="style_14">or earlier</span>, your OSX Install disc (or OSX USB thumb drive on a MacBookAir).<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 15px; text-indent: -15px; ">
+<p class="paragraph_style_10" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_4">Or</span>, a different disk that has OSX installed on it.  Be sure you use a compatible version of OSX -- if you’re running Leopard, use a Leopard disc;  if you’re running Snow Leopard, use a Snow Leopard disc.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_4">(If you're not sure what version of OSX you're running, see <a href="OSXversion.html" title="OSXversion.html">OSX Versions</a>).<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">To start up from your OSX Install disc, insert it in the SuperDrive (or insert the Software Reinstall drive on a MacBook Air).   Then:<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -10px; ">
+<p class="paragraph_style_11" style="text-indent: -10px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 4px; "></span>Either wait for the Mac OS X Install DVD window and double-click the <span class="style_5">Install</span> icon;  or power down, then start up while holding down the "C" key.  Either way, that takes a few minutes.<br/><br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -10px; ">
+<p class="paragraph_style_11" style="text-indent: -10px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 4px; "></span>Select your language when prompted.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_3"><br/></p>
+<div class="paragraph paragraph_style_3"><div class="tinyText style_SkipStroke_4 inline-block stroke_4" style="height: 198px; width: 495px;  clear: right; float: right; height: 198px; margin: 6px 0px 6px 6px; position: relative; width: 495px; "><img alt="" src="DU2_files/DU%201a%20Utilities%20Menu.jpg" style="border: none; height: 199px; width: 496px; "/></div><br/></div>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -10px; ">
+<p class="paragraph_style_11" style="text-indent: -10px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 4px; "></span>On the next screen, select <span class="style_5">Utilities</span> in the Menubar, then <span class="style_5">Disk Utility</span>.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3" style="padding-bottom: 0pt; ">  </p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="tinyText style_SkipStroke_6 stroke_4" style="height: 396px; width: 368px;  height: 396px; left: 393px; position: absolute; top: 3187px; width: 368px; z-index: 1; ">
+<img alt="" src="DU2_files/DU%202e%20SL,%20Leo%20Erase%20Free%20Space.jpg" style="border: none; height: 396px; width: 369px; "/>
+</div>
+<div class="tinyText style_SkipStroke_6 stroke_4" style="height: 279px; width: 347px;  height: 279px; left: 36px; position: absolute; top: 3187px; width: 347px; z-index: 1; ">
+<img alt="" src="DU2_files/DU%202e%20Lion+%20Erase%20Free%20Space.jpg" style="border: none; height: 279px; width: 348px; "/>
+</div>
+<div class="style_SkipStroke_7 shape-with-text stroke_6" id="id8" style="height: 584px; left: 22px; position: absolute; top: 1946px; width: 755px; z-index: 1; ">
+<div class="text-content style_External_753_582" style="padding: 1px; ">
+<div class="style_7">
+<p class="paragraph_style_12" style="padding-top: 0pt; "><span class="style_17" style="line-height: 27px; ">Security Options</span> <span class="style_9">can overwrite the disk with zeros, to prevent recovery of erased files.<br/></span></p>
+<p class="paragraph_style_12"><span class="style_9"><br/></span></p>
+<p class="paragraph_style_13"><span class="style_9">The windows below are different, but the function is the same.<br/></span></p>
+<p class="paragraph_style_13"><span class="style_9">In most cases, a single pass is plenty.  <br/></span></p>
+<p class="paragraph_style_13"><span class="style_9">                </span><span class="style_11" style="line-height: 27px; ">Lion 10.7.x and later</span><span class="style_9">                  </span><span class="style_11" style="line-height: 27px; ">Snow Leopard 10.6.x and earlier<br/></span></p>
+</div>
+</div>
+</div>
+<div class="tinyText style_SkipStroke_6 stroke_4" style="height: 296px; width: 363px;  height: 296px; left: 33px; position: absolute; top: 2132px; width: 363px; z-index: 1; ">
+<img alt="" src="DU2_files/DU%201e%20Lion+%20security%20options%20.jpg" style="border: none; height: 297px; width: 363px; "/>
+</div>
+<div class="tinyText style_SkipStroke_6 stroke_4" style="height: 386px; width: 367px;  height: 386px; left: 402px; position: absolute; top: 2132px; width: 367px; z-index: 1; ">
+<img alt="" src="DU2_files/DU%201f%20SL,%20Leo%20Secure%20Erase%20options.jpg" style="border: none; height: 387px; width: 367px; "/>
+</div>
+<div class="spacer" style="height: 3677px; line-height: 3677px; "> </div>
+</div>
+<div id="footer_layer" style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id9" style="height: 27px; left: 726px; position: absolute; top: 8px; width: 60px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_60_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_14" style="padding-bottom: 0pt; padding-top: 0pt; ">4/20/13</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id10" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_15" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2013 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-

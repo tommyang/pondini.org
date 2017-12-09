@@ -1,154 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20130831" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>How Time Machine Works its Magic
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20130831" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>How Time Machine Works its Magic
 How Network Backups are Stored in Sparse Bundles</title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="Works3_files/Works3.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Works3_files/Works3IE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="Works3_files/Works3.js"></script>
-  </head>
-  <body style="background: rgb(255, 223, 205); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 116px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 49px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">How Time Machine Works its Magic</span><span style="line-height: 27px; " class="style_2"><br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1">How Network Backups are Stored in Sparse Bundles</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 30px; left: 14px; position: absolute; top: 6px; width: 772px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_770_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="Works2.html" href="Works2.html">Previous</a>      <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Works.html" href="Works.html">Works Overview</a>      <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>     <a title="Works4.html" href="Works4.html">Next</a>    </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 30px; left: 10px; position: absolute; top: 3232px; width: 777px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
-            <div class="text-content graphic_textbox_layout_style_default_External_775_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="Works2.html" href="Works2.html">Previous</a>      <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Works.html" href="Works.html">Works Overview</a>      <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>    <a title="Works4.html" href="Works4.html">Next</a>    </p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 1396px; left: 46px; position: absolute; top: 39px; width: 707px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content style_External_707_1396" style="padding: 0px; ">
-              <div class="style_3">
-                <p style="padding-top: 0pt; " class="paragraph_style_3">The normal <span class="style_4">Backups.backupdb</span> folder used to store local backups (see <a title="Works2.html" href="Works2.html">How Local Backups are Stored</a>) can't be placed and used directly on a network drive.  <br /></p>
-                <p class="paragraph_style_3">When backups are made over a network (Ethernet or wireless), the <span class="style_4">Backups.backupdb</span> folder is placed inside a rather odd container called a <span class="style_5">sparse bundle disk image.  </span>A disk image is kind of like a disk-within-a-disk -- it has its own format, directories, etc.  Thus the format may be different from the format of the disk it's on.   See the <span class="style_6">blue</span> box below for more details.<br /></p>
-                <p class="paragraph_style_3">Unlike backups made locally, there's a separate sparse bundle for each Mac, named for and identified to that Mac.  You can see the sparse bundle(s) via the Finder -- connect to the server, then click on the disk/partition name (Finder in <span class="style_5">Column View</span>):<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <div class="paragraph paragraph_style_3"><div style="height: 319px; width: 697px;  clear: right; float: right; height: 319px; margin: 6px 0px 6px 6px; position: relative; width: 697px; " class="tinyText style_SkipStroke_2 inline-block stroke_3"><img src="Works3_files/4%20sparse%20bundles.jpg" alt="" style="border: none; height: 320px; width: 697px; " /></div>                                                                 <br /></div>
-                <p class="paragraph_style_3">The Time Capsule's internal HD is named &quot;Data&quot; by default (you can change it via <span class="style_5">Airport Utility</span>).  Any other drives connected to it will also be shown (such as &quot;S. Misc3&quot; in the sample).  <br /></p>
-                <p class="paragraph_style_3">The names of the sparse bundles start with the name of the computer that was backed up, but vary a bit depending on how they were created, but most look like the first one in the sample.  But ometimes there's a 12-digit address as in the second one, and sometimes the <span class="style_5">.sparsebundle</span> suffix isn't shown, as in the first.<br /></p>
-                <p class="paragraph_style_3"><span class="style_4">To see the backups in the disk image</span>, double-click the sparse bundle via the Finder to mount the disk image inside it.  That will take a moment;  then the disk image (usually named <span class="style_5">Time Machine Backups,</span> but sometimes <span class="style_5">Backups of &lt;computer name&gt;)</span>, will appear in the Finder sidebar and/or desktop (circled in <span class="style_7">green</span> in the sample):<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <div class="paragraph paragraph_style_3"><div style="height: 315px; width: 688px;  clear: right; float: right; height: 315px; margin: 6px 0px 6px 6px; position: relative; width: 688px; " class="tinyText style_SkipStroke_2 inline-block stroke_3"><img src="Works3_files/5%20Disk%20image%20mounted.jpg" alt="" style="border: none; height: 316px; width: 688px; " /></div>                                                                 <br /></div>
-                <p class="paragraph_style_3">Double-click the disk image to open it.  Then you'll see the same <span class="style_4">Backups.backupdb </span>structure as with local backups.<br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_3">The sparse bundle also contains some identification and control files (different versions of OSX will have slightly different contents), plus a very large number of files in the <span class="style_5">bands</span> folder -- your data (including the usual directory structure) is actually spread over them. </p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id5" style="height: 878px; left: 11px; position: absolute; top: 2289px; width: 772px; z-index: 1; " class="style_SkipStroke_4 shape-with-text stroke_4">
-            <div class="text-content style_External_770_876" style="padding: 1px; ">
-              <div class="style_8">
-                <p style="padding-top: 0pt; " class="paragraph_style_4">What the heck is a <span class="style_9">sparse bundle disk image</span>?<br /></p>
-                <p class="paragraph_style_3">OSX allows you to create and manipulate various types of disk images, via Disk Utility.  <br /></p>
-                <p class="paragraph_style_3">It may be formatted differently than the format of the volume (physical disk or partition) it's on, and has its own set of directories, Spotlight index, trash folder, etc., plus, of course, any data you put there.<br /></p>
-                <p class="paragraph_style_3">To do anything to the contents (view, add, change, or delete files or folders), you must first &quot;mount&quot; it, usually by double-clicking it via the Finder.   Unlike a normal volume (disk or partition), only one user may do that at a time.<br /></p>
-                <p class="paragraph_style_5">There are two main differences between the types:<br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>When most types are created, you specify a size, and that amount of space is immediately assigned to it.  That can take a long time, especially if it's created over a network.  Thereafter, it cannot be expanded or contracted -- it remains a fixed size.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>When not mounted, all types except sparse bundles are treated as a single file.  That means, if you mount it, change a single tiny file, then unmount it, the entire disk image is treated as changed, so any backup app (such as Time Machine or a &quot;cloning&quot; application), will back up the entire contents.  <br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_8"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>But when you create a <span class="style_4">sparse bundle</span> disk image, you specify a <span class="style_10">maximum</span> size.  The actual contents start out very small (just enough for the control files, empty directories, etc.).  As you add to it, the actual size grows until it reaches the maximum.  While it's possible to change the size later, Disk Utility must do a <span class="style_5">Verify Disk</span> as part of the procedure, so it can take a very long time, especially over a network.  See <a title="A8.html" href="A8.html">Troubleshooting item #A8</a> for details.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sparse bundles, however, have that &quot;bands&quot; folder in the sample above.  All the directories, etc., plus the data, is spread over the &quot;band&quot; files inside it.  Only the new or changed band files are considered as changed, so they're the only ones that get backed-up.  On a large disk image, that can save lots of time and backup space.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>The downside is, when things are deleted, the disk image doesn't shrink automatically.  The vacated space is re-used for new data, then the disk image will grow again.  There is a UNIX command to &quot;compact&quot; a sparse bundle, that will recover most of the empty space.  That's the first thing Time Machine does when it's out of room.  You can do it yourself if necessary;  see the pink box in <a title="12.html" href="12.html">Time Machine FAQ #12</a> for instructions.<br /></p>
-                  </li>
-                </ol>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_5">Normally, disk images of any type are not backed-up while mounted, as they're considered as open.  They only get backed-up when <span class="style_10">not</span> mounted.  (However, Time Machine does show them as included in the backup, but with the contents of the last time they were actually backed-up.)</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id6" style="height: 737px; left: 32px; position: absolute; top: 1497px; width: 735px; z-index: 1; " class="style_SkipStroke_5 shape-with-text stroke_5">
-            <div class="text-content style_External_733_735" style="padding: 1px; ">
-              <div class="style_11">
-                <p style="padding-top: 0pt; " class="paragraph_style_3"> <span style="line-height: 27px; " class="style_12">To see the control files in the sparse bundle</span><span style="line-height: 27px; " class="style_13">,</span> select and <span class="style_14">control-click </span>it, and choose <span class="style_5">Show Package Contents </span>(Finder in <span class="style_5">List View</span>)<span class="style_5">:<br /></span></p>
-                <p class="paragraph_style_3"><span class="style_5"><br /></span></p>
-                <div class="paragraph paragraph_style_3"><div style="height: 335px; width: 710px;  clear: right; float: right; height: 335px; margin: 6px 0px 6px 6px; position: relative; width: 710px; " class="tinyText style_SkipStroke_2 inline-block stroke_3"><img src="Works3_files/6%20Sparse%20Bundle%20contents.jpg" alt="" style="border: none; height: 335px; width: 710px; " /></div><span class="style_5"></span><span class="style_5"></span>                                                                 <span class="style_5"><br /></span></div>
-                <p class="paragraph_style_3">Do not attempt to change anything in those control files;  that can destroy your backups.  Among other things, they contain the hardware address of the Mac that was backed-up.  The sample is from Mountain Lion;  older versions of OSX don't have all the files shown above.  Leopard, for example, has only the last 3.  Sparse bundles used for other purposes will have some differences.<br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_3">As detailed below, unlike a normal folder or disk image, when a file in a sparse bundle is changed or deleted, the space in the band folder(s) remains as part of the sparse bundle -- the size of the sparse bundle doesn't change.  That space is re-used for new files, though, so the sparse bundle won't grow until all the vacated space is used, and new &quot;band&quot; files are added.   There is a UNIX command to &quot;compact&quot; the sparse bundle, which Time Machine uses when there isn't enough room for new backups.  You can also do that manually, if necessary.  See the pink box in <a title="12.html" href="12.html">Time Machine FAQ #12</a> for instructions.</p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          <div style="height: 3262px; line-height: 3262px; " class="spacer"> </div>
-        </div>
-        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id7" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; " class="style_SkipStroke_6 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_10">8/31/13</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id8" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_6 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_11">Copyright © 2013 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<link href="Works3_files/Works3.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Works3_files/Works3IE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="Works3_files/Works3.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(255, 223, 205); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 116px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 14px; position: absolute; top: 49px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; "><span class="style_1" style="line-height: 21px; ">How Time Machine Works its Magic</span><span class="style_2" style="line-height: 27px; "><br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; ">How Network Backups are Stored in Sparse Bundles</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 30px; left: 14px; position: absolute; top: 6px; width: 772px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_770_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="Works2.html" title="Works2.html">Previous</a>      <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Works.html" title="Works.html">Works Overview</a>      <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>       <a href="Contact.html" title="Contact.html">Contact</a>     <a href="Works4.html" title="Works4.html">Next</a>    </p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_1 shape-with-text stroke_2" id="id3" style="height: 30px; left: 10px; position: absolute; top: 3232px; width: 777px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_775_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="Works2.html" title="Works2.html">Previous</a>      <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Works.html" title="Works.html">Works Overview</a>      <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>       <a href="Contact.html" title="Contact.html">Contact</a>    <a href="Works4.html" title="Works4.html">Next</a>    </p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text" id="id4" style="height: 1396px; left: 46px; position: absolute; top: 39px; width: 707px; z-index: 1; ">
+<div class="text-content style_External_707_1396" style="padding: 0px; ">
+<div class="style_3">
+<p class="paragraph_style_3" style="padding-top: 0pt; ">The normal <span class="style_4">Backups.backupdb</span> folder used to store local backups (see <a href="Works2.html" title="Works2.html">How Local Backups are Stored</a>) can't be placed and used directly on a network drive.  <br/></p>
+<p class="paragraph_style_3">When backups are made over a network (Ethernet or wireless), the <span class="style_4">Backups.backupdb</span> folder is placed inside a rather odd container called a <span class="style_5">sparse bundle disk image.  </span>A disk image is kind of like a disk-within-a-disk -- it has its own format, directories, etc.  Thus the format may be different from the format of the disk it's on.   See the <span class="style_6">blue</span> box below for more details.<br/></p>
+<p class="paragraph_style_3">Unlike backups made locally, there's a separate sparse bundle for each Mac, named for and identified to that Mac.  You can see the sparse bundle(s) via the Finder -- connect to the server, then click on the disk/partition name (Finder in <span class="style_5">Column View</span>):<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<div class="paragraph paragraph_style_3"><div class="tinyText style_SkipStroke_2 inline-block stroke_3" style="height: 319px; width: 697px;  clear: right; float: right; height: 319px; margin: 6px 0px 6px 6px; position: relative; width: 697px; "><img alt="" src="Works3_files/4%20sparse%20bundles.jpg" style="border: none; height: 320px; width: 697px; "/></div>                                                                 <br/></div>
+<p class="paragraph_style_3">The Time Capsule's internal HD is named "Data" by default (you can change it via <span class="style_5">Airport Utility</span>).  Any other drives connected to it will also be shown (such as "S. Misc3" in the sample).  <br/></p>
+<p class="paragraph_style_3">The names of the sparse bundles start with the name of the computer that was backed up, but vary a bit depending on how they were created, but most look like the first one in the sample.  But ometimes there's a 12-digit address as in the second one, and sometimes the <span class="style_5">.sparsebundle</span> suffix isn't shown, as in the first.<br/></p>
+<p class="paragraph_style_3"><span class="style_4">To see the backups in the disk image</span>, double-click the sparse bundle via the Finder to mount the disk image inside it.  That will take a moment;  then the disk image (usually named <span class="style_5">Time Machine Backups,</span> but sometimes <span class="style_5">Backups of &lt;computer name&gt;)</span>, will appear in the Finder sidebar and/or desktop (circled in <span class="style_7">green</span> in the sample):<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<div class="paragraph paragraph_style_3"><div class="tinyText style_SkipStroke_2 inline-block stroke_3" style="height: 315px; width: 688px;  clear: right; float: right; height: 315px; margin: 6px 0px 6px 6px; position: relative; width: 688px; "><img alt="" src="Works3_files/5%20Disk%20image%20mounted.jpg" style="border: none; height: 316px; width: 688px; "/></div>                                                                 <br/></div>
+<p class="paragraph_style_3">Double-click the disk image to open it.  Then you'll see the same <span class="style_4">Backups.backupdb </span>structure as with local backups.<br/></p>
+<p class="paragraph_style_3" style="padding-bottom: 0pt; ">The sparse bundle also contains some identification and control files (different versions of OSX will have slightly different contents), plus a very large number of files in the <span class="style_5">bands</span> folder -- your data (including the usual directory structure) is actually spread over them. </p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_4 shape-with-text stroke_4" id="id5" style="height: 878px; left: 11px; position: absolute; top: 2289px; width: 772px; z-index: 1; ">
+<div class="text-content style_External_770_876" style="padding: 1px; ">
+<div class="style_8">
+<p class="paragraph_style_4" style="padding-top: 0pt; ">What the heck is a <span class="style_9">sparse bundle disk image</span>?<br/></p>
+<p class="paragraph_style_3">OSX allows you to create and manipulate various types of disk images, via Disk Utility.  <br/></p>
+<p class="paragraph_style_3">It may be formatted differently than the format of the volume (physical disk or partition) it's on, and has its own set of directories, Spotlight index, trash folder, etc., plus, of course, any data you put there.<br/></p>
+<p class="paragraph_style_3">To do anything to the contents (view, add, change, or delete files or folders), you must first "mount" it, usually by double-clicking it via the Finder.   Unlike a normal volume (disk or partition), only one user may do that at a time.<br/></p>
+<p class="paragraph_style_5">There are two main differences between the types:<br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_6" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>When most types are created, you specify a size, and that amount of space is immediately assigned to it.  That can take a long time, especially if it's created over a network.  Thereafter, it cannot be expanded or contracted -- it remains a fixed size.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_7" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>When not mounted, all types except sparse bundles are treated as a single file.  That means, if you mount it, change a single tiny file, then unmount it, the entire disk image is treated as changed, so any backup app (such as Time Machine or a "cloning" application), will back up the entire contents.  <br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_8" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>But when you create a <span class="style_4">sparse bundle</span> disk image, you specify a <span class="style_10">maximum</span> size.  The actual contents start out very small (just enough for the control files, empty directories, etc.).  As you add to it, the actual size grows until it reaches the maximum.  While it's possible to change the size later, Disk Utility must do a <span class="style_5">Verify Disk</span> as part of the procedure, so it can take a very long time, especially over a network.  See <a href="A8.html" title="A8.html">Troubleshooting item #A8</a> for details.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_9" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>Sparse bundles, however, have that "bands" folder in the sample above.  All the directories, etc., plus the data, is spread over the "band" files inside it.  Only the new or changed band files are considered as changed, so they're the only ones that get backed-up.  On a large disk image, that can save lots of time and backup space.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_9" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>The downside is, when things are deleted, the disk image doesn't shrink automatically.  The vacated space is re-used for new data, then the disk image will grow again.  There is a UNIX command to "compact" a sparse bundle, that will recover most of the empty space.  That's the first thing Time Machine does when it's out of room.  You can do it yourself if necessary;  see the pink box in <a href="12.html" title="12.html">Time Machine FAQ #12</a> for instructions.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_5" style="padding-bottom: 0pt; ">Normally, disk images of any type are not backed-up while mounted, as they're considered as open.  They only get backed-up when <span class="style_10">not</span> mounted.  (However, Time Machine does show them as included in the backup, but with the contents of the last time they were actually backed-up.)</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_5 shape-with-text stroke_5" id="id6" style="height: 737px; left: 32px; position: absolute; top: 1497px; width: 735px; z-index: 1; ">
+<div class="text-content style_External_733_735" style="padding: 1px; ">
+<div class="style_11">
+<p class="paragraph_style_3" style="padding-top: 0pt; "> <span class="style_12" style="line-height: 27px; ">To see the control files in the sparse bundle</span><span class="style_13" style="line-height: 27px; ">,</span> select and <span class="style_14">control-click </span>it, and choose <span class="style_5">Show Package Contents </span>(Finder in <span class="style_5">List View</span>)<span class="style_5">:<br/></span></p>
+<p class="paragraph_style_3"><span class="style_5"><br/></span></p>
+<div class="paragraph paragraph_style_3"><div class="tinyText style_SkipStroke_2 inline-block stroke_3" style="height: 335px; width: 710px;  clear: right; float: right; height: 335px; margin: 6px 0px 6px 6px; position: relative; width: 710px; "><img alt="" src="Works3_files/6%20Sparse%20Bundle%20contents.jpg" style="border: none; height: 335px; width: 710px; "/></div><span class="style_5"></span><span class="style_5"></span>                                                                 <span class="style_5"><br/></span></div>
+<p class="paragraph_style_3">Do not attempt to change anything in those control files;  that can destroy your backups.  Among other things, they contain the hardware address of the Mac that was backed-up.  The sample is from Mountain Lion;  older versions of OSX don't have all the files shown above.  Leopard, for example, has only the last 3.  Sparse bundles used for other purposes will have some differences.<br/></p>
+<p class="paragraph_style_3" style="padding-bottom: 0pt; ">As detailed below, unlike a normal folder or disk image, when a file in a sparse bundle is changed or deleted, the space in the band folder(s) remains as part of the sparse bundle -- the size of the sparse bundle doesn't change.  That space is re-used for new files, though, so the sparse bundle won't grow until all the vacated space is used, and new "band" files are added.   There is a UNIX command to "compact" the sparse bundle, which Time Machine uses when there isn't enough room for new backups.  You can also do that manually, if necessary.  See the pink box in <a href="12.html" title="12.html">Time Machine FAQ #12</a> for instructions.</p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="spacer" style="height: 3262px; line-height: 3262px; "> </div>
+</div>
+<div id="footer_layer" style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_6 shape-with-text" id="id7" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_10" style="padding-bottom: 0pt; padding-top: 0pt; ">8/31/13</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_6 shape-with-text" id="id8" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_11" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2013 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-

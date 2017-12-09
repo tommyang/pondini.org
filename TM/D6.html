@@ -1,191 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20130103" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>Time Machine - Troubleshooting 
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20130103" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>Time Machine - Troubleshooting 
 D6.  How to Cancel a Backup, or if it won't cancel</title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="D6_files/D6.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='D6_files/D6IE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="D6_files/D6.js"></script>
-  </head>
-  <body style="background: rgb(213, 253, 208); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">Time Machine - Troubleshooting</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1">D6.  How to Cancel a Backup, or if it won't cancel</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="D5.html" href="D5.html">Previous</a>        <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>     <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>      <a title="Contact.html" href="Contact.html">Contact</a>      <a title="D7.html" href="D7.html">Next</a>  </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 196px; left: 49px; position: absolute; top: 802px; width: 747px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_747_196" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_3">Allow a few moments for it to cancel.<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">If it doesn't cancel, start the <span class="style_3">Activity Monitor </span>app, in your <span class="style_3">Applications/Utilities</span> folder. <br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">Select either <span class="style_3">All Processes</span> or <span class="style_3">Active Processes</span> in the Toolbar (if there's no toolbar, click the lozenge at the upper right).<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_3">In the <span class="style_3">Process Name</span> column, find and select the process named <span class="style_4">backupd</span> and click the <span class="style_3">Quit Process</span> icon in the toolbar, or <span class="style_3">View &gt; Quit Process</span> from the Menubar.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 38px; left: 23px; position: absolute; top: 1920px; width: 763px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
-            <div class="text-content style_External_761_36 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style_5 vertical-align-middle-innerbox">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"> <a title="D5.html" href="D5.html">Previous</a>         <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>          <a title="Home.html" href="Home.html">Home</a>          <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>         <a title="Contact.html" href="Contact.html">Contact</a>        <a title="D7.html" href="D7.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id5" style="height: 36px; left: 53px; position: absolute; top: 1382px; width: 747px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_747_36" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3">Then click the <span class="style_3">Force Quit</span> button in the confirmation prompt. It still may take a few moments to quit.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id6" style="height: 87px; left: 143px; position: absolute; top: 1785px; width: 560px; z-index: 1; " class="style_SkipStroke_3 shape-with-text stroke_3">
-            <div class="text-content style_External_558_85" style="padding: 1px; ">
-              <div class="style_6">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_5">Do not disconnect or unplug the drive except as a last resort, as that may damage your backups. If you have to do that, when you reconnect, <span class="style_7">repair</span> them per <a title="A5.html" href="A5.html">section #A5</a>.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id7" style="height: 31px; left: 26px; position: absolute; top: 37px; width: 747px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_747_31" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3">There are three usual ways to cancel a backup:</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div style="height: 299px; width: 720px;  height: 299px; left: 68px; position: absolute; top: 1435px; width: 720px; z-index: 1; " class="tinyText style_SkipStroke_4 stroke_4">
-            <img src="D6_files/D6b.jpg" alt="" style="border: none; height: 300px; width: 720px; " />
-          </div>
-          
-
-
-          <div style="height: 313px; width: 736px;  height: 313px; left: 54px; position: absolute; top: 1033px; width: 736px; z-index: 1; " class="tinyText style_SkipStroke_4 stroke_4">
-            <img src="D6_files/D6a.jpg" alt="" style="border: none; height: 313px; width: 736px; " />
-          </div>
-          
-
-
-          <div id="id8" style="height: 146px; left: 56px; position: absolute; top: 68px; width: 694px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_694_146" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <div class="paragraph paragraph_style_6" style="padding-top: 0pt; "><div style="height: 128px; width: 262px;  clear: right; float: right; height: 128px; margin: 6px 0px 6px 6px; position: relative; width: 262px; " class="tinyText inline-block stroke_4"><div style="position: relative; width: 262px; "><img src="D6_files/shapeimage_1.png" alt="" style="height: 128px; left: 0px; position: absolute; top: 0px; width: 262px; " /></div></div><br /></div>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 43px; text-indent: -23px; " class="full-width">
-                    <p style="padding-bottom: 0pt; text-indent: -23px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 17px; " class="inline-block"></span>Click the Time Machine icon in your Menubar and select <span class="style_3">Stop Backing Up.</span><br /></p>
-                  </li>
-                </ol>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id9" style="height: 246px; left: 56px; position: absolute; top: 214px; width: 694px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_694_246" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <div class="paragraph paragraph_style_6" style="padding-top: 0pt; "><div style="height: 228px; width: 311px;  clear: right; float: right; height: 228px; margin: 6px 0px 6px 6px; position: relative; width: 311px; " class="tinyText inline-block stroke_4"><div style="position: relative; width: 311px; "><img src="D6_files/shapeimage_2.png" alt="" style="height: 228px; left: 0px; position: absolute; top: 0px; width: 311px; " /></div></div><br /></div>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 43px; text-indent: -23px; " class="full-width">
-                    <p style="padding-bottom: 0pt; text-indent: -23px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 17px; " class="inline-block"></span>Control-click (right-click) the Time Machine icon in your Dock and select <span class="style_3">Stop Backing Up.</span><br /></p>
-                  </li>
-                </ol>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id10" style="height: 305px; left: 56px; position: absolute; top: 477px; width: 694px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_694_305" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <div class="paragraph paragraph_style_6" style="padding-top: 0pt; "><div style="height: 286px; width: 430px;  clear: right; float: right; height: 286px; margin: 6px 0px 6px 6px; position: relative; width: 430px; " class="tinyText inline-block stroke_4"><div style="position: relative; width: 430px; "><img src="D6_files/shapeimage_3.png" alt="" style="height: 286px; left: 0px; position: absolute; top: 0px; width: 430px; " /></div></div><br /></div>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 43px; text-indent: -23px; " class="full-width">
-                    <p style="padding-bottom: 0pt; text-indent: -23px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 17px; " class="inline-block"></span>Click the &quot;X&quot; icon at the right of the progress bar on the Time Machine Preferences window.<br /></p>
-                  </li>
-                </ol>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          <div style="height: 1958px; line-height: 1958px; " class="spacer"> </div>
-        </div>
-        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id11" style="height: 27px; left: 717px; position: absolute; top: 7px; width: 66px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_66_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_8">1/3/13</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id12" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_9">Copyright © 2013 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<link href="D6_files/D6.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='D6_files/D6IE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="D6_files/D6.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(213, 253, 208); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; "><span class="style_1" style="line-height: 21px; ">Time Machine - Troubleshooting</span><span class="style_2" style="line-height: 27px; "> <br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; ">D6.  How to Cancel a Backup, or if it won't cancel</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="D5.html" title="D5.html">Previous</a>        <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Home.html" title="Home.html">Home</a>     <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>      <a href="Contact.html" title="Contact.html">Contact</a>      <a href="D7.html" title="D7.html">Next</a>  </p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id3" style="height: 196px; left: 49px; position: absolute; top: 802px; width: 747px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_747_196" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_3" style="padding-top: 0pt; ">Allow a few moments for it to cancel.<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">If it doesn't cancel, start the <span class="style_3">Activity Monitor </span>app, in your <span class="style_3">Applications/Utilities</span> folder. <br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">Select either <span class="style_3">All Processes</span> or <span class="style_3">Active Processes</span> in the Toolbar (if there's no toolbar, click the lozenge at the upper right).<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3" style="padding-bottom: 0pt; ">In the <span class="style_3">Process Name</span> column, find and select the process named <span class="style_4">backupd</span> and click the <span class="style_3">Quit Process</span> icon in the toolbar, or <span class="style_3">View &gt; Quit Process</span> from the Menubar.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_2" id="id4" style="height: 38px; left: 23px; position: absolute; top: 1920px; width: 763px; z-index: 1; ">
+<div class="text-content style_External_761_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style_5 vertical-align-middle-innerbox">
+<p class="paragraph_style_4" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="D5.html" title="D5.html">Previous</a>         <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>          <a href="Home.html" title="Home.html">Home</a>          <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>         <a href="Contact.html" title="Contact.html">Contact</a>        <a href="D7.html" title="D7.html">Next</a></p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id5" style="height: 36px; left: 53px; position: absolute; top: 1382px; width: 747px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_747_36" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_3" style="padding-bottom: 0pt; padding-top: 0pt; ">Then click the <span class="style_3">Force Quit</span> button in the confirmation prompt. It still may take a few moments to quit.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text stroke_3" id="id6" style="height: 87px; left: 143px; position: absolute; top: 1785px; width: 560px; z-index: 1; ">
+<div class="text-content style_External_558_85" style="padding: 1px; ">
+<div class="style_6">
+<p class="paragraph_style_5" style="padding-bottom: 0pt; padding-top: 0pt; ">Do not disconnect or unplug the drive except as a last resort, as that may damage your backups. If you have to do that, when you reconnect, <span class="style_7">repair</span> them per <a href="A5.html" title="A5.html">section #A5</a>.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id7" style="height: 31px; left: 26px; position: absolute; top: 37px; width: 747px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_747_31" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_3" style="padding-bottom: 0pt; padding-top: 0pt; ">There are three usual ways to cancel a backup:</p>
+</div>
+</div>
+</div>
+<div class="tinyText style_SkipStroke_4 stroke_4" style="height: 299px; width: 720px;  height: 299px; left: 68px; position: absolute; top: 1435px; width: 720px; z-index: 1; ">
+<img alt="" src="D6_files/D6b.jpg" style="border: none; height: 300px; width: 720px; "/>
+</div>
+<div class="tinyText style_SkipStroke_4 stroke_4" style="height: 313px; width: 736px;  height: 313px; left: 54px; position: absolute; top: 1033px; width: 736px; z-index: 1; ">
+<img alt="" src="D6_files/D6a.jpg" style="border: none; height: 313px; width: 736px; "/>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id8" style="height: 146px; left: 56px; position: absolute; top: 68px; width: 694px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_694_146" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<div class="paragraph paragraph_style_6" style="padding-top: 0pt; "><div class="tinyText inline-block stroke_4" style="height: 128px; width: 262px;  clear: right; float: right; height: 128px; margin: 6px 0px 6px 6px; position: relative; width: 262px; "><div style="position: relative; width: 262px; "><img alt="" src="D6_files/shapeimage_1.png" style="height: 128px; left: 0px; position: absolute; top: 0px; width: 262px; "/></div></div><br/></div>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 43px; text-indent: -23px; ">
+<p class="paragraph_style_7" style="padding-bottom: 0pt; text-indent: -23px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 17px; "></span>Click the Time Machine icon in your Menubar and select <span class="style_3">Stop Backing Up.</span><br/></p>
+</li>
+</ol>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id9" style="height: 246px; left: 56px; position: absolute; top: 214px; width: 694px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_694_246" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<div class="paragraph paragraph_style_6" style="padding-top: 0pt; "><div class="tinyText inline-block stroke_4" style="height: 228px; width: 311px;  clear: right; float: right; height: 228px; margin: 6px 0px 6px 6px; position: relative; width: 311px; "><div style="position: relative; width: 311px; "><img alt="" src="D6_files/shapeimage_2.png" style="height: 228px; left: 0px; position: absolute; top: 0px; width: 311px; "/></div></div><br/></div>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 43px; text-indent: -23px; ">
+<p class="paragraph_style_7" style="padding-bottom: 0pt; text-indent: -23px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 17px; "></span>Control-click (right-click) the Time Machine icon in your Dock and select <span class="style_3">Stop Backing Up.</span><br/></p>
+</li>
+</ol>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id10" style="height: 305px; left: 56px; position: absolute; top: 477px; width: 694px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_694_305" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<div class="paragraph paragraph_style_6" style="padding-top: 0pt; "><div class="tinyText inline-block stroke_4" style="height: 286px; width: 430px;  clear: right; float: right; height: 286px; margin: 6px 0px 6px 6px; position: relative; width: 430px; "><div style="position: relative; width: 430px; "><img alt="" src="D6_files/shapeimage_3.png" style="height: 286px; left: 0px; position: absolute; top: 0px; width: 430px; "/></div></div><br/></div>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 43px; text-indent: -23px; ">
+<p class="paragraph_style_7" style="padding-bottom: 0pt; text-indent: -23px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 17px; "></span>Click the "X" icon at the right of the progress bar on the Time Machine Preferences window.<br/></p>
+</li>
+</ol>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="spacer" style="height: 1958px; line-height: 1958px; "> </div>
+</div>
+<div id="footer_layer" style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id11" style="height: 27px; left: 717px; position: absolute; top: 7px; width: 66px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_66_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_8" style="padding-bottom: 0pt; padding-top: 0pt; ">1/3/13</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id12" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_9" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2013 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-

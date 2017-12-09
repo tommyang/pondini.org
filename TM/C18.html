@@ -1,172 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20130225" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>Time Machine - Troubleshooting 
-C18.  &quot;. . . ran out of space unexpectedly&quot; </title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="C18_files/C18.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='C18_files/C18IE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="C18_files/C18.js"></script>
-  </head>
-  <body style="background: rgb(213, 253, 208); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 119px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 52px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">Time Machine - Troubleshooting</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1">C18.  &quot;. . . ran out of space unexpectedly&quot; </p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="C17.html" href="C17.html">Previous</a>        <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>     <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>      <a title="Contact.html" href="Contact.html">Contact</a>      <a title="C19.html" href="C19.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 38px; left: 14px; position: absolute; top: 1584px; width: 772px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
-            <div class="text-content style_External_770_36 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style_3 vertical-align-middle-innerbox">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3">  <a title="C17.html" href="C17.html">Previous</a>           <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>          <a title="Home.html" href="Home.html">Home</a>        <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>         <a title="Contact.html" href="Contact.html">Contact</a>        <a title="C19.html" href="C19.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 448px; left: 37px; position: absolute; top: 37px; width: 712px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_712_448" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_4">At the beginning of each backup (in the &quot;Preparing&quot; phase), Time Machine estimates how much needs to be backed-up, adds at least 20% (sometimes much more) for workspace, then determines if there's enough room on the destination.<br /></p>
-                <p class="paragraph_style_4">If there isn't, it will start deleting backups trying to make room.  If it can't make enough room without deleting your last remaining backup, it will <span class="style_4">fail</span> with a message that <span class="style_5">&quot;The backup disk is full,&quot;</span> or <span class="style_5">&quot;This backup is too large&quot;</span> as detailed in <a title="C4.html" href="C4.html">item #C4</a>.  <br /></p>
-                <p class="paragraph_style_4"><br /></p>
-                <div class="paragraph paragraph_style_4">It won't start the actual copying unless <div style="height: 183px; width: 395px;  clear: right; float: right; height: 183px; margin: 6px 0px 6px 6px; position: relative; width: 395px; " class="tinyText style_SkipStroke_2 inline-block stroke_3"><img src="C18_files/C18%20Out%20of%20space%20unexpectedly.jpg" alt="" style="border: none; height: 183px; width: 395px; " /></div>there's enough space.   However, in rare cases, it will start copying, then fail with the <span class="style_6">&quot;...ran out of space unexpectedly&quot; </span>message:<br /></div>
-                <p class="paragraph_style_4">                                       <br /></p>
-                <p class="paragraph_style_4">                                             <br /></p>
-                <p class="paragraph_style_4">                                        <br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_5">This is pretty unusual, and can be caused by different things:</p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id5" style="height: 432px; left: 37px; position: absolute; top: 1121px; width: 712px; z-index: 1; " class="style_SkipStroke_4 shape-with-text stroke_4">
-            <div class="text-content style_External_710_430" style="padding: 1px; ">
-              <div class="style_7">
-                <p style="padding-top: 0pt; " class="paragraph_style_6">Large and/or repeated updates or additions to files (particularly database files) while the backup is running.<br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>This is extremely rare, and rarely causes multi-GB differences, but if the items above don't help, this may be worth examining.  Unfortunately, it's rather hard to diagnose.  <br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>If you have a 3rd-party Mail application, such as Entourage or Thunderbird, that might be the problem.  Try just quitting it, to prevent updates to it, before starting the backup.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>You might try looking for large items in recent backups, via one of the apps in <a title="A2.html" href="A2.html">item #A2</a>.  That only shows <span class="style_5">completed</span> backups though, so may only give you a clue to some file(s) that <span class="style_5">might</span> be involved.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>If you know of any other large file(s) that are updated frequently, stop any such updates while a backup is running to see if that's where the problem lies.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="padding-bottom: 0pt; text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>If none of that helps, about all you can do is to <span class="style_6">exclude </span>things from being backed-up, to try to pinpoint the problem file(s).  If you know or suspect some particular files, exclude them first.  If the behavior continues, try excluding larger things, such as your entire <span class="style_5">Documents</span> folder, or the <span class="style_5">Library</span> folder inside your home folder.  If you're not sure how to do that, see <a title="10.html" href="10.html">Time Machine FAQ #10</a> for instructions.</p>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id6" style="height: 255px; left: 37px; position: absolute; top: 527px; width: 712px; z-index: 1; " class="style_SkipStroke_5 shape-with-text stroke_5">
-            <div class="text-content style_External_710_253" style="padding: 1px; ">
-              <div class="style_7">
-                <p style="padding-top: 0pt; " class="paragraph_style_8"><span class="style_8">A directory problem, causing files to appear much smaller than they are.</span><span class="style_9">  </span> <span class="style_4"><br /></span></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 40px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_9"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Try <span class="style_6">Verifying</span><span class="style_4"> </span>your internal HD, and<span class="style_4"> </span><span class="style_6">Repairing </span>any other disks/partitions that are being backed-up, and your backups, per <a title="A5.html" href="A5.html">item #A5</a>.  <br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 40px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_9"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>When a backup fails, it leaves the partial backup in an &quot;.inProgress&quot; package on the backup drive.  Time Machine will delete what's not needed automatically, but only <span class="style_6">after</span><span class="style_4"> </span>the next <span class="style_6">successful</span> backup.   So, if a lot of data was actually copied (per the &quot;<span class="style_5">xxx GB of yyy GB&quot; </span>messages, or check the log messages per <a title="A1.html" href="A1.html">item #A1</a>), or if there's very little space left on the backup drive, you may want to delete the partial backup, per <a title="A10.html" href="A10.html">item #A10</a>.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 40px; text-indent: -15px; " class="full-width">
-                    <p style="padding-bottom: 0pt; text-indent: -15px; " class="paragraph_style_9"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Then Restart your Mac and try the backup again.</p>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id7" style="height: 234px; left: 36px; position: absolute; top: 837px; width: 712px; z-index: 1; " class="style_SkipStroke_6 shape-with-text stroke_6">
-            <div class="text-content style_External_710_232" style="padding: 1px; ">
-              <div class="style_7">
-                <p style="padding-top: 0pt; " class="paragraph_style_8"><span class="style_8">Something else writing to the backup drive.<br /></span></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_10"><span style="color: rgb(201, 27, 0); font-size: 0px; opacity: 1.00; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>If you're backing-up more than one Mac to the same place, or any other app or process is adding data to the backup drive, it's possible for the available space to shrink during a backup (it should only be significant for a long and/or large backup).  <br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_10"><span style="color: rgb(201, 27, 0); font-size: 0px; opacity: 1.00; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>If you're backing up multiple Macs to the same place over your network, you may want to limit the maximum size of the sparse bundles, per<a title="A8.html" href="A8.html"> item #A8</a>.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="padding-bottom: 0pt; text-indent: -25px; " class="paragraph_style_10"><span style="color: rgb(201, 27, 0); font-size: 0px; opacity: 1.00; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>If you're keeping other data on the same partition as your Time Machine backups, that's not a good idea.  See <a title="3.html" href="3.html">Time Machine FAQ #3</a> for details.  </p>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          <div style="height: 1622px; line-height: 1622px; " class="spacer"> </div>
-        </div>
-        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id8" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_11">11/23/12</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id9" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_12">Copyright © 2012 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20130225" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>Time Machine - Troubleshooting 
+C18.  ". . . ran out of space unexpectedly" </title>
+<link href="C18_files/C18.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='C18_files/C18IE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="C18_files/C18.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(213, 253, 208); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 119px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 14px; position: absolute; top: 52px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; "><span class="style_1" style="line-height: 21px; ">Time Machine - Troubleshooting</span><span class="style_2" style="line-height: 27px; "> <br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; ">C18.  ". . . ran out of space unexpectedly" </p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="C17.html" title="C17.html">Previous</a>        <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Home.html" title="Home.html">Home</a>     <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>      <a href="Contact.html" title="Contact.html">Contact</a>      <a href="C19.html" title="C19.html">Next</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_1 shape-with-text stroke_2" id="id3" style="height: 38px; left: 14px; position: absolute; top: 1584px; width: 772px; z-index: 1; ">
+<div class="text-content style_External_770_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style_3 vertical-align-middle-innerbox">
+<p class="paragraph_style_3" style="padding-bottom: 0pt; padding-top: 0pt; ">  <a href="C17.html" title="C17.html">Previous</a>           <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>          <a href="Home.html" title="Home.html">Home</a>        <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>         <a href="Contact.html" title="Contact.html">Contact</a>        <a href="C19.html" title="C19.html">Next</a></p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text" id="id4" style="height: 448px; left: 37px; position: absolute; top: 37px; width: 712px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_712_448" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_4" style="padding-top: 0pt; ">At the beginning of each backup (in the "Preparing" phase), Time Machine estimates how much needs to be backed-up, adds at least 20% (sometimes much more) for workspace, then determines if there's enough room on the destination.<br/></p>
+<p class="paragraph_style_4">If there isn't, it will start deleting backups trying to make room.  If it can't make enough room without deleting your last remaining backup, it will <span class="style_4">fail</span> with a message that <span class="style_5">"The backup disk is full,"</span> or <span class="style_5">"This backup is too large"</span> as detailed in <a href="C4.html" title="C4.html">item #C4</a>.  <br/></p>
+<p class="paragraph_style_4"><br/></p>
+<div class="paragraph paragraph_style_4">It won't start the actual copying unless <div class="tinyText style_SkipStroke_2 inline-block stroke_3" style="height: 183px; width: 395px;  clear: right; float: right; height: 183px; margin: 6px 0px 6px 6px; position: relative; width: 395px; "><img alt="" src="C18_files/C18%20Out%20of%20space%20unexpectedly.jpg" style="border: none; height: 183px; width: 395px; "/></div>there's enough space.   However, in rare cases, it will start copying, then fail with the <span class="style_6">"...ran out of space unexpectedly" </span>message:<br/></div>
+<p class="paragraph_style_4">                                       <br/></p>
+<p class="paragraph_style_4">                                             <br/></p>
+<p class="paragraph_style_4">                                        <br/></p>
+<p class="paragraph_style_5" style="padding-bottom: 0pt; ">This is pretty unusual, and can be caused by different things:</p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_4 shape-with-text stroke_4" id="id5" style="height: 432px; left: 37px; position: absolute; top: 1121px; width: 712px; z-index: 1; ">
+<div class="text-content style_External_710_430" style="padding: 1px; ">
+<div class="style_7">
+<p class="paragraph_style_6" style="padding-top: 0pt; ">Large and/or repeated updates or additions to files (particularly database files) while the backup is running.<br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_7" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>This is extremely rare, and rarely causes multi-GB differences, but if the items above don't help, this may be worth examining.  Unfortunately, it's rather hard to diagnose.  <br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_7" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>If you have a 3rd-party Mail application, such as Entourage or Thunderbird, that might be the problem.  Try just quitting it, to prevent updates to it, before starting the backup.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_7" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>You might try looking for large items in recent backups, via one of the apps in <a href="A2.html" title="A2.html">item #A2</a>.  That only shows <span class="style_5">completed</span> backups though, so may only give you a clue to some file(s) that <span class="style_5">might</span> be involved.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_7" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>If you know of any other large file(s) that are updated frequently, stop any such updates while a backup is running to see if that's where the problem lies.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_7" style="padding-bottom: 0pt; text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>If none of that helps, about all you can do is to <span class="style_6">exclude </span>things from being backed-up, to try to pinpoint the problem file(s).  If you know or suspect some particular files, exclude them first.  If the behavior continues, try excluding larger things, such as your entire <span class="style_5">Documents</span> folder, or the <span class="style_5">Library</span> folder inside your home folder.  If you're not sure how to do that, see <a href="10.html" title="10.html">Time Machine FAQ #10</a> for instructions.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_5 shape-with-text stroke_5" id="id6" style="height: 255px; left: 37px; position: absolute; top: 527px; width: 712px; z-index: 1; ">
+<div class="text-content style_External_710_253" style="padding: 1px; ">
+<div class="style_7">
+<p class="paragraph_style_8" style="padding-top: 0pt; "><span class="style_8">A directory problem, causing files to appear much smaller than they are.</span><span class="style_9">  </span> <span class="style_4"><br/></span></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 40px; text-indent: -15px; ">
+<p class="paragraph_style_9" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Try <span class="style_6">Verifying</span><span class="style_4"> </span>your internal HD, and<span class="style_4"> </span><span class="style_6">Repairing </span>any other disks/partitions that are being backed-up, and your backups, per <a href="A5.html" title="A5.html">item #A5</a>.  <br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 40px; text-indent: -15px; ">
+<p class="paragraph_style_9" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>When a backup fails, it leaves the partial backup in an ".inProgress" package on the backup drive.  Time Machine will delete what's not needed automatically, but only <span class="style_6">after</span><span class="style_4"> </span>the next <span class="style_6">successful</span> backup.   So, if a lot of data was actually copied (per the "<span class="style_5">xxx GB of yyy GB" </span>messages, or check the log messages per <a href="A1.html" title="A1.html">item #A1</a>), or if there's very little space left on the backup drive, you may want to delete the partial backup, per <a href="A10.html" title="A10.html">item #A10</a>.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 40px; text-indent: -15px; ">
+<p class="paragraph_style_9" style="padding-bottom: 0pt; text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Then Restart your Mac and try the backup again.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_6 shape-with-text stroke_6" id="id7" style="height: 234px; left: 36px; position: absolute; top: 837px; width: 712px; z-index: 1; ">
+<div class="text-content style_External_710_232" style="padding: 1px; ">
+<div class="style_7">
+<p class="paragraph_style_8" style="padding-top: 0pt; "><span class="style_8">Something else writing to the backup drive.<br/></span></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_10" style="text-indent: -25px; "><span class="Bullet" style="color: rgb(201, 27, 0); font-size: 0px; opacity: 1.00; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>If you're backing-up more than one Mac to the same place, or any other app or process is adding data to the backup drive, it's possible for the available space to shrink during a backup (it should only be significant for a long and/or large backup).  <br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_10" style="text-indent: -25px; "><span class="Bullet" style="color: rgb(201, 27, 0); font-size: 0px; opacity: 1.00; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>If you're backing up multiple Macs to the same place over your network, you may want to limit the maximum size of the sparse bundles, per<a href="A8.html" title="A8.html"> item #A8</a>.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_10" style="padding-bottom: 0pt; text-indent: -25px; "><span class="Bullet" style="color: rgb(201, 27, 0); font-size: 0px; opacity: 1.00; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>If you're keeping other data on the same partition as your Time Machine backups, that's not a good idea.  See <a href="3.html" title="3.html">Time Machine FAQ #3</a> for details.  </p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="spacer" style="height: 1622px; line-height: 1622px; "> </div>
+</div>
+<div id="footer_layer" style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_3 shape-with-text" id="id8" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_11" style="padding-bottom: 0pt; padding-top: 0pt; ">11/23/12</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text" id="id9" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_12" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2012 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-

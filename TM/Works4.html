@@ -1,207 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20130901" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>How Time Machine Works its Magic
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20130901" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>How Time Machine Works its Magic
 Inclusion and Exclusion handling and the Preferences file</title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="Works4_files/Works4.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Works4_files/Works4IE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="Works4_files/Works4.js"></script>
-  </head>
-  <body style="background: rgb(255, 223, 205); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 116px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 49px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">How Time Machine Works its Magic</span><span style="line-height: 27px; " class="style_2"><br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1">Inclusion and Exclusion handling and the Preferences file</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 30px; left: 14px; position: absolute; top: 6px; width: 772px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_770_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="Works3.html" href="Works3.html">Previous</a>      <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Works.html" href="Works.html">Works Overview</a>      <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>     <a title="Contact.html" href="Contact.html">Next</a>    </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 30px; left: 14px; position: absolute; top: 3879px; width: 773px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
-            <div class="text-content graphic_textbox_layout_style_default_External_771_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="Works3.html" href="Works3.html">Previous</a>      <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Works.html" href="Works.html">Works Overview</a>      <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>    <a title="Contact.html" href="Contact.html">Next</a>    </p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 1434px; left: 15px; position: absolute; top: 32px; width: 773px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content style_External_773_1434" style="padding: 0px; ">
-              <div class="style_3">
-                <p style="padding-top: 0pt; " class="paragraph_style_3">There are several types of inclusions &amp; exclusions, used for various purposes, handled in various ways.  Some are shown on the <span class="style_4">Preferences Window &gt; Options</span>, some are in the Time Machine preferences file at <span class="style_4">/Library/Preferences/com.apple.TimeMachine.plist </span>(sample contents below).  Note that there are some variations by OSX version, including how specific files are excluded.<span class="style_4"><br /></span></p>
-                <p class="paragraph_style_4">Exclusions Shown on the Preferences Window <span style="line-height: 21px; " class="style_5">See </span><a title="10.html" href="10.html" style="line-height: 21px; " class="style_6">Time Machine FAQ #10</a><span style="line-height: 21px; " class="style_5">.</span><br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_7">User exclusions</span> are set via the Prefs window &gt; Options;  files &amp; folders are in <span class="style_4">SkipPaths</span> in the plist;  internal disks/partitions in <span class="style_4">ExcludedVolumeUUIDs </span>in the plist.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_6"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>If a user selects <span class="style_4">/System</span>, then the <span class="style_7">Exclude All System Files </span>option in the prompt that triggers, <span class="style_4">SkipSystemFiles</span> is also set in the plist.  That causes the items in <span class="style_4">/System/Library/CoreServices/backupd.bundle/Contents/Resources/System.plist</span> to be excluded, and <span class="style_7">System Files and Applications</span> is shown on the Preferences window instead of the System folder.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Excluded Internal Volumes <span class="style_8">(shown in black) are internal volumes excluded by the user and shown in the </span><span class="style_9">Excluded Volumes</span><span class="style_8"> section of the plist.<br /></span></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Excluded External Volumes<span class="style_8"> (shown in black) are placed there automatically unless removed by the user, and do not appear in the plist.</span><br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Automatic Volume Exclusions<span class="style_8"> (shown in gray) are internal or external Time Machine backup drives selected as destinations, and non-HFS drives (which Time Machine cannot back up).  They cannot be removed and do not appear in the plist.</span><br /></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_8">Exclusions Not Shown on the Preferences Window<span class="style_8"><br /></span></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_7">Standard exclusions</span> apply to all Macs, with some variations by OSX version.  They're in <span class="style_4">/System/Library/CoreServices/backupd.bundle/Contents/Resources/StdExclusions.plist. </span> These are things like system work files, most caches and logs, and trash.  The main ones are noted in the tan box of <a title="11.html" href="11.html">Time Machine FAQ #11</a>.<span class="style_4">  </span>Note that those exclusions are not deducted from the <span class="style_4">Estimated size of full backup</span> on the <span class="style_4">Preferences window &gt; Options</span>.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_7">Fixed Path Exclusions</span> are set by the <span class="style_7">CSBackupSetItemExcluded</span> API or <span class="style_7">sudo tmutil</span> with the <span class="style_7">-p</span> option, whether the item exists or not. They're in the <span class="style_4">ExcludeByPath</span> section of the plist.  These are also kept in a system cache, so if the plist is deleted, the <span class="style_7">backupd </span>process will restore them as defaults.  Also see the <span class="style_10">Note</span> below.<span class="style_7">  </span><br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_7">Sticky exclusions</span> are set in an item's extended attributes, via the <span class="style_7">CSBackupSetItemExcluded</span> API, <span class="style_7">xattr, </span>or <span class="style_7">tmutil</span> without the <span class="style_7">-p</span> option.  The item must exist to set the exclusion.  These follow the item if it's moved or renamed, and are not in the plist, but can be displayed per the yellow box in <a title="11.html" href="11.html">Time Machine FAQ #11</a>.  See the <span class="style_10">Note</span> below.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Backed-upVolumes<span class="style_8"> internal and external, </span><span class="style_4">may</span><span class="style_8"> be in the </span><span class="style_9">IncludedVolumeIDs</span><span class="style_8"> in the plist.  See </span><span class="style_11">Note</span><span class="style_8">.<br /></span></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Required folders<span class="style_8"> at the top level of the OSX drive, are in the </span><span class="style_9">IncludeByPath</span><span class="style_8"> section of the plist, unless specifically excluded by the user.  This does not appear unless necessary. </span><span style="line-height: 21px; " class="style_12">  </span><span style="line-height: 21px; " class="style_13"><br /></span></p>
-                  </li>
-                  <li style="line-height: 27px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><span style="line-height: 21px; " class="style_13">Note:</span><span class="style_11"> </span><span style="line-height: 21px; " class="style_12">Fixed Path and Sticky exclusions are used by some extra Apple and 3rd-party apps, to exclude things like cache files they create and manage, that may change frequently but shouldn't be backed-up hourly.  <br /></span></p>
-                  </li>
-                  <li style="line-height: 27px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><span style="line-height: 21px; " class="style_12">In addition, sometimes there's an </span><span style="line-height: 21px; " class="style_14">IncludeByPath </span><span style="line-height: 21px; " class="style_12">section, usually containing the top-level folders (Applications, Library, System, and some hidden system folders).  That section </span><span style="line-height: 21px; " class="style_14">may</span><span style="line-height: 21px; " class="style_12"> be used only when the </span><span style="line-height: 21px; " class="style_14">ExcludeByPath</span><span style="line-height: 21px; " class="style_12"> section also appears. <br /></span></p>
-                  </li>
-                  <li style="line-height: 27px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -14px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><span class="style_15"><br /></span></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_10">Sample plists:<br /></p>
-                <p style="padding-top: 0px; " class="paragraph_style_11">The Time Machine plist is a <span class="style_4">binary</span> file, so can't be deciphered easily with a text editor app;  a <span class="style_4">Plist Editor</span> app such as the paid <a title="http://www.bresink.com/osx/PrefEdit.html" href="http://www.bresink.com/osx/PrefEdit.html">PrefEdit</a> app will work.<br /></p>
-                <p style="padding-top: 0px; " class="paragraph_style_12">Or, if you're comfortable with Terminal:<br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_13"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Copy the file to your Desktop<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="padding-top: 1px; text-indent: -15px; " class="paragraph_style_14"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Convert it to XML via Terminal:    <span style="line-height: 16px; " class="style_16">plutil -convert xml1 ~/Desktop/com.apple.TimeMachine.plist</span><span class="style_17"> <br /></span></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="padding-top: 1px; text-indent: -15px; " class="paragraph_style_14"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Open it with a text editor that recognizes XML.  Some will display the XML, some will use the plist format in the samples below.<br /></p>
-                  </li>
-                </ol>
-                <p style="padding-bottom: 0pt; padding-top: 23px; " class="paragraph_style_15">Note that there are some variations by OSX version;  these are from Mountain Lion.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id5" style="height: 793px; left: 51px; position: absolute; top: 1481px; width: 671px; z-index: 1; " class="style_SkipStroke_4 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_671_793" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_16"><span class="style_18">Sample 1:</span>  Default plist after setting up Time Machine,<span class="style_8"> but before any backups.<br /></span></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
-                    <p style="padding-top: 1px; text-indent: -11px; " class="paragraph_style_17"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 11px; " class="inline-block"></span><span class="style_8">Automatic backups off;  two destinations, one local (# 0), one network (# 1);  5 internal HD partitions excluded;  one external partition included; 4 items excluded by user via </span><span class="style_9">Time Machine Preferences &gt; Options</span><span class="style_8">.</span><br /></p>
-                  </li>
-                </ol>
-                <p style="padding-top: 1px; " class="paragraph_style_16"><br /></p>
-                <div class="paragraph paragraph_style_16" style="padding-bottom: 0pt; padding-top: 1px; "><div style="height: 637px; width: 638px;  clear: right; float: right; height: 637px; margin: 6px 0px 6px 6px; position: relative; width: 638px; " class="tinyText style_SkipStroke_3 inline-block stroke_3"><img src="Works4_files/1.%20Default%20plist%20after%20setup.jpg" alt="" style="border: none; height: 637px; width: 638px; " /></div></div>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id6" style="height: 881px; left: 51px; position: absolute; top: 2291px; width: 663px; z-index: 1; " class="style_SkipStroke_4 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_663_881" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_16"><span class="style_18">Sample 2:</span>  Same plist after backups <span class="style_8">to both destinations.<br /></span></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
-                    <p style="padding-top: 1px; text-indent: -11px; " class="paragraph_style_17"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 11px; " class="inline-block"></span><span class="style_8">Results of completed backups added by </span>backupd<span class="style_8"> process.<br /></span></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
-                    <p style="padding-top: 1px; text-indent: -11px; " class="paragraph_style_17"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 11px; " class="inline-block"></span><br /></p>
-                  </li>
-                </ol>
-                <div class="paragraph paragraph_style_16" style="padding-bottom: 0pt; padding-top: 1px; "><div style="height: 767px; width: 627px;  clear: right; float: right; height: 767px; margin: 6px 0px 6px 6px; position: relative; width: 627px; " class="tinyText style_SkipStroke_3 inline-block stroke_3"><img src="Works4_files/2.%20Same%20plist%20after%20backups.jpg" alt="" style="border: none; height: 767px; width: 628px; " /></div></div>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id7" style="height: 639px; left: 34px; position: absolute; top: 3207px; width: 671px; z-index: 1; " class="style_SkipStroke_4 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_671_639" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_16"><span class="style_18">Sample 3: </span> Plist with &quot;Fixed Path&quot; exclusions <span class="style_8"> <br /></span></p>
-                <p style="padding-top: 1px; " class="paragraph_style_16"><span class="style_8"><br /></span></p>
-                <div class="paragraph paragraph_style_16" style="padding-top: 1px; "><div style="height: 575px; width: 623px;  clear: right; float: right; height: 575px; margin: 6px 0px 6px 6px; position: relative; width: 623px; " class="tinyText style_SkipStroke_3 inline-block stroke_3"><img src="Works4_files/3.%20With%20Fixed%20Path%20exclusions.jpg" alt="" style="border: none; height: 576px; width: 623px; " /></div><span class="style_8"></span><span class="style_8"></span><br /></div>
-                <p style="padding-top: 1px; " class="paragraph_style_18"><br /></p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          <div style="height: 3909px; line-height: 3909px; " class="spacer"> </div>
-        </div>
-        <div style="height: 42px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id8" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; " class="style_SkipStroke_4 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_19">9/1/13</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id9" style="height: 22px; left: 238px; position: absolute; top: 10px; width: 297px; z-index: 1; " class="style_SkipStroke_4 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_20">Copyright © 2013 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<link href="Works4_files/Works4.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Works4_files/Works4IE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="Works4_files/Works4.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(255, 223, 205); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 116px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 14px; position: absolute; top: 49px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; "><span class="style_1" style="line-height: 21px; ">How Time Machine Works its Magic</span><span class="style_2" style="line-height: 27px; "><br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; ">Inclusion and Exclusion handling and the Preferences file</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 30px; left: 14px; position: absolute; top: 6px; width: 772px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_770_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="Works3.html" title="Works3.html">Previous</a>      <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Works.html" title="Works.html">Works Overview</a>      <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>       <a href="Contact.html" title="Contact.html">Contact</a>     <a href="Contact.html" title="Contact.html">Next</a>    </p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_1 shape-with-text stroke_2" id="id3" style="height: 30px; left: 14px; position: absolute; top: 3879px; width: 773px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_771_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="Works3.html" title="Works3.html">Previous</a>      <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Works.html" title="Works.html">Works Overview</a>      <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>       <a href="Contact.html" title="Contact.html">Contact</a>    <a href="Contact.html" title="Contact.html">Next</a>    </p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id4" style="height: 1434px; left: 15px; position: absolute; top: 32px; width: 773px; z-index: 1; ">
+<div class="text-content style_External_773_1434" style="padding: 0px; ">
+<div class="style_3">
+<p class="paragraph_style_3" style="padding-top: 0pt; ">There are several types of inclusions &amp; exclusions, used for various purposes, handled in various ways.  Some are shown on the <span class="style_4">Preferences Window &gt; Options</span>, some are in the Time Machine preferences file at <span class="style_4">/Library/Preferences/com.apple.TimeMachine.plist </span>(sample contents below).  Note that there are some variations by OSX version, including how specific files are excluded.<span class="style_4"><br/></span></p>
+<p class="paragraph_style_4">Exclusions Shown on the Preferences Window <span class="style_5" style="line-height: 21px; ">See </span><a class="style_6" href="10.html" style="line-height: 21px; " title="10.html">Time Machine FAQ #10</a><span class="style_5" style="line-height: 21px; ">.</span><br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_5" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_7">User exclusions</span> are set via the Prefs window &gt; Options;  files &amp; folders are in <span class="style_4">SkipPaths</span> in the plist;  internal disks/partitions in <span class="style_4">ExcludedVolumeUUIDs </span>in the plist.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_6" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>If a user selects <span class="style_4">/System</span>, then the <span class="style_7">Exclude All System Files </span>option in the prompt that triggers, <span class="style_4">SkipSystemFiles</span> is also set in the plist.  That causes the items in <span class="style_4">/System/Library/CoreServices/backupd.bundle/Contents/Resources/System.plist</span> to be excluded, and <span class="style_7">System Files and Applications</span> is shown on the Preferences window instead of the System folder.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_7" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Excluded Internal Volumes <span class="style_8">(shown in black) are internal volumes excluded by the user and shown in the </span><span class="style_9">Excluded Volumes</span><span class="style_8"> section of the plist.<br/></span></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_7" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Excluded External Volumes<span class="style_8"> (shown in black) are placed there automatically unless removed by the user, and do not appear in the plist.</span><br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_7" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Automatic Volume Exclusions<span class="style_8"> (shown in gray) are internal or external Time Machine backup drives selected as destinations, and non-HFS drives (which Time Machine cannot back up).  They cannot be removed and do not appear in the plist.</span><br/></p>
+</li>
+</ol>
+<p class="paragraph_style_8">Exclusions Not Shown on the Preferences Window<span class="style_8"><br/></span></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_5" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_7">Standard exclusions</span> apply to all Macs, with some variations by OSX version.  They're in <span class="style_4">/System/Library/CoreServices/backupd.bundle/Contents/Resources/StdExclusions.plist. </span> These are things like system work files, most caches and logs, and trash.  The main ones are noted in the tan box of <a href="11.html" title="11.html">Time Machine FAQ #11</a>.<span class="style_4">  </span>Note that those exclusions are not deducted from the <span class="style_4">Estimated size of full backup</span> on the <span class="style_4">Preferences window &gt; Options</span>.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_5" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_7">Fixed Path Exclusions</span> are set by the <span class="style_7">CSBackupSetItemExcluded</span> API or <span class="style_7">sudo tmutil</span> with the <span class="style_7">-p</span> option, whether the item exists or not. They're in the <span class="style_4">ExcludeByPath</span> section of the plist.  These are also kept in a system cache, so if the plist is deleted, the <span class="style_7">backupd </span>process will restore them as defaults.  Also see the <span class="style_10">Note</span> below.<span class="style_7">  </span><br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_5" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_7">Sticky exclusions</span> are set in an item's extended attributes, via the <span class="style_7">CSBackupSetItemExcluded</span> API, <span class="style_7">xattr, </span>or <span class="style_7">tmutil</span> without the <span class="style_7">-p</span> option.  The item must exist to set the exclusion.  These follow the item if it's moved or renamed, and are not in the plist, but can be displayed per the yellow box in <a href="11.html" title="11.html">Time Machine FAQ #11</a>.  See the <span class="style_10">Note</span> below.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_7" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Backed-upVolumes<span class="style_8"> internal and external, </span><span class="style_4">may</span><span class="style_8"> be in the </span><span class="style_9">IncludedVolumeIDs</span><span class="style_8"> in the plist.  See </span><span class="style_11">Note</span><span class="style_8">.<br/></span></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_7" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Required folders<span class="style_8"> at the top level of the OSX drive, are in the </span><span class="style_9">IncludeByPath</span><span class="style_8"> section of the plist, unless specifically excluded by the user.  This does not appear unless necessary. </span><span class="style_12" style="line-height: 21px; ">  </span><span class="style_13" style="line-height: 21px; "><br/></span></p>
+</li>
+<li class="full-width" style="line-height: 27px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_9" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span><span class="style_13" style="line-height: 21px; ">Note:</span><span class="style_11"> </span><span class="style_12" style="line-height: 21px; ">Fixed Path and Sticky exclusions are used by some extra Apple and 3rd-party apps, to exclude things like cache files they create and manage, that may change frequently but shouldn't be backed-up hourly.  <br/></span></p>
+</li>
+<li class="full-width" style="line-height: 27px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_9" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span><span class="style_12" style="line-height: 21px; ">In addition, sometimes there's an </span><span class="style_14" style="line-height: 21px; ">IncludeByPath </span><span class="style_12" style="line-height: 21px; ">section, usually containing the top-level folders (Applications, Library, System, and some hidden system folders).  That section </span><span class="style_14" style="line-height: 21px; ">may</span><span class="style_12" style="line-height: 21px; "> be used only when the </span><span class="style_14" style="line-height: 21px; ">ExcludeByPath</span><span class="style_12" style="line-height: 21px; "> section also appears. <br/></span></p>
+</li>
+<li class="full-width" style="line-height: 27px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_9" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -14px; "></span><span class="inline-block" style="width: 25px; "></span><span class="style_15"><br/></span></p>
+</li>
+</ol>
+<p class="paragraph_style_10">Sample plists:<br/></p>
+<p class="paragraph_style_11" style="padding-top: 0px; ">The Time Machine plist is a <span class="style_4">binary</span> file, so can't be deciphered easily with a text editor app;  a <span class="style_4">Plist Editor</span> app such as the paid <a href="http://www.bresink.com/osx/PrefEdit.html" title="http://www.bresink.com/osx/PrefEdit.html">PrefEdit</a> app will work.<br/></p>
+<p class="paragraph_style_12" style="padding-top: 0px; ">Or, if you're comfortable with Terminal:<br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_13" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Copy the file to your Desktop<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_14" style="padding-top: 1px; text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Convert it to XML via Terminal:    <span class="style_16" style="line-height: 16px; ">plutil -convert xml1 ~/Desktop/com.apple.TimeMachine.plist</span><span class="style_17"> <br/></span></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_14" style="padding-top: 1px; text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Open it with a text editor that recognizes XML.  Some will display the XML, some will use the plist format in the samples below.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_15" style="padding-bottom: 0pt; padding-top: 23px; ">Note that there are some variations by OSX version;  these are from Mountain Lion.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_4 shape-with-text" id="id5" style="height: 793px; left: 51px; position: absolute; top: 1481px; width: 671px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_671_793" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_16" style="padding-top: 0pt; "><span class="style_18">Sample 1:</span>  Default plist after setting up Time Machine,<span class="style_8"> but before any backups.<br/></span></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 11px; text-indent: -11px; ">
+<p class="paragraph_style_17" style="padding-top: 1px; text-indent: -11px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 11px; "></span><span class="style_8">Automatic backups off;  two destinations, one local (# 0), one network (# 1);  5 internal HD partitions excluded;  one external partition included; 4 items excluded by user via </span><span class="style_9">Time Machine Preferences &gt; Options</span><span class="style_8">.</span><br/></p>
+</li>
+</ol>
+<p class="paragraph_style_16" style="padding-top: 1px; "><br/></p>
+<div class="paragraph paragraph_style_16" style="padding-bottom: 0pt; padding-top: 1px; "><div class="tinyText style_SkipStroke_3 inline-block stroke_3" style="height: 637px; width: 638px;  clear: right; float: right; height: 637px; margin: 6px 0px 6px 6px; position: relative; width: 638px; "><img alt="" src="Works4_files/1.%20Default%20plist%20after%20setup.jpg" style="border: none; height: 637px; width: 638px; "/></div></div>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_4 shape-with-text" id="id6" style="height: 881px; left: 51px; position: absolute; top: 2291px; width: 663px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_663_881" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_16" style="padding-top: 0pt; "><span class="style_18">Sample 2:</span>  Same plist after backups <span class="style_8">to both destinations.<br/></span></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 11px; text-indent: -11px; ">
+<p class="paragraph_style_17" style="padding-top: 1px; text-indent: -11px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 11px; "></span><span class="style_8">Results of completed backups added by </span>backupd<span class="style_8"> process.<br/></span></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 11px; text-indent: -11px; ">
+<p class="paragraph_style_17" style="padding-top: 1px; text-indent: -11px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 11px; "></span><br/></p>
+</li>
+</ol>
+<div class="paragraph paragraph_style_16" style="padding-bottom: 0pt; padding-top: 1px; "><div class="tinyText style_SkipStroke_3 inline-block stroke_3" style="height: 767px; width: 627px;  clear: right; float: right; height: 767px; margin: 6px 0px 6px 6px; position: relative; width: 627px; "><img alt="" src="Works4_files/2.%20Same%20plist%20after%20backups.jpg" style="border: none; height: 767px; width: 628px; "/></div></div>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_4 shape-with-text" id="id7" style="height: 639px; left: 34px; position: absolute; top: 3207px; width: 671px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_671_639" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_16" style="padding-top: 0pt; "><span class="style_18">Sample 3: </span> Plist with "Fixed Path" exclusions <span class="style_8"> <br/></span></p>
+<p class="paragraph_style_16" style="padding-top: 1px; "><span class="style_8"><br/></span></p>
+<div class="paragraph paragraph_style_16" style="padding-top: 1px; "><div class="tinyText style_SkipStroke_3 inline-block stroke_3" style="height: 575px; width: 623px;  clear: right; float: right; height: 575px; margin: 6px 0px 6px 6px; position: relative; width: 623px; "><img alt="" src="Works4_files/3.%20With%20Fixed%20Path%20exclusions.jpg" style="border: none; height: 576px; width: 623px; "/></div><span class="style_8"></span><span class="style_8"></span><br/></div>
+<p class="paragraph_style_18" style="padding-top: 1px; "><br/></p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="spacer" style="height: 3909px; line-height: 3909px; "> </div>
+</div>
+<div id="footer_layer" style="height: 42px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_4 shape-with-text" id="id8" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_19" style="padding-bottom: 0pt; padding-top: 0pt; ">9/1/13</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_4 shape-with-text" id="id9" style="height: 22px; left: 238px; position: absolute; top: 10px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_20" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2013 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-

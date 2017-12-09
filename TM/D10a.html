@@ -1,309 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20130904" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>Time Machine - Troubleshooting 
-D10a  Clues to the &quot;Skip Folders&quot; bug</title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="D10a_files/D10a.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='D10a_files/D10aIE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="D10a_files/D10a.js"></script>
-  </head>
-  <body style="background: rgb(213, 253, 208); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">Time Machine - Troubleshooting</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1">D10a  Clues to the &quot;Skip Folders&quot; bug</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="D10.html" href="D10.html">Previous</a>        <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>     <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>      <a title="Contact.html" href="Contact.html">Contact</a>      <a title="D10b.html" href="D10b.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 38px; left: 3px; position: absolute; top: 4149px; width: 786px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
-            <div class="text-content style_External_784_36 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style_3 vertical-align-middle-innerbox">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3">  <a title="D10.html" href="D10.html">Previous</a>           <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>          <a title="Home.html" href="Home.html">Home</a>        <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>         <a title="Contact.html" href="Contact.html">Contact</a>        <a title="D10b.html" href="D10b.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 1497px; left: 21px; position: absolute; top: 43px; width: 772px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_772_1497" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_4">The actual <span class="style_4">cause</span> is unknown so far.  It appears to happen only when certain 3rd-party apps are installed, but exactly which ones, under what circumstances, and how it happens, remains a mystery.<br /></p>
-                <p class="paragraph_style_4">What is clear is the mechanism:  some process is adding instructions to the Time Machine Parameter List (<span class="style_5">/Library/Preferences/com.apple.TimeMachine.plist</span>) telling Time Machine not to back up 7 top-level folders, including <span class="style_5">/Applications, /Library, /System</span>, and the hidden <span class="style_5">/private</span> folder (user home folders, other top-level folders, and other volumes aren't affected, so are backed-up normally).<br /></p>
-                <p class="paragraph_style_4"><br /></p>
-                <p class="paragraph_style_4">The absence of those folders from backups means:<br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>The backups aren't complete, so don't appear for selection when doing a full system restore via the <span class="style_5">Recovery HD.<br /></span></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Since user accounts are stored in <span class="style_5">/private</span>, Setup/Migration Assistant can't recreate them, much less associate them with their home folders, so the backups aren't even recognized by the Assistants.   The backup drive or sparsebundle doesn't appear as a selection option, as if it's not connected.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>These exclusions are &quot;Fixed Path&quot; exclusions, in a separate portion of the plist, that users cannot set via the Time Machine Preferences window, and are not shown there.  Thus users have no idea there's a problem, as they rarely look for anything besides data in their home folders, which appear normally via the Time Machine browser.<br /></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_6"><br /></p>
-                <p class="paragraph_style_6">&quot;FIXED PATH&quot; EXCLUSIONS<br /></p>
-                <p class="paragraph_style_7">Extra Apple and 3rd-party apps may set these exclusions, for such things as cache files that exist and are used only by that app, by passing them to the <a title="http://developer.apple.com/library/Mac/documentation/MacOSX/Reference/Backup/Reference/reference.html#//apple_ref/doc/uid/TP40004700-CH1-DontLinkElementID_3" href="http://developer.apple.com/library/Mac/documentation/MacOSX/Reference/Backup/Reference/reference.html#//apple_ref/doc/uid/TP40004700-CH1-DontLinkElementID_3">CSBackupSetItemExcluded</a> Apple API.  The file/folder path is then placed in the <span class="style_5">ExcludeByPath</span> section of the plist.  This is <span class="style_6">separate</span> from the <span class="style_5">SkipPaths</span> section set by and displayed via the Time Machine Preferences window.  <br /></p>
-                <p class="paragraph_style_7">(That API can also set &quot;Sticky&quot; exclusions that follow a file that's moved or renamed, but those don't go in the plist and aren't a problem here.  Both kinds can also be set via the <span class="style_6">tmutil</span><span class="style_4"> </span>command, but it seems unlikely to be the culprit, as it probably calls the same API.)  <br /></p>
-                <p class="paragraph_style_7">In some circumstances, another section is added: <span class="style_5">IncludeByPath.</span>  That contains the 7 top-level libraries, all of which <span class="style_5">should</span> be backed-up unless specifically excluded by the user.<br /></p>
-                <p class="paragraph_style_7"><br /></p>
-                <p class="paragraph_style_6">WHAT GOES WRONG<br /></p>
-                <p class="paragraph_style_7">In a relatively few cases, instead of adding the 7 libraries to the <span class="style_5">IncludeByPath</span> section, they're added (or moved) to the <span class="style_5">ExcludeByPath </span>section instead.   Thereafter, of course, the backups are incomplete.<br /></p>
-                <p class="paragraph_style_7">In most, but not all, of the cases I've seen, <span class="style_5">Microsoft/PlayReady</span> appears, as in the samples below.  <span class="style_5">Drive Genius</span> is also in a few of them, and some other 3rd-party apps are named, too.  The significance is, well, unknown.<br /></p>
-                <p class="paragraph_style_8"><span class="style_7">THEORIES:</span>  <br /></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_9"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Something in the API puts the 7 libraries in the wrong section under some odd circumstances.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>The <span class="style_6">backupd</span> process, when updating that section, does it wrong in some cases.  It seems that <span class="style_6">cfprefsd</span> is updating the plist when a backup runs.  <br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Further investigation shows frequent changes to the plist while a backup is running;  in many, but not all, cases the libraries are excluded momentarily (10 seconds at most), then included.  That sounds like whatever is supposed to include them again <span class="style_6">fails</span> on occasion, triggering the bug.<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>An Install failed after excluding the libraries temporarily, but before re-including them.  From an Install Log:<br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_11"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sep  4 16:03:11 JPsiMac10v8.local installd[1588]: PackageKit: prevent user idle system sleep<br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sep  4 16:03:11 JPsiMac10v8.local installd[1588]: PackageKit: suspending backupd<br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sep  4 16:03:11 JPsiMac10v8.local installd[1588]: PackageKit: Executing script &quot;preinstall&quot; in /private/tmp/PKInstallSandbox.yPluFZ/Scripts/com.apple.pkg.&lt;deleted&gt;.hklmYy<br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sep  4 16:03:12 JPsiMac10v8.local install_monitor[1598]: <span class="style_8">Temporarily excluding: /Applications, /Library, /System, /bin, /private, /sbin, /usr</span><span class="style_9"><br /></span></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span> <br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>followed later by:<br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span> <br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sep  4 16:03:39 JPsiMac10v8.local install_monitor[1598]: <span class="style_8">Re-included: /Applications, /Library, /System, /bin, /private, /sbin, /usr</span><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sep  4 16:03:40 JPsiMac10v8.local installd[1588]: PackageKit: releasing backupd<br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sep  4 16:03:40 JPsiMac10v8.local installd[1588]: PackageKit: allow user idle system sleep<br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_12"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>Sep  4 16:03:40 JPsiMac10v8.local installd[1588]: PackageKit: ----- End install -----<br /></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="padding-bottom: 0pt; text-indent: -25px; " class="paragraph_style_13"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>In addition, similar behavior seems to occur when installing Sophos (and perhaps other) anti-virus updates, which apparently can happen hourly.</p>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id5" style="height: 538px; left: 10px; position: absolute; top: 2873px; width: 770px; z-index: 1; " class="style_SkipStroke_4 shape-with-text stroke_4">
-            <div class="text-content style_External_768_536" style="padding: 1px; ">
-              <div class="style_10">
-                <p style="padding-top: 0pt; " class="paragraph_style_6">A DAMAGED PLIST<span class="style_11">    (from the same Mac as the one in the blue box):<br /></span></p>
-                <div class="paragraph paragraph_style_6"><div style="height: 481px; width: 569px;  clear: right; float: right; height: 481px; margin: 6px 0px 6px 6px; position: relative; width: 569px; " class="tinyText style_SkipStroke_3 inline-block stroke_3"><img src="D10a_files/D10c%20Damaged%20plist.jpg" alt="" style="border: none; height: 481px; width: 569px; " /></div><span class="style_11"></span><span class="style_11"><br /></span></div>
-                <p class="paragraph_style_6"><span class="style_11"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11">The </span><span class="style_12">ExcludeByPath </span><span class="style_11">section now contains the 7 volumes in addition to the &quot;real&quot; one.<br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11">The </span><span class="style_12">IncludeByPath </span><span class="style_11">section is </span>gone<span class="style_11">.<br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11"><br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_6"><span class="style_12">SkipPaths</span><span class="style_11"> remains unchanged.</span></p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id6" style="height: 555px; left: 10px; position: absolute; top: 2269px; width: 770px; z-index: 1; " class="style_SkipStroke_5 shape-with-text stroke_5">
-            <div class="text-content style_External_768_553" style="padding: 1px; ">
-              <div class="style_10">
-                <div class="paragraph paragraph_style_7" style="padding-top: 0pt; "><span class="style_13">A NORMAL PLIST</span>  (with a &quot;Fixed Path&quot; exclusion, from a <div style="height: 495px; width: 573px;  clear: right; float: right; height: 495px; margin: 6px 0px 6px 6px; position: relative; width: 573px; " class="tinyText style_SkipStroke_3 inline-block stroke_3"><img src="D10a_files/D10b%20Normal%20ExcludeByPath.jpg" alt="" style="border: none; height: 495px; width: 573px; " /></div>different Mac:<br /></div>
-                <p class="paragraph_style_6"><span class="style_11"> <br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11">The </span><span class="style_14">ExcludeByPath</span><span class="style_11"> section has been added.<br /></span></p>
-                <p class="paragraph_style_7"><span class="style_15">IncludeByPath</span> is added sometimes, sometimes not.<br /></p>
-                <p class="paragraph_style_7"><br /></p>
-                <p class="paragraph_style_7"><br /></p>
-                <p class="paragraph_style_7"><br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_7"><span class="style_15">SkipPaths</span> items excluded by the user are unchanged.</p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id7" style="height: 342px; left: 10px; position: absolute; top: 1881px; width: 772px; z-index: 1; " class="style_SkipStroke_6 shape-with-text stroke_6">
-            <div class="text-content style_External_770_340" style="padding: 1px; ">
-              <div class="style_16">
-                <p style="padding-top: 0pt; " class="paragraph_style_4"><span class="style_13">A NORMAL PLIST</span>  (without &quot;Fixed Path&quot; exclusions) will look something like this:<br /></p>
-                <div class="paragraph paragraph_style_14"><div style="height: 291px; width: 516px;  clear: right; float: right; height: 291px; margin: 6px 0px 6px 6px; position: relative; width: 516px; " class="tinyText style_SkipStroke_3 inline-block stroke_3"><img src="D10a_files/D10a%20Normal%20plist.jpg" alt="" style="border: none; height: 291px; width: 516px; " /></div><br /></div>
-                <p class="paragraph_style_14"><br /></p>
-                <p class="paragraph_style_14"><br /></p>
-                <p class="paragraph_style_4">There are no <span class="style_15">ExcludeByPath</span> or <span class="style_15">IncludeByPath </span>sections.<br /></p>
-                <p class="paragraph_style_15"><br /></p>
-                <p class="paragraph_style_15"><br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_4">Note the <span class="style_15">SkipPaths</span> section containing items selected via the Preferences Window.</p>
-              </div>
-              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id8" style="height: 652px; left: 11px; position: absolute; top: 3463px; width: 770px; z-index: 1; " class="style_SkipStroke_7 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_770_652" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_6">SOME RELATED THREADS in the Apple Support Community forums<br /></p>
-                <p class="paragraph_style_7">As usual, there's lots of duplicate and/or irrelevant info in them, but any number of users have seen this problem.  Many had already fixed it, so no longer have the evidence, thus haven't reported it.<br /></p>
-                <p class="paragraph_style_7">In addition, before we realized there was a problem, we assumed several users who reported not being able to restore and/or use <span class="style_5">Setup/Migration Assistant</span> had excluded System Files and took their denials with a grain of salt, or had damaged backups.  I didn't bookmark any of those threads.<br /></p>
-                <p class="paragraph_style_7">Plus, several users contacted me directly, and never posted in the forums.  <br /></p>
-                <ol>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_16"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/22164528#22164528" href="https://discussions.apple.com/message/22164528#22164528">Serious Time Machine bug on Mountain Lion</a> <br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_17"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/thread/5125969?tstart=0" href="https://discussions.apple.com/thread/5125969?tstart=0">UPDATED: Serious Time Machine bug on Mountain Lion</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_18"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/22111886#22111886" href="https://discussions.apple.com/message/22111886#22111886">Trouble recovering latest TM backup to new SSD</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/22152480#22152480" href="https://discussions.apple.com/message/22152480#22152480">Problems With Migration Assistant &amp; Time Capsule</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/19212368#19212368" href="https://discussions.apple.com/message/19212368#19212368">Mountain Lion: Time Machine Backups Get Very Big!</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/22215663#22215663" href="https://discussions.apple.com/message/22215663#22215663">Time Machine restore point failure - a WARNING!</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/22156555#22156555" href="https://discussions.apple.com/message/22156555#22156555">Time machine running out of space quickly-Why?</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/thread/4963705" href="https://discussions.apple.com/thread/4963705">Time Machine intermittently backs up a large amount unnecessarily</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/thread/5092766" href="https://discussions.apple.com/thread/5092766">Cannot Restore from Time Machine on Time Capsule 10.8.4</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/22766467#22766467" href="https://discussions.apple.com/message/22766467#22766467">Time Machine doesn't back everything up</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/22479349#22479349" href="https://discussions.apple.com/message/22479349#22479349">TimeMachine: Restore incremental backup</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/19423853#19423853" href="https://discussions.apple.com/message/19423853#19423853">Time Machine only backing up Users folder</a><br /></p>
-                  </li>
-                  <li style="line-height: 16px; padding-left: 25px; text-indent: -25px; " class="full-width">
-                    <p style="text-indent: -25px; " class="paragraph_style_19"><span style="font-size: 0px; position: relative; top: -8px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span><a title="https://discussions.apple.com/message/20445620#20445620" href="https://discussions.apple.com/message/20445620#20445620">time machine not backing up system files</a><br /></p>
-                  </li>
-                </ol>
-                <p class="paragraph_style_20"><br /></p>
-                <p class="paragraph_style_20">Not to belabor the point, but some users may have posted elsewhere, or not at all.<br /></p>
-                <p class="paragraph_style_20">But the MAIN CONCERN is, since it's rare for a user to notice this before it's too late, <br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_21">HOW MANY OTHERS HAVE IT, BUT WON'T KNOW UNTIL IT'S TOO LATE ????</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id9" style="height: 229px; left: 21px; position: absolute; top: 1611px; width: 772px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_772_229" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_6">SAMPLES<span class="style_12"><br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11">The Time Machine plist is a binary file, so can't be deciphered easily with most text editors;  a </span><span class="style_12">Plist Editor</span><span class="style_11"> app such as the paid </span><a title="http://www.bresink.com/osx/PrefEdit.html" href="http://www.bresink.com/osx/PrefEdit.html" class="style_11">PrefEdit</a><span class="style_11">, will.<br /></span></p>
-                <p class="paragraph_style_6"><span class="style_11">Or, if you're comfortable with Terminal:<br /></span></p>
-                <ol>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_22"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_11">Copy the file to your Desktop<br /></span></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="text-indent: -15px; " class="paragraph_style_22"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_11">Convert it to XML via Terminal:    </span><span style="line-height: 16px; " class="style_17">plutil -convert xml1 ~/Desktop/com.apple.TimeMachine.plist</span><span class="style_11"> <br /></span></p>
-                  </li>
-                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
-                    <p style="padding-bottom: 0pt; text-indent: -15px; " class="paragraph_style_22"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_11">Then you can open it with a text editor that recognizes XML.  It may display in XML format, or as in the samples below.  TextEdit displays as shown.</span></p>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          <div style="height: 4187px; line-height: 4187px; " class="spacer"> </div>
-        </div>
-        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id10" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_23">9/4/13</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id11" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_24">Copyright © 2013 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20130904" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>Time Machine - Troubleshooting 
+D10a  Clues to the "Skip Folders" bug</title>
+<link href="D10a_files/D10a.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='D10a_files/D10aIE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="D10a_files/D10a.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(213, 253, 208); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; "><span class="style_1" style="line-height: 21px; ">Time Machine - Troubleshooting</span><span class="style_2" style="line-height: 27px; "> <br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; ">D10a  Clues to the "Skip Folders" bug</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="D10.html" title="D10.html">Previous</a>        <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Home.html" title="Home.html">Home</a>     <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>      <a href="Contact.html" title="Contact.html">Contact</a>      <a href="D10b.html" title="D10b.html">Next</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_1 shape-with-text stroke_2" id="id3" style="height: 38px; left: 3px; position: absolute; top: 4149px; width: 786px; z-index: 1; ">
+<div class="text-content style_External_784_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style_3 vertical-align-middle-innerbox">
+<p class="paragraph_style_3" style="padding-bottom: 0pt; padding-top: 0pt; ">  <a href="D10.html" title="D10.html">Previous</a>           <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>          <a href="Home.html" title="Home.html">Home</a>        <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>         <a href="Contact.html" title="Contact.html">Contact</a>        <a href="D10b.html" title="D10b.html">Next</a></p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id4" style="height: 1497px; left: 21px; position: absolute; top: 43px; width: 772px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_772_1497" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_4" style="padding-top: 0pt; ">The actual <span class="style_4">cause</span> is unknown so far.  It appears to happen only when certain 3rd-party apps are installed, but exactly which ones, under what circumstances, and how it happens, remains a mystery.<br/></p>
+<p class="paragraph_style_4">What is clear is the mechanism:  some process is adding instructions to the Time Machine Parameter List (<span class="style_5">/Library/Preferences/com.apple.TimeMachine.plist</span>) telling Time Machine not to back up 7 top-level folders, including <span class="style_5">/Applications, /Library, /System</span>, and the hidden <span class="style_5">/private</span> folder (user home folders, other top-level folders, and other volumes aren't affected, so are backed-up normally).<br/></p>
+<p class="paragraph_style_4"><br/></p>
+<p class="paragraph_style_4">The absence of those folders from backups means:<br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_5" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>The backups aren't complete, so don't appear for selection when doing a full system restore via the <span class="style_5">Recovery HD.<br/></span></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_5" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Since user accounts are stored in <span class="style_5">/private</span>, Setup/Migration Assistant can't recreate them, much less associate them with their home folders, so the backups aren't even recognized by the Assistants.   The backup drive or sparsebundle doesn't appear as a selection option, as if it's not connected.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_5" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>These exclusions are "Fixed Path" exclusions, in a separate portion of the plist, that users cannot set via the Time Machine Preferences window, and are not shown there.  Thus users have no idea there's a problem, as they rarely look for anything besides data in their home folders, which appear normally via the Time Machine browser.<br/></p>
+</li>
+</ol>
+<p class="paragraph_style_6"><br/></p>
+<p class="paragraph_style_6">"FIXED PATH" EXCLUSIONS<br/></p>
+<p class="paragraph_style_7">Extra Apple and 3rd-party apps may set these exclusions, for such things as cache files that exist and are used only by that app, by passing them to the <a href="http://developer.apple.com/library/Mac/documentation/MacOSX/Reference/Backup/Reference/reference.html#//apple_ref/doc/uid/TP40004700-CH1-DontLinkElementID_3" title="http://developer.apple.com/library/Mac/documentation/MacOSX/Reference/Backup/Reference/reference.html#//apple_ref/doc/uid/TP40004700-CH1-DontLinkElementID_3">CSBackupSetItemExcluded</a> Apple API.  The file/folder path is then placed in the <span class="style_5">ExcludeByPath</span> section of the plist.  This is <span class="style_6">separate</span> from the <span class="style_5">SkipPaths</span> section set by and displayed via the Time Machine Preferences window.  <br/></p>
+<p class="paragraph_style_7">(That API can also set "Sticky" exclusions that follow a file that's moved or renamed, but those don't go in the plist and aren't a problem here.  Both kinds can also be set via the <span class="style_6">tmutil</span><span class="style_4"> </span>command, but it seems unlikely to be the culprit, as it probably calls the same API.)  <br/></p>
+<p class="paragraph_style_7">In some circumstances, another section is added: <span class="style_5">IncludeByPath.</span>  That contains the 7 top-level libraries, all of which <span class="style_5">should</span> be backed-up unless specifically excluded by the user.<br/></p>
+<p class="paragraph_style_7"><br/></p>
+<p class="paragraph_style_6">WHAT GOES WRONG<br/></p>
+<p class="paragraph_style_7">In a relatively few cases, instead of adding the 7 libraries to the <span class="style_5">IncludeByPath</span> section, they're added (or moved) to the <span class="style_5">ExcludeByPath </span>section instead.   Thereafter, of course, the backups are incomplete.<br/></p>
+<p class="paragraph_style_7">In most, but not all, of the cases I've seen, <span class="style_5">Microsoft/PlayReady</span> appears, as in the samples below.  <span class="style_5">Drive Genius</span> is also in a few of them, and some other 3rd-party apps are named, too.  The significance is, well, unknown.<br/></p>
+<p class="paragraph_style_8"><span class="style_7">THEORIES:</span>  <br/></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_9" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Something in the API puts the 7 libraries in the wrong section under some odd circumstances.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_10" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>The <span class="style_6">backupd</span> process, when updating that section, does it wrong in some cases.  It seems that <span class="style_6">cfprefsd</span> is updating the plist when a backup runs.  <br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_10" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>Further investigation shows frequent changes to the plist while a backup is running;  in many, but not all, cases the libraries are excluded momentarily (10 seconds at most), then included.  That sounds like whatever is supposed to include them again <span class="style_6">fails</span> on occasion, triggering the bug.<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_10" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span>An Install failed after excluding the libraries temporarily, but before re-including them.  From an Install Log:<br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_11" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>Sep  4 16:03:11 JPsiMac10v8.local installd[1588]: PackageKit: prevent user idle system sleep<br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>Sep  4 16:03:11 JPsiMac10v8.local installd[1588]: PackageKit: suspending backupd<br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>Sep  4 16:03:11 JPsiMac10v8.local installd[1588]: PackageKit: Executing script "preinstall" in /private/tmp/PKInstallSandbox.yPluFZ/Scripts/com.apple.pkg.&lt;deleted&gt;.hklmYy<br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>Sep  4 16:03:12 JPsiMac10v8.local install_monitor[1598]: <span class="style_8">Temporarily excluding: /Applications, /Library, /System, /bin, /private, /sbin, /usr</span><span class="style_9"><br/></span></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span> <br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>followed later by:<br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span> <br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>Sep  4 16:03:39 JPsiMac10v8.local install_monitor[1598]: <span class="style_8">Re-included: /Applications, /Library, /System, /bin, /private, /sbin, /usr</span><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>Sep  4 16:03:40 JPsiMac10v8.local installd[1588]: PackageKit: releasing backupd<br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>Sep  4 16:03:40 JPsiMac10v8.local installd[1588]: PackageKit: allow user idle system sleep<br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_12" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span>Sep  4 16:03:40 JPsiMac10v8.local installd[1588]: PackageKit: ----- End install -----<br/></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_13" style="padding-bottom: 0pt; text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -11px; "></span><span class="inline-block" style="width: 25px; "></span>In addition, similar behavior seems to occur when installing Sophos (and perhaps other) anti-virus updates, which apparently can happen hourly.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_4 shape-with-text stroke_4" id="id5" style="height: 538px; left: 10px; position: absolute; top: 2873px; width: 770px; z-index: 1; ">
+<div class="text-content style_External_768_536" style="padding: 1px; ">
+<div class="style_10">
+<p class="paragraph_style_6" style="padding-top: 0pt; ">A DAMAGED PLIST<span class="style_11">    (from the same Mac as the one in the blue box):<br/></span></p>
+<div class="paragraph paragraph_style_6"><div class="tinyText style_SkipStroke_3 inline-block stroke_3" style="height: 481px; width: 569px;  clear: right; float: right; height: 481px; margin: 6px 0px 6px 6px; position: relative; width: 569px; "><img alt="" src="D10a_files/D10c%20Damaged%20plist.jpg" style="border: none; height: 481px; width: 569px; "/></div><span class="style_11"></span><span class="style_11"><br/></span></div>
+<p class="paragraph_style_6"><span class="style_11"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_11"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_11"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_11">The </span><span class="style_12">ExcludeByPath </span><span class="style_11">section now contains the 7 volumes in addition to the "real" one.<br/></span></p>
+<p class="paragraph_style_6"><span class="style_11">The </span><span class="style_12">IncludeByPath </span><span class="style_11">section is </span>gone<span class="style_11">.<br/></span></p>
+<p class="paragraph_style_6"><span class="style_11"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_11"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_11"><br/></span></p>
+<p class="paragraph_style_6" style="padding-bottom: 0pt; "><span class="style_12">SkipPaths</span><span class="style_11"> remains unchanged.</span></p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_5 shape-with-text stroke_5" id="id6" style="height: 555px; left: 10px; position: absolute; top: 2269px; width: 770px; z-index: 1; ">
+<div class="text-content style_External_768_553" style="padding: 1px; ">
+<div class="style_10">
+<div class="paragraph paragraph_style_7" style="padding-top: 0pt; "><span class="style_13">A NORMAL PLIST</span>  (with a "Fixed Path" exclusion, from a <div class="tinyText style_SkipStroke_3 inline-block stroke_3" style="height: 495px; width: 573px;  clear: right; float: right; height: 495px; margin: 6px 0px 6px 6px; position: relative; width: 573px; "><img alt="" src="D10a_files/D10b%20Normal%20ExcludeByPath.jpg" style="border: none; height: 495px; width: 573px; "/></div>different Mac:<br/></div>
+<p class="paragraph_style_6"><span class="style_11"> <br/></span></p>
+<p class="paragraph_style_6"><span class="style_11"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_11"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_11">The </span><span class="style_14">ExcludeByPath</span><span class="style_11"> section has been added.<br/></span></p>
+<p class="paragraph_style_7"><span class="style_15">IncludeByPath</span> is added sometimes, sometimes not.<br/></p>
+<p class="paragraph_style_7"><br/></p>
+<p class="paragraph_style_7"><br/></p>
+<p class="paragraph_style_7"><br/></p>
+<p class="paragraph_style_7" style="padding-bottom: 0pt; "><span class="style_15">SkipPaths</span> items excluded by the user are unchanged.</p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_6 shape-with-text stroke_6" id="id7" style="height: 342px; left: 10px; position: absolute; top: 1881px; width: 772px; z-index: 1; ">
+<div class="text-content style_External_770_340" style="padding: 1px; ">
+<div class="style_16">
+<p class="paragraph_style_4" style="padding-top: 0pt; "><span class="style_13">A NORMAL PLIST</span>  (without "Fixed Path" exclusions) will look something like this:<br/></p>
+<div class="paragraph paragraph_style_14"><div class="tinyText style_SkipStroke_3 inline-block stroke_3" style="height: 291px; width: 516px;  clear: right; float: right; height: 291px; margin: 6px 0px 6px 6px; position: relative; width: 516px; "><img alt="" src="D10a_files/D10a%20Normal%20plist.jpg" style="border: none; height: 291px; width: 516px; "/></div><br/></div>
+<p class="paragraph_style_14"><br/></p>
+<p class="paragraph_style_14"><br/></p>
+<p class="paragraph_style_4">There are no <span class="style_15">ExcludeByPath</span> or <span class="style_15">IncludeByPath </span>sections.<br/></p>
+<p class="paragraph_style_15"><br/></p>
+<p class="paragraph_style_15"><br/></p>
+<p class="paragraph_style_4" style="padding-bottom: 0pt; ">Note the <span class="style_15">SkipPaths</span> section containing items selected via the Preferences Window.</p>
+</div>
+<div class="tinyText" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+</div>
+<div class="style_SkipStroke_7 shape-with-text" id="id8" style="height: 652px; left: 11px; position: absolute; top: 3463px; width: 770px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_770_652" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_6" style="padding-top: 0pt; ">SOME RELATED THREADS in the Apple Support Community forums<br/></p>
+<p class="paragraph_style_7">As usual, there's lots of duplicate and/or irrelevant info in them, but any number of users have seen this problem.  Many had already fixed it, so no longer have the evidence, thus haven't reported it.<br/></p>
+<p class="paragraph_style_7">In addition, before we realized there was a problem, we assumed several users who reported not being able to restore and/or use <span class="style_5">Setup/Migration Assistant</span> had excluded System Files and took their denials with a grain of salt, or had damaged backups.  I didn't bookmark any of those threads.<br/></p>
+<p class="paragraph_style_7">Plus, several users contacted me directly, and never posted in the forums.  <br/></p>
+<ol>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_16" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/22164528#22164528" title="https://discussions.apple.com/message/22164528#22164528">Serious Time Machine bug on Mountain Lion</a> <br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_17" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/thread/5125969?tstart=0" title="https://discussions.apple.com/thread/5125969?tstart=0">UPDATED: Serious Time Machine bug on Mountain Lion</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_18" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/22111886#22111886" title="https://discussions.apple.com/message/22111886#22111886">Trouble recovering latest TM backup to new SSD</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/22152480#22152480" title="https://discussions.apple.com/message/22152480#22152480">Problems With Migration Assistant &amp; Time Capsule</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/19212368#19212368" title="https://discussions.apple.com/message/19212368#19212368">Mountain Lion: Time Machine Backups Get Very Big!</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/22215663#22215663" title="https://discussions.apple.com/message/22215663#22215663">Time Machine restore point failure - a WARNING!</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/22156555#22156555" title="https://discussions.apple.com/message/22156555#22156555">Time machine running out of space quickly-Why?</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/thread/4963705" title="https://discussions.apple.com/thread/4963705">Time Machine intermittently backs up a large amount unnecessarily</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/thread/5092766" title="https://discussions.apple.com/thread/5092766">Cannot Restore from Time Machine on Time Capsule 10.8.4</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/22766467#22766467" title="https://discussions.apple.com/message/22766467#22766467">Time Machine doesn't back everything up</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/22479349#22479349" title="https://discussions.apple.com/message/22479349#22479349">TimeMachine: Restore incremental backup</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/19423853#19423853" title="https://discussions.apple.com/message/19423853#19423853">Time Machine only backing up Users folder</a><br/></p>
+</li>
+<li class="full-width" style="line-height: 16px; padding-left: 25px; text-indent: -25px; ">
+<p class="paragraph_style_19" style="text-indent: -25px; "><span class="Bullet" style="font-size: 0px; position: relative; top: -8px; "></span><span class="inline-block" style="width: 25px; "></span><a href="https://discussions.apple.com/message/20445620#20445620" title="https://discussions.apple.com/message/20445620#20445620">time machine not backing up system files</a><br/></p>
+</li>
+</ol>
+<p class="paragraph_style_20"><br/></p>
+<p class="paragraph_style_20">Not to belabor the point, but some users may have posted elsewhere, or not at all.<br/></p>
+<p class="paragraph_style_20">But the MAIN CONCERN is, since it's rare for a user to notice this before it's too late, <br/></p>
+<p class="paragraph_style_21" style="padding-bottom: 0pt; ">HOW MANY OTHERS HAVE IT, BUT WON'T KNOW UNTIL IT'S TOO LATE ????</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id9" style="height: 229px; left: 21px; position: absolute; top: 1611px; width: 772px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_772_229" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_6" style="padding-top: 0pt; ">SAMPLES<span class="style_12"><br/></span></p>
+<p class="paragraph_style_6"><span class="style_11">The Time Machine plist is a binary file, so can't be deciphered easily with most text editors;  a </span><span class="style_12">Plist Editor</span><span class="style_11"> app such as the paid </span><a class="style_11" href="http://www.bresink.com/osx/PrefEdit.html" title="http://www.bresink.com/osx/PrefEdit.html">PrefEdit</a><span class="style_11">, will.<br/></span></p>
+<p class="paragraph_style_6"><span class="style_11">Or, if you're comfortable with Terminal:<br/></span></p>
+<ol>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_22" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_11">Copy the file to your Desktop<br/></span></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_22" style="text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_11">Convert it to XML via Terminal:    </span><span class="style_17" style="line-height: 16px; ">plutil -convert xml1 ~/Desktop/com.apple.TimeMachine.plist</span><span class="style_11"> <br/></span></p>
+</li>
+<li class="full-width" style="line-height: 21px; padding-left: 25px; text-indent: -15px; ">
+<p class="paragraph_style_22" style="padding-bottom: 0pt; text-indent: -15px; "><span class="Bullet" style="font-size: 18px; position: relative; top: 0px; ">•</span><span class="inline-block" style="width: 9px; "></span><span class="style_11">Then you can open it with a text editor that recognizes XML.  It may display in XML format, or as in the samples below.  TextEdit displays as shown.</span></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="spacer" style="height: 4187px; line-height: 4187px; "> </div>
+</div>
+<div id="footer_layer" style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id10" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_23" style="padding-bottom: 0pt; padding-top: 0pt; ">9/4/13</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id11" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_24" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2013 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-

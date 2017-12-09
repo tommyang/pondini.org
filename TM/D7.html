@@ -1,114 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20121031" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>Time Machine - Troubleshooting 
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20121031" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>Time Machine - Troubleshooting 
 D7.  All  Backups  are  Full  Backups </title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="D7_files/D7.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='D7_files/D7IE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="D7_files/D7.js"></script>
-  </head>
-  <body style="background: rgb(213, 253, 208); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">Time Machine - Troubleshooting</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1">D7.  All  Backups  are  Full  Backups </p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="D6.html" href="D6.html">Previous</a>        <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>      <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>      <a title="Contact.html" href="Contact.html">Contact</a>      <a title="D8.html" href="D8.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 805px; left: 48px; position: absolute; top: 38px; width: 708px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_708_805" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_3">If it seems like every backup is a full one, first be sure that’s really true (sometimes it’s not easy to tell).  Don’t be misled by using the Finder to see the <span class="style_3">size</span> of the dated backup folders;  that’s <span class="style_3">very</span> misleading  (see <a title="Works.html" href="Works.html">How Time Machine works its Magic</a> for an explanation).<br /></p>
-                <p class="paragraph_style_3">Instead, check the copying &quot;xxx GB of yyy GB&quot; messages shown on the <span class="style_4">Time Machine Preferences</span> window while a backup is running, and/or the log messages, per <a title="A1.html" href="A1.html">item #A1</a>.  Compare those sizes to the <span class="style_4">Estimated size of full backup</span> (Lion or Snow Leopard) or <span class="style_4">Included Items</span> (Leopard) under the exclusions box in <span class="style_4">Time Machine Preferences &gt; Options</span>.<br /></p>
-                <p class="paragraph_style_3">If those really show large, repeated backups, make sure there isn’t another explanation -- see <a title="D3.html" href="D3.html">sections #D3</a>  and <a title="D4.html" href="D4.html"> #D4</a> first.  Once you’re <span class="style_3">certain</span> neither of those explains it, try a &quot;full reset&quot; of Time Machine, per item <a title="A4.html" href="A4.html">#A4</a>.  That will usually fix it.<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p class="paragraph_style_3">If it doesn’t, you need to figure out exactly what is getting backed-up repeatedly, since there are different causes, and each cause has a different fix.<br /></p>
-                <p class="paragraph_style_3">Often, it’s a user’s home folder.  After doing the &quot;full reset&quot; per <a title="A4.html" href="A4.html">item #A4</a>, try excluding one entire home folder from backups, via <span class="style_4">Time Machine Preferences &gt; Options</span>.  Click the plus sign at the bottom, then navigate to the home folder in question, select it, click the <span class="style_4">Exclude</span> button, then the <span class="style_4">Done</span> button on the main exclusions window.  Then run another backup.  If the &quot;Copying xxx GB of yyy GB&quot; message still indicates a full backup (nearly the size noted above), Time Machine really is trying to do a full backup, in spite of the exclusion list:  that’s usually caused by something corrupted in your installation of OSX.  You may need to install the &quot;combo&quot; update, per <a title="../OSX/Combo.html" href="../OSX/Combo.html">Installing the &quot;combo&quot; update and/or Reinstalling OSX</a>.  If that doesn't help, you may want to reinstall OSX (that won't disturb anything else), per the same article.<br /></p>
-                <p class="paragraph_style_3"><br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_3">If not, and the &quot;Copying&quot; message indicates a much smaller backup, there’s likely a problem with your home folder.  To confirm this, try another account’s home folder.  If you don’t have one, go to <span class="style_4">System Preferences &gt; Users &amp; Groups </span><span class="style_5">(or </span><span class="style_4">System Preferences &gt; Accounts</span> on Leopard or Snow Leopard) and create one.  With your main home folder still excluded, run a backup.  That should back up everything in the new user account’s home folder.  Then make a couple of small test files, in different sub-folders, such as <span class="style_4">Desktop</span> and <span class="style_4">Documents</span>, and run another backup.  See <a title="A2.html" href="A2.html">item #A2</a> for a couple of apps that will show exactly what was backed-up each time (but don’t try it on one of the really big ones, as it will take a <span class="style_3">very</span> long time.)   If <span class="style_3">only</span> the test files in the second home folder were backed-up the second time, then the original account and/or home folder is somehow corrupted.  See the <span class="style_6">pink</span> box below.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 240px; left: 73px; position: absolute; top: 903px; width: 633px; z-index: 1; " class="style_SkipStroke_3 shape-with-text stroke_2">
-            <div class="text-content style_External_631_238" style="padding: 1px; ">
-              <div class="style_7">
-                <p style="padding-top: 0pt; " class="paragraph_style_3"><span class="style_8">Fixing a corrupted home folder</span> doesn’t seem possible, unfortunately.  The only workaround is to create a new user account, copy the contents from the old home folder to the new one, then delete the old account and home folder.<br /></p>
-                <p class="paragraph_style_3">See  <a title="../OSX/Transfer.html" href="../OSX/Transfer.html" class="style_3">Transferring files from one User Account to another</a> for instructions.<br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_3">You can copy sub-folders you created that way, but you can't copy the automatically-created and required &quot;default&quot; sub-folders, such as <span class="style_4">Desktop, Documents, Downloads</span>, etc., that way.  You'll have to copy the sub-folders <span class="style_4">within</span> those folders, so it will get rather tedious.  Be very careful -- it's easy to miss things in that process.</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id5" style="height: 38px; left: 23px; position: absolute; top: 1205px; width: 746px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_3">
-            <div class="text-content style_External_744_36 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style_9 vertical-align-middle-innerbox">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"> <a title="D6.html" href="D6.html">Previous</a>         <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>        <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>        <a title="D8.html" href="D8.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-          <div style="height: 1243px; line-height: 1243px; " class="spacer"> </div>
-        </div>
-        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id6" style="height: 27px; left: 707px; position: absolute; top: 8px; width: 63px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_63_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_5">1/8/12</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id7" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_6">Copyright © 2012 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<link href="D7_files/D7.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='D7_files/D7IE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="D7_files/D7.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(213, 253, 208); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; "><span class="style_1" style="line-height: 21px; ">Time Machine - Troubleshooting</span><span class="style_2" style="line-height: 27px; "> <br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; ">D7.  All  Backups  are  Full  Backups </p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="D6.html" title="D6.html">Previous</a>        <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Home.html" title="Home.html">Home</a>      <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>      <a href="Contact.html" title="Contact.html">Contact</a>      <a href="D8.html" title="D8.html">Next</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id3" style="height: 805px; left: 48px; position: absolute; top: 38px; width: 708px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_708_805" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_3" style="padding-top: 0pt; ">If it seems like every backup is a full one, first be sure that’s really true (sometimes it’s not easy to tell).  Don’t be misled by using the Finder to see the <span class="style_3">size</span> of the dated backup folders;  that’s <span class="style_3">very</span> misleading  (see <a href="Works.html" title="Works.html">How Time Machine works its Magic</a> for an explanation).<br/></p>
+<p class="paragraph_style_3">Instead, check the copying "xxx GB of yyy GB" messages shown on the <span class="style_4">Time Machine Preferences</span> window while a backup is running, and/or the log messages, per <a href="A1.html" title="A1.html">item #A1</a>.  Compare those sizes to the <span class="style_4">Estimated size of full backup</span> (Lion or Snow Leopard) or <span class="style_4">Included Items</span> (Leopard) under the exclusions box in <span class="style_4">Time Machine Preferences &gt; Options</span>.<br/></p>
+<p class="paragraph_style_3">If those really show large, repeated backups, make sure there isn’t another explanation -- see <a href="D3.html" title="D3.html">sections #D3</a>  and <a href="D4.html" title="D4.html"> #D4</a> first.  Once you’re <span class="style_3">certain</span> neither of those explains it, try a "full reset" of Time Machine, per item <a href="A4.html" title="A4.html">#A4</a>.  That will usually fix it.<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3">If it doesn’t, you need to figure out exactly what is getting backed-up repeatedly, since there are different causes, and each cause has a different fix.<br/></p>
+<p class="paragraph_style_3">Often, it’s a user’s home folder.  After doing the "full reset" per <a href="A4.html" title="A4.html">item #A4</a>, try excluding one entire home folder from backups, via <span class="style_4">Time Machine Preferences &gt; Options</span>.  Click the plus sign at the bottom, then navigate to the home folder in question, select it, click the <span class="style_4">Exclude</span> button, then the <span class="style_4">Done</span> button on the main exclusions window.  Then run another backup.  If the "Copying xxx GB of yyy GB" message still indicates a full backup (nearly the size noted above), Time Machine really is trying to do a full backup, in spite of the exclusion list:  that’s usually caused by something corrupted in your installation of OSX.  You may need to install the "combo" update, per <a href="../OSX/Combo.html" title="../OSX/Combo.html">Installing the "combo" update and/or Reinstalling OSX</a>.  If that doesn't help, you may want to reinstall OSX (that won't disturb anything else), per the same article.<br/></p>
+<p class="paragraph_style_3"><br/></p>
+<p class="paragraph_style_3" style="padding-bottom: 0pt; ">If not, and the "Copying" message indicates a much smaller backup, there’s likely a problem with your home folder.  To confirm this, try another account’s home folder.  If you don’t have one, go to <span class="style_4">System Preferences &gt; Users &amp; Groups </span><span class="style_5">(or </span><span class="style_4">System Preferences &gt; Accounts</span> on Leopard or Snow Leopard) and create one.  With your main home folder still excluded, run a backup.  That should back up everything in the new user account’s home folder.  Then make a couple of small test files, in different sub-folders, such as <span class="style_4">Desktop</span> and <span class="style_4">Documents</span>, and run another backup.  See <a href="A2.html" title="A2.html">item #A2</a> for a couple of apps that will show exactly what was backed-up each time (but don’t try it on one of the really big ones, as it will take a <span class="style_3">very</span> long time.)   If <span class="style_3">only</span> the test files in the second home folder were backed-up the second time, then the original account and/or home folder is somehow corrupted.  See the <span class="style_6">pink</span> box below.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_3 shape-with-text stroke_2" id="id4" style="height: 240px; left: 73px; position: absolute; top: 903px; width: 633px; z-index: 1; ">
+<div class="text-content style_External_631_238" style="padding: 1px; ">
+<div class="style_7">
+<p class="paragraph_style_3" style="padding-top: 0pt; "><span class="style_8">Fixing a corrupted home folder</span> doesn’t seem possible, unfortunately.  The only workaround is to create a new user account, copy the contents from the old home folder to the new one, then delete the old account and home folder.<br/></p>
+<p class="paragraph_style_3">See  <a class="style_3" href="../OSX/Transfer.html" title="../OSX/Transfer.html">Transferring files from one User Account to another</a> for instructions.<br/></p>
+<p class="paragraph_style_3" style="padding-bottom: 0pt; ">You can copy sub-folders you created that way, but you can't copy the automatically-created and required "default" sub-folders, such as <span class="style_4">Desktop, Documents, Downloads</span>, etc., that way.  You'll have to copy the sub-folders <span class="style_4">within</span> those folders, so it will get rather tedious.  Be very careful -- it's easy to miss things in that process.</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_3" id="id5" style="height: 38px; left: 23px; position: absolute; top: 1205px; width: 746px; z-index: 1; ">
+<div class="text-content style_External_744_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style_9 vertical-align-middle-innerbox">
+<p class="paragraph_style_4" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="D6.html" title="D6.html">Previous</a>         <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Home.html" title="Home.html">Home</a>        <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>       <a href="Contact.html" title="Contact.html">Contact</a>        <a href="D8.html" title="D8.html">Next</a></p>
+</div>
+</div>
+</div>
+<div class="spacer" style="height: 1243px; line-height: 1243px; "> </div>
+</div>
+<div id="footer_layer" style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id6" style="height: 27px; left: 707px; position: absolute; top: 8px; width: 63px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_63_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_5" style="padding-bottom: 0pt; padding-top: 0pt; ">1/8/12</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id7" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_6" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2012 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-

@@ -1,125 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20130829" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta name="viewport" content="width=800" />
-    <title>Time Machine - Troubleshooting 
-D1.  Stuck in &quot;Preparing&quot;  or  &quot;Calculating changes&quot; </title>
-    <link rel="stylesheet" type="text/css" media="screen,print" href="D1_files/D1.css" />
-    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='D1_files/D1IE.css'/><![endif]-->
-    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
-    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
-    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
-    <script type="text/javascript" src="D1_files/D1.js"></script>
-  </head>
-  <body style="background: rgb(213, 253, 208); margin: 0pt; " onload="onPageLoad();">
-    <div style="text-align: center; ">
-      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
-        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
-        </div>
-        <div style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
-            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style vertical-align-middle-innerbox">
-                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">Time Machine - Troubleshooting</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_1">D1.  Stuck in &quot;Preparing&quot;  or  &quot;Calculating changes&quot; </p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
-            <div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="C19.html" href="C19.html">Previous</a>        <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>     <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>      <a title="Contact.html" href="Contact.html">Contact</a>      <a title="D2.html" href="D2.html">Next</a>  </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id3" style="height: 1161px; left: 14px; position: absolute; top: 46px; width: 772px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_772_1161" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-top: 0pt; " class="paragraph_style_3">The first question is, &quot;How slow is slow?&quot;  Some backups will be faster than others, for a wide variety of reasons, even on the same hardware.  See <a title="29.html" href="29.html">Time Machine FAQ #29</a> <span class="style_3">first</span>.<br /></p>
-                <p class="paragraph_style_4">Time Machine backups can be very slow if your Mac is indexing your internal HD (and/or other drives being backed-up) at the same time.  Click the spotlight icon at the right of your menubar to see if indexing is in progress;  if it is, either cancel the backup, or be extra patient, until the indexing is finished.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">Normally, Time Machine can determine what’s changed and needs to be backed-up very quickly, via the hidden log of changes that OSX keeps on each disk.  When it takes a long time, Time Machine may be doing a &quot;deep scan,&quot;  because it can’t use that log for some reason.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">Note:  this phase of a backup is called &quot;Preparing&quot; (&quot;Calculating Changes&quot; on Snow Leopard 10.6.x).  They do the same thing;  the only real difference is, effective with 10.6.3 through 10.6.8, you’ll see a &quot;Scanning nnnn items&quot; message on the Time Machine Preference window and/or the small display when you click the Time Machine icon in your menubar, then a &quot;Preparing xxxx items items&quot; message.  That way, the increasing counts in the message at least let you know it’s not &quot;stuck.&quot;<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">You can verify this via the messages in your logs.  See <a title="A1.html" href="A1.html">item #A1</a> for an easy way to do that.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">If you see a message there about  &quot;<span class="style_4">. . . deep scan . . .&quot; </span><span class="style_5">on Lion 10.7.x or later, or </span><span class="style_4"> &quot; . .  . node requires deep traversal</span>&quot; on earlier versions of OSX, that’s what’s going on.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">If so, see this Apple Support document: <a title="http://support.apple.com/kb/TS1516" href="http://support.apple.com/kb/TS1516">Time Machine may display &quot;Preparing&quot; for a longer time</a> and/or the blue box in <a title="A6.html" href="A6.html">section #A6</a> for details and common causes.  The amount of time required for this is very hard to predict;  it depends mostly on the number of items on your system (rather than the total size) and the connection to your backup volume.  So if you’re backing-up over a network, it’s going to take much longer than to a FireWire 800 external disk, for example, just as the actual backup will.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">Try not to interrupt the backup, as <span class="style_6">this procedure must be done again (and again)</span> until a backup is completed successfully.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">Also see the next topic, item <a title="D2.html" href="D2.html">#D2</a>.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">But if it continues for a very long time, and never starts the copying &quot;xxx MB/GB of yyy GB&quot; messages on the Time Machine Preferences window, something may be wrong with the preferences file.  Cancel the backup (if it doesn't cancel within a few minutes, see <a title="D6.html" href="D6.html">item #D6</a>).  <br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">Then try a &quot;full reset&quot; of Time Machine, per<a title="A4.html" href="A4.html"> item #A4</a>. <br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">On occasion, just Restarting your Mac may clear it up.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">If that doesn't help, there may be a directory problem on your internal HD, another disk/partition being backed-up, or your backup volume.    Then <span class="style_4">Verify</span> your internal HD, and <span class="style_4">Repair</span> any other volumes being backed-up, <span class="style_6">and</span> your backup volume, per <a title="A5.html" href="A5.html">item #A5</a>.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">If you see this frequently, without a good reason, something is probably wrong;  try to figure out which of the reasons in the blue box of <a title="A6.html" href="A6.html">section #A6 </a>applies.  If you can’t, post a new thread, with full particulars,  including the messages from the widget, in the appropriate Apple Discussions forum:<br /></p>
-                <p class="paragraph_style_6"><a title="https://discussions.apple.com/community/mac_os/os_x_mountain_lion" href="https://discussions.apple.com/community/mac_os/os_x_mountain_lion">Mac OS X v. 10.8  Mountain Lion</a><a title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion?view=discussions" href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion?view=discussions"><br /></a></p>
-                <p class="paragraph_style_6"><a title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion?view=discussions" href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion?view=discussions">Mac OS X v. 10.7 Lion</a><br /></p>
-                <p class="paragraph_style_6"><a title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.6_snow_leopard" href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.6_snow_leopard">Mac OS X v. 10.6 Snow Leopard</a>    <br /></p>
-                <p class="paragraph_style_6"><a title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.5_leopard" href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.5_leopard">Mac OSX v. 10.5 Leopard</a>    <br /></p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id4" style="height: 38px; left: 9px; position: absolute; top: 1225px; width: 783px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
-            <div class="text-content style_External_781_36 vertical-align-middle-middlebox" style="padding: 1px; ">
-              <div class="style_7 vertical-align-middle-innerbox">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_7">  <a title="C19.html" href="C19.html">Previous</a>          <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>          <a title="Home.html" href="Home.html">Home</a>           <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>          <a title="Contact.html" href="Contact.html">Contact</a>        <a title="D2.html" href="D2.html">Next</a></p>
-              </div>
-            </div>
-          </div>
-          <div style="height: 1263px; line-height: 1263px; " class="spacer"> </div>
-        </div>
-        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
-          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
-          <div id="id5" style="height: 27px; left: 707px; position: absolute; top: 8px; width: 68px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_68_27" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_8">8/29/13</p>
-              </div>
-            </div>
-          </div>
-          
-
-
-          <div id="id6" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
-              <div class="graphic_textbox_layout_style_default">
-                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_9">Copyright © 2012 James Pond.  All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="iWeb 3.0.4" name="Generator"/>
+<meta content="local-build-20130829" name="iWeb-Build"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<meta content="width=800" name="viewport"/>
+<title>Time Machine - Troubleshooting 
+D1.  Stuck in "Preparing"  or  "Calculating changes" </title>
+<link href="D1_files/D1.css" media="screen,print" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='D1_files/D1IE.css'/><![endif]-->
+<!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+<script src="Scripts/iWebSite.js" type="text/javascript"></script>
+<script src="Scripts/iWebImage.js" type="text/javascript"></script>
+<script src="D1_files/D1.js" type="text/javascript"></script>
+</head>
+<body onload="onPageLoad();" style="background: rgb(213, 253, 208); margin: 0pt; ">
+<div style="text-align: center; ">
+<div id="body_content" style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; "><div id="mirror-banner" style="background-color: #eceff1; width: 100%; margin-bottom: 1em; text-align: center; padding: 0.5em 0"> <p>This is an unofficial mirror of <a href="http://pondini.org">pondini.org</a> by James Pond, who is unfortunately <a href="http://www.beckerfamilyfuneral.com/obituary/3109691" title="Obituary">no longer with us</a>. </p> <p>All rights belong to James' beneficiaries.</p> <p>No guarantee is made about the accuracy or completeness of this mirror. </p></div>
+<div id="nav_layer" style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="spacer" style="clear: both; height: 0px; line-height: 0px; "> </div>
+</div>
+<div id="header_layer" style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke shape-with-text stroke_0" id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; ">
+<div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style vertical-align-middle-innerbox">
+<p class="paragraph_style" style="padding-top: 0pt; "><span class="style_1" style="line-height: 21px; ">Time Machine - Troubleshooting</span><span class="style_2" style="line-height: 27px; "> <br/></span></p>
+<p class="paragraph_style_1" style="padding-bottom: 0pt; ">D1.  Stuck in "Preparing"  or  "Calculating changes" </p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_1" id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_2" style="padding-bottom: 0pt; padding-top: 0pt; "> <a href="C19.html" title="C19.html">Previous</a>        <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>        <a href="Home.html" title="Home.html">Home</a>     <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>      <a href="Contact.html" title="Contact.html">Contact</a>      <a href="D2.html" title="D2.html">Next</a>  </p>
+</div>
+</div>
+</div>
+</div>
+<div id="body_layer" style="margin-left: 0px; position: relative; width: 800px; z-index: 5; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id3" style="height: 1161px; left: 14px; position: absolute; top: 46px; width: 772px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_772_1161" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_3" style="padding-top: 0pt; ">The first question is, "How slow is slow?"  Some backups will be faster than others, for a wide variety of reasons, even on the same hardware.  See <a href="29.html" title="29.html">Time Machine FAQ #29</a> <span class="style_3">first</span>.<br/></p>
+<p class="paragraph_style_4">Time Machine backups can be very slow if your Mac is indexing your internal HD (and/or other drives being backed-up) at the same time.  Click the spotlight icon at the right of your menubar to see if indexing is in progress;  if it is, either cancel the backup, or be extra patient, until the indexing is finished.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">Normally, Time Machine can determine what’s changed and needs to be backed-up very quickly, via the hidden log of changes that OSX keeps on each disk.  When it takes a long time, Time Machine may be doing a "deep scan,"  because it can’t use that log for some reason.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">Note:  this phase of a backup is called "Preparing" ("Calculating Changes" on Snow Leopard 10.6.x).  They do the same thing;  the only real difference is, effective with 10.6.3 through 10.6.8, you’ll see a "Scanning nnnn items" message on the Time Machine Preference window and/or the small display when you click the Time Machine icon in your menubar, then a "Preparing xxxx items items" message.  That way, the increasing counts in the message at least let you know it’s not "stuck."<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">You can verify this via the messages in your logs.  See <a href="A1.html" title="A1.html">item #A1</a> for an easy way to do that.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">If you see a message there about  "<span class="style_4">. . . deep scan . . ." </span><span class="style_5">on Lion 10.7.x or later, or </span><span class="style_4"> " . .  . node requires deep traversal</span>" on earlier versions of OSX, that’s what’s going on.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">If so, see this Apple Support document: <a href="http://support.apple.com/kb/TS1516" title="http://support.apple.com/kb/TS1516">Time Machine may display "Preparing" for a longer time</a> and/or the blue box in <a href="A6.html" title="A6.html">section #A6</a> for details and common causes.  The amount of time required for this is very hard to predict;  it depends mostly on the number of items on your system (rather than the total size) and the connection to your backup volume.  So if you’re backing-up over a network, it’s going to take much longer than to a FireWire 800 external disk, for example, just as the actual backup will.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">Try not to interrupt the backup, as <span class="style_6">this procedure must be done again (and again)</span> until a backup is completed successfully.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">Also see the next topic, item <a href="D2.html" title="D2.html">#D2</a>.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">But if it continues for a very long time, and never starts the copying "xxx MB/GB of yyy GB" messages on the Time Machine Preferences window, something may be wrong with the preferences file.  Cancel the backup (if it doesn't cancel within a few minutes, see <a href="D6.html" title="D6.html">item #D6</a>).  <br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">Then try a "full reset" of Time Machine, per<a href="A4.html" title="A4.html"> item #A4</a>. <br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">On occasion, just Restarting your Mac may clear it up.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">If that doesn't help, there may be a directory problem on your internal HD, another disk/partition being backed-up, or your backup volume.    Then <span class="style_4">Verify</span> your internal HD, and <span class="style_4">Repair</span> any other volumes being backed-up, <span class="style_6">and</span> your backup volume, per <a href="A5.html" title="A5.html">item #A5</a>.<br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5"><br/></p>
+<p class="paragraph_style_5">If you see this frequently, without a good reason, something is probably wrong;  try to figure out which of the reasons in the blue box of <a href="A6.html" title="A6.html">section #A6 </a>applies.  If you can’t, post a new thread, with full particulars,  including the messages from the widget, in the appropriate Apple Discussions forum:<br/></p>
+<p class="paragraph_style_6"><a href="https://discussions.apple.com/community/mac_os/os_x_mountain_lion" title="https://discussions.apple.com/community/mac_os/os_x_mountain_lion">Mac OS X v. 10.8  Mountain Lion</a><a href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion?view=discussions" title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion?view=discussions"><br/></a></p>
+<p class="paragraph_style_6"><a href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion?view=discussions" title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.7_lion?view=discussions">Mac OS X v. 10.7 Lion</a><br/></p>
+<p class="paragraph_style_6"><a href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.6_snow_leopard" title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.6_snow_leopard">Mac OS X v. 10.6 Snow Leopard</a>    <br/></p>
+<p class="paragraph_style_6"><a href="https://discussions.apple.com/community/mac_os/mac_os_x_v10.5_leopard" title="https://discussions.apple.com/community/mac_os/mac_os_x_v10.5_leopard">Mac OSX v. 10.5 Leopard</a>    <br/></p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_1 shape-with-text stroke_2" id="id4" style="height: 38px; left: 9px; position: absolute; top: 1225px; width: 783px; z-index: 1; ">
+<div class="text-content style_External_781_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+<div class="style_7 vertical-align-middle-innerbox">
+<p class="paragraph_style_7" style="padding-bottom: 0pt; padding-top: 0pt; ">  <a href="C19.html" title="C19.html">Previous</a>          <a href="FAQ.html" title="FAQ.html">Frequently Asked Questions</a>          <a href="Home.html" title="Home.html">Home</a>           <a href="Troubleshooting.html" title="Troubleshooting.html">Troubleshooting</a>          <a href="Contact.html" title="Contact.html">Contact</a>        <a href="D2.html" title="D2.html">Next</a></p>
+</div>
+</div>
+</div>
+<div class="spacer" style="height: 1263px; line-height: 1263px; "> </div>
+</div>
+<div id="footer_layer" style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; ">
+<div class="bumper" style="height: 0px; line-height: 0px; "> </div>
+<div class="style_SkipStroke_2 shape-with-text" id="id5" style="height: 27px; left: 707px; position: absolute; top: 8px; width: 68px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_68_27" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_8" style="padding-bottom: 0pt; padding-top: 0pt; ">8/29/13</p>
+</div>
+</div>
+</div>
+<div class="style_SkipStroke_2 shape-with-text" id="id6" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; ">
+<div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+<div class="graphic_textbox_layout_style_default">
+<p class="paragraph_style_9" style="padding-bottom: 0pt; padding-top: 0pt; ">Copyright © 2012 James Pond.  All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
-
-
