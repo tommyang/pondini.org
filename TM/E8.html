@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20121031" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=800" />
+    <title>Time Machine - Troubleshooting 
+E8.  After a full restore, Mac won't start up, or kernel panics.</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="E8_files/E8.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='E8_files/E8IE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="E8_files/E8.js"></script>
+  </head>
+  <body style="background: rgb(213, 253, 208); margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
+            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style vertical-align-middle-innerbox">
+                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">Time Machine - Troubleshooting</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1">E8.  After a full restore, Mac won't start up, or kernel panics.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
+            <div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="E7.html" href="E7.html">Previous</a>        <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>       <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>       <a title="E9.html" href="E9.html">Next</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id3" style="height: 38px; left: 12px; position: absolute; top: 1158px; width: 769px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
+            <div class="text-content style_External_767_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style_3 vertical-align-middle-innerbox">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"> <a title="E7.html" href="E7.html">Previous</a>         <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>          <a title="Home.html" href="Home.html">Home</a>          <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>         <a title="Contact.html" href="Contact.html">Contact</a>        <a title="E9.html" href="E9.html">Next</a></p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 256px; left: 38px; position: absolute; top: 48px; width: 725px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_725_256" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_4">If you're running Snow Leopard, see the <span class="style_4">pink</span><span class="style_5"> </span>box<span class="style_5"> </span>below first.<br /></p>
+                <p class="paragraph_style_5">In most cases, just installing a fresh copy of OSX will fix the problem (and won't disturb anything else).  See  <a title="../OSX/Combo.html" href="../OSX/Combo.html">Installing the &quot;combo&quot; update and/or Reinstalling OSX</a> for details and instructions.<br /></p>
+                <p class="paragraph_style_4">However, if you're restoring because you had a serious problem with your Mac, especially the internal HD, that problem may have corrupted things on your internal HD and those problems may have been backed-up, so brought back when you did the restore.  That can include not only parts of OSX but also your user data.<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_6">In that case, try the restore again, but select an earlier backup, from <span class="style_6">before </span>the problems started.  See <a title="14.html" href="14.html">Time Machine FAQ #14</a>.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id5" style="height: 292px; left: 55px; position: absolute; top: 371px; width: 683px; z-index: 1; " class="style_SkipStroke_3 shape-with-text stroke_3">
+            <div class="text-content style_External_681_290" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_6">If all else fails, your best option is to erase your internal HD and install a fresh copy of OSX.  See the yellow box in <a title="../OSX/DU1.html" href="../OSX/DU1.html">Format, Erase, or Reformat a Drive</a> if you're not sure how to erase it.  Once it's erased, just quit Disk Utility and install OSX, per <a title="../OSX/Combo.html" href="../OSX/Combo.html">Installing the &quot;combo&quot; update and/or Reinstalling OSX</a>. <br /></p>
+                <p class="paragraph_style_6">When your Mac restarts, use <span class="style_8">Setup Assistant</span> to transfer your settings, apps, users and data from your backups.  See <a title="../OSX/SetupLion.html" href="../OSX/SetupLion.html">Using Setup Assistant on Lion or Mountain Lion</a> or <a title="Home.html" href="Home.html">Using Setup Assistant on Snow Leopard or Leopard</a> for details.  <br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_6">Especially if you're on Leopard or Snow Leopard, you may not be on the same version of OSX as the backups.  If not, <span class="style_9">do not use any Apple apps yet</span>, as they'll be older versions and may conflict with newer data.  Download and install the OSX &quot;combo&quot; update first.  See <a title="../OSX/Combo.html" href="../OSX/Combo.html">Installing the &quot;combo&quot; update and/or Reinstalling OSX</a> for details and instructions.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id6" style="height: 368px; left: 34px; position: absolute; top: 725px; width: 725px; z-index: 1; " class="style_SkipStroke_4 shape-with-text stroke_4">
+            <div class="text-content style_External_723_366" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_7">If you're running Snow Leopard (10.6.x):<br /></p>
+                <p class="paragraph_style_6">A common cause of this is using a <span class="style_6">Leopard</span> Install disc to restore a <span class="style_6">Snow Leopard</span> backup.  The installer on the Leopard disc will <span class="style_8">copy</span> everything, but your Mac won't start up properly.  <br /></p>
+                <p class="paragraph_style_6">If that's not what you did, just install a fresh copy of OSX as above.<br /></p>
+                <p class="paragraph_style_6">If that <span class="style_10">is</span> what you did:<br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_8"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>If the restore didn't take over 90 minutes or so, your best bet is to just do it over, using your Snow Leopard Install disc, per <a title="14.html" href="14.html">Time Machine FAQ #14</a>.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="padding-bottom: 0pt; text-indent: -15px; " class="paragraph_style_9"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>If the restore took much longer, it may be better to install a fresh copy of OSX (that won't disturb anything else) from your Install disk.  When your Mac restarts, if you're not on the same version of OSX as the restored system,<span class="style_11"> </span><span class="style_9">do not use any Apple apps yet</span>, as they'll be older versions and may conflict with newer data.  Download and install the OSX &quot;combo&quot; update first.  See <a title="../OSX/Combo.html" href="../OSX/Combo.html">Installing the &quot;combo&quot; update and/or Reinstalling OSX</a> for details and instructions.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div style="height: 1196px; line-height: 1196px; " class="spacer"> </div>
+        </div>
+        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id7" style="height: 27px; left: 722px; position: absolute; top: 8px; width: 62px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_10">10/29/12</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id8" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_11">Copyright © 2012 James Pond.  All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20130515" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=800" />
+    <title>Time Machine - Troubleshooting 
+C4. &quot;The backup disk is full&quot; or &quot;. . . almost full&quot;
+ or &quot;This backup is too large . . .&quot;</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="C4_files/C4.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='C4_files/C4IE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="C4_files/C4.js"></script>
+  </head>
+  <body style="background: rgb(213, 253, 208); margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 140px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id1" style="height: 90px; left: 14px; position: absolute; top: 50px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
+            <div class="text-content style_External_769_88 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style vertical-align-middle-innerbox">
+                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">Time Machine - Troubleshooting</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
+                <p class="paragraph_style_1">C4. &quot;The backup disk is full&quot; or &quot;. . . almost full&quot;<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1"> or &quot;This backup is too large . . .&quot;</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
+            <div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="C3.html" href="C3.html">Previous</a>        <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>     <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>      <a title="Contact.html" href="Contact.html">Contact</a>      <a title="C5.html" href="C5.html">Next</a>  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id3" style="height: 481px; left: 15px; position: absolute; top: 30px; width: 750px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_750_481" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_3">For one reason or another, Time Machine is out of room on the backup disk/partition.  When its space gets near full, it will normally delete as many old and expired backups as it can to make room for new ones.  This is handled a bit differently on different versions of OSX.  (If you're not sure what version of OSX you're running, click <a title="../OSX/OSXversion.html" href="../OSX/OSXversion.html">here</a>).<br /></p>
+                <p class="paragraph_style_3">There are some backups that Time Machine <span class="style_3">will not delete</span>, however.  It won't delete the last remaining backup, or any backups from a different Mac (if you're backing-up more than one Mac to the same place, see <a title="33.html" href="33.html">Time Machine FAQ #33</a>, especially the <span class="style_4">pink</span> box there).   And it won't delete other data on the backup drive.<br /></p>
+                <p class="paragraph_style_3">Under some circumstances, Time Machine will start a new &quot;sequence&quot; of backups, as if you had a different Mac, and it may not delete any from the prior sequence, either.<br /></p>
+                <p class="paragraph_style_3">Also note that, although it deletes a <span class="style_3">backup</span>, it doesn't necessarily delete its copies of all the <span class="style_5">items</span> that were on that backup.  It only deletes its copies of things that no longer exist on any <span class="style_6">other</span> backup.  Thus you won't lose the backup of anything that's currently on your system, or the ability to restore your entire system from any <span class="style_3">remaining</span> backup, since all Time Machine backups are, in effect, full backups.<br /></p>
+                <p class="paragraph_style_4"><span class="style_5">Note:  </span>If you think Time Machine is trying to back up too much data, see <a title="D4.html" href="D4.html">item #D4</a> for some common causes of extra-large backups.<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_3">Compare the message you got to the ones below  (if you've forgotten the exact message, go to Time Machine Preferences and click the red &quot;<span class="style_4">i</span>&quot; icon next to the word &quot;<span class="style_4">Failed</span>.&quot;)</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 399px; left: 19px; position: absolute; top: 1506px; width: 750px; z-index: 1; " class="style_SkipStroke_3 shape-with-text stroke_3">
+            <div class="text-content style_External_748_397" style="padding: 1px; ">
+              <div class="style_7">
+                <div class="paragraph paragraph_style_5" style="padding-top: 0pt; "><span class="style_8">This backup is too large</span>  (Leopard 10.5.x) <div style="height: 217px; width: 420px;  clear: right; float: right; height: 217px; margin: 6px 0px 6px 6px; position: relative; width: 420px; " class="tinyText inline-block stroke_2"><div style="position: relative; width: 420px; "><img src="C4_files/shapeimage_1.png" alt="" style="height: 217px; left: 0px; position: absolute; top: 0px; width: 420px; " /></div></div><br /></div>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">If you have the <span class="style_9">Warn when old backups are deleted</span> option checked in <span class="style_9">Time Machine Preferences &gt; Options</span>, your backup will <span class="style_8">fail</span> with this message.  (Note that the required size is the estimated size of the data to be backed up <span class="style_3">plus 20% or more</span> (sometimes much more), for workspace and in some cases to temporarily duplicate the index.  Thus in the sample, Time Machine was probably trying to back up about 81 GB).  <br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_5">Time Machine will not delete old backups while this option is checked.  This doesn't necessarily indicate a problem;  un-check the <span class="style_9">Warn . . .</span>  option in <span class="style_9">TM Preferences</span>, and try another backup.  Time Machine will delete one or more of your oldest backups to make room for the new one.  If you get the same message again, the disk really is too full.  In that case, see the next item:</p>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id5" style="height: 38px; left: 6px; position: absolute; top: 3613px; width: 786px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_4">
+            <div class="text-content style_External_784_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style_10 vertical-align-middle-innerbox">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_6"> <a title="C3.html" href="C3.html">Previous</a>         <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>         <a title="Home.html" href="Home.html">Home</a>         <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>         <a title="Contact.html" href="Contact.html">Contact</a>         <a title="C5.html" href="C5.html">Next</a></p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id6" style="height: 355px; left: 21px; position: absolute; top: 564px; width: 750px; z-index: 1; " class="style_SkipStroke_5 shape-with-text stroke_5">
+            <div class="text-content style_External_748_353" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_7"><span class="style_8">The backup disk is almost full</span>  (Snow Leopard 10.6.x and later) <br /></p>
+                <p class="paragraph_style_7"><br /></p>
+                <div class="paragraph paragraph_style_7">You may see this warning <span class="style_11">the first </span><div style="height: 183px; width: 434px;  clear: right; float: right; height: 183px; margin: 6px 0px 6px 6px; position: relative; width: 434px; " class="tinyText style_SkipStroke_4 inline-block stroke_2"><img src="C4_files/C4%20%20Lion%20disk%20near%20full%20warning.jpg" alt="" style="border: none; height: 183px; width: 434px; " /></div><span class="style_11">time</span> your backup disk gets near full:<br /></div>
+                <p class="paragraph_style_8">All it means is, Time Machine will start deleting old backups soon.  When it does, if you have the <span class="style_9">Notify after old backups are deleted</span> box checked in <span class="style_9">Time Machine Preferences &gt; Options</span>, you'll see the message in the<span class="style_3"> </span><span class="style_12">blue</span><span class="style_13"> </span>box after the deletions.<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_8">Depending on the circumstances, you may not see this message before the one in the <span class="style_12">blue</span> box.  If there's a lot of space left after one backup, the warning won't be sent -- but if the <span class="style_9">next</span> backup requires too much space,<span class="style_9"> that</span> backup will have to start deleting old ones.</p>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id7" style="height: 462px; left: 20px; position: absolute; top: 980px; width: 750px; z-index: 1; " class="style_SkipStroke_6 shape-with-text stroke_6">
+            <div class="text-content style_External_748_460" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_5"><span class="style_8">The backup disk is full</span>  (Snow Leopard 10.6.x and later; sample from Mountain Lion) <br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <div class="paragraph paragraph_style_5">If you have the <span class="style_9">Notify after old </span><div style="height: 260px; width: 476px;  clear: right; float: right; height: 260px; margin: 6px 0px 6px 6px; position: relative; width: 476px; " class="tinyText style_SkipStroke_4 inline-block stroke_2"><img src="C4_files/C4b%20ML%20disk%20full%20%28w%3Aname%29.jpg" alt="" style="border: none; height: 260px; width: 476px; " /></div><span class="style_9">backups are deleted</span> box checked in  <span class="style_9">Time Machine Preferences &gt; Options</span>, you'll see this message <span class="style_3">after</span> Time Machine has deleted some old backups.  The new backup completed normally, and you don't <span class="style_3">need</span> to take any action -- this is just a notification. <br /></div>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">If you don't want to see this message again when Time Machine deletes more old backups, click the <span class="style_9">Do not show this warning again</span> box in the message, or un-check the <span class="style_9">Notify . . .</span> box in <span class="style_9">Time Machine Preferences &gt; Options.<br /></span></p>
+                <p class="paragraph_style_5"><span class="style_9"><br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_9"><span class="style_14">Note:  If your backups are on a network, the name shown is actually the </span><span class="style_15">server </span><span class="style_14">name, not the </span><span class="style_15">disk </span><span class="style_14">name.  On Lion and earlier, the disk name isn’t shown at all.</span></p>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id8" style="height: 1305px; left: 19px; position: absolute; top: 1968px; width: 751px; z-index: 1; " class="style_SkipStroke_8 shape-with-text stroke_7">
+            <div class="text-content style_External_749_1303" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_5"><span class="style_8">This backup is too large . . .</span>  (all OSX versions; sample from Mountain Lion)<br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <div class="paragraph paragraph_style_5">Time Machine could not delete <div style="height: 236px; width: 476px;  clear: right; float: right; height: 236px; margin: 10px 0px 10px 10px; position: relative; width: 476px; " class="tinyText style_SkipStroke_7 inline-block stroke_2"><img src="C4_files/C4d%20ML%20Disk%20Full%20msg%20%28w%3Aname%29.jpg" alt="" style="border: none; height: 236px; width: 476px; " /></div>enough backups to make room for a new one (as noted above, it will <span class="style_5">never</span> delete your last remaining backup).  This happens when Time Machine needs to do a very large or full backup, but can't make enough room, and the Time Machine disk/partition isn't well over the size of the data it's backing-up.  The message includes the amount of space that the backup requires;  note that it's the estimated size of the data to be backed up <span class="style_3">plus at least 20%</span> (for workspace), sometimes much more on Mountain Lion 10.8.x.  Thus in the sample, Time Machine was trying to back up roughly 22 GB.<br /></div>
+                <p class="paragraph_style_5">                                       <br /></p>
+                <p class="paragraph_style_9"><span class="style_14">Note:  If your backups are on a network, the name shown is actually the </span><span class="style_15">server </span><span class="style_14">name, not the </span><span class="style_15">disk </span><span class="style_14">name.  On Lion and earlier, the disk name isn’t shown at all.</span><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_10"><br /></p>
+                <p class="paragraph_style_10"><br /></p>
+                <p class="paragraph_style_10"><br /></p>
+                <p class="paragraph_style_10"><br /></p>
+                <p class="paragraph_style_10">                      <br /></p>
+                <p class="paragraph_style_10">                      <br /></p>
+                <p class="paragraph_style_10">           <br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">If in doubt as to what's going on, see <a title="A1.html" href="A1.html">item #A1</a> to download the <span class="style_9">Time Machine Buddy</span> widget, which should document the sizes.<br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">If you're backing-up multiple Macs to the same place, see the pink box in <a title="33.html" href="33.html">Time Machine FAQ #33</a>.<br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">When this happens, you have a few options:<br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="1">
+                    <p style="text-indent: -20px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">1.</span><span style="width: 7px; " class="inline-block"></span>See if there's something very large (like a new external HD, or virtual machine file) that doesn't need to be backed-up.  Check the<span class="style_9"> Estimated size of full backup</span> (Snow Leopard and later) or <span class="style_9">Total included </span>(Leopard) under the exclusions box in <span class="style_9">Time Machine Preferences &gt; Options.   </span>If so, <span class="style_3">exclude</span> it from TM backups via that window (see  <a title="10.html" href="10.html">Frequently Asked Question #10</a>.)<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="2">
+                    <p style="text-indent: -20px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">2.</span><span style="width: 7px; " class="inline-block"></span>Erase the Time Machine disk/partition with <span class="style_9">Disk Utility</span> (in your Applications/Utilities folder) and let Time Machine start over with a new full backup.  (If you're backing up to a Time Capsule, delete the sparse bundle containing the backups via the <span class="style_9">Finder</span>, or erase the Time Capsule's disk via <span class="style_9">Airport Utility</span>: select <span class="style_9">Base Station &gt; Manual Set-Up</span> from the Menubar, then <span class="style_9">Disks</span> in the tool Bar, then <span class="style_9">Erase</span>.)<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="3">
+                    <p style="text-indent: -20px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">3.</span><span style="width: 7px; " class="inline-block"></span>Get a different disk/partition for your Time Machine backups  (see <a title="1.html" href="1.html">Time Machine FAQ #1</a> to be sure it's large enough). Then either:<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_5"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 46px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_12"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Give it a different name, and use the <span class="style_9">Select Disk</span> button (<span class="style_9">Change Disk</span> in Leopard) in <span class="style_9">Time Machine Preferences</span> to select it.  Let Time Machine start fresh on the new drive/partition, with a full backup of your entire system.  Keep the old drive &quot;on the shelf&quot; (disconnected) for a while until you're sure everything is working and you don't need the old backups anymore.  You'll still be able to view and restore from the old ones, via the procedure in <a title="E2.html" href="E2.html">item #E2</a>.<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_5"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 46px; text-indent: -15px; " class="full-width">
+                    <p style="padding-bottom: 0pt; text-indent: -15px; " class="paragraph_style_12"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Or, if it's a larger disk, copy the current backups to it via the procedure in <a title="18.html" href="18.html">Frequently Asked Question #18</a>.</p>
+                  </li>
+                </ol>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id9" style="height: 162px; left: 60px; position: absolute; top: 2436px; width: 667px; z-index: 1; " class="style_SkipStroke_9 shape-with-text stroke_8 shadow_0">
+            <div class="text-content style_External_665_160" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_4">A common cause of this is restoring all your data, either to the original internal HD or a replaced one,  depending on the restore method and what version of OSX you're on.  In some cases, everything restored is treated as <span class="style_16">new</span>, so must be backed-up again.  See  <a title="D3.html" href="D3.html">item #D3</a>  or  <a title="D4.html" href="D4.html">item #D4</a>,  for other common causes of full or extra-large backups. <br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_4"><span class="style_3">Effective with Lion</span>, in some cases you can make Time Machine &quot;associate&quot; the new or restored drive with the old backups.  See <a title="B6.html" href="B6.html">item #B6</a>.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id10" style="height: 255px; left: 19px; position: absolute; top: 3318px; width: 750px; z-index: 1; " class="style_SkipStroke_10 shape-with-text stroke_9">
+            <div class="text-content style_External_748_253" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_7"><span class="style_8">. . . ran out of space unexpectedly</span>  (all OSX versions; sample from Mountain Lion)<br /></p>
+                <p class="paragraph_style_7"> <br /></p>
+                <div class="paragraph paragraph_style_7"><div style="height: 183px; width: 394px;  clear: right; float: right; height: 183px; margin: 6px 0px 6px 6px; position: relative; width: 394px; " class="tinyText style_SkipStroke_4 inline-block stroke_2"><img src="C4_files/C4e%20Out%20of%20space%20unexpectedly.jpg" alt="" style="border: none; height: 183px; width: 395px; " /></div><span class="style_11"></span><span class="style_11"></span><span class="style_17">This unusual message indicates a rather different problem.   <br /></span></div>
+                <p class="paragraph_style_7"><span class="style_17"><br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_7"><span class="style_17">See </span><a title="C18.html" href="C18.html" class="style_17">Item #C18</a><span class="style_17"> for details.</span></p>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          <div style="height: 3651px; line-height: 3651px; " class="spacer"> </div>
+        </div>
+        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id11" style="height: 27px; left: 726px; position: absolute; top: 8px; width: 60px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_60_27" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_13">5/15/13</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id12" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_14">Copyright © 2013 James Pond.  All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

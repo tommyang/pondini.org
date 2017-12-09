@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20130420" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=800" />
+    <title>OSX Tips:  Using Disk Utility 
+1.  Format,  Erase,  or  Reformat  a  Drive</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="DU1_files/DU1.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='DU1_files/DU1IE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="DU1_files/DU1.js"></script>
+  </head>
+  <body style="background: rgb(255, 223, 205); margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 133px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id1" style="height: 67px; left: 13px; position: absolute; top: 66px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
+            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style vertical-align-middle-innerbox">
+                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">OSX Tips:  Using Disk Utility</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1">1.  Format,  Erase,  or  Reformat  a  Drive</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id2" style="height: 37px; left: 36px; position: absolute; top: 11px; width: 724px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
+            <div class="text-content graphic_textbox_layout_style_default_External_722_35" style="padding: 1px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"><span class="style_3">     </span><a title="DU.html" href="DU.html">Previous</a><span class="style_3">               </span><a title="Home.html" href="Home.html">Home</a><span class="style_3">             </span><a title="DU.html" href="DU.html">Using Disk Utility: Contents</a><span class="style_3">              </span><a title="TipsContact.html" href="TipsContact.html">Contact</a><span class="style_3">            </span><a title="DU2.html" href="DU2.html">Next</a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id3" style="height: 275px; left: 52px; position: absolute; top: 45px; width: 691px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_691_275" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_3">This procedure will format or reformat an entire hard drive, <span class="style_4">erasing all the contents</span>.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">Note:  to format a disk for use with Time Machine backups, see <a title="../TM/5.html" href="../TM/5.html">Time Machine FAQ #5</a>.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">To erase or reformat a single partition without disturbing any other partitions, see <a title="DU2.html" href="DU2.html">Erase or Reformat a partition</a>.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">You can use Disk Utility to format an entire internal or directly-connected external hard drive, but not the same drive you’re running from.   To erase or format a drive connected to a network, you must connect it directly to your Mac via USB or Firewire.<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_4"><span class="style_5">Partitions to be used by </span><span class="style_6">Boot </span><span class="style_5">Camp</span><span class="style_6"> </span><span class="style_5">must be added and managed by </span><span class="style_6">Boot Camp Assistant</span><span class="style_5"> only.  See </span><a title="http://support.apple.com/kb/HT1461" href="http://support.apple.com/kb/HT1461" class="style_5">Mac 101: Using Windows on your Mac via Boot Camp</a><span class="style_5"> for details.</span></p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 84px; left: 71px; position: absolute; top: 350px; width: 657px; z-index: 1; " class="style_SkipStroke_3 shape-with-text stroke_2">
+            <div class="text-content style_External_655_82" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3">To format, erase, or reformat an internal or external HD that’s <span class="style_4">NOT</span> the one you’re running OSX from, start the <span class="style_8">Disk Utility</span> app in your Applications/Utilities folder.  Then see the blue box below.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id5" style="height: 689px; left: 70px; position: absolute; top: 467px; width: 657px; z-index: 1; " class="style_SkipStroke_5 shape-with-text stroke_4">
+            <div class="text-content style_External_655_687" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_3">To format, erase, or reformat your Startup volume (the OSX volume <span class="style_4">on your internal HD)</span>,  you must start your Mac up from a different source:  <br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_4">On Lion </span><span class="style_5">or later</span>, the <a title="RecoveryHD.html" href="RecoveryHD.html">Recovery HD</a> or OSX USB thumb drive.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_4">On Snow Leopard </span><span class="style_5">or earlier</span>, your OSX Install disc (or OSX USB thumb drive on a MacBookAir).<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_4">Or</span>, a different disk that has OSX installed on it.  Be sure you use a compatible version of OSX -- if you’re running Leopard, use a Leopard disc;  if you’re running Snow Leopard, use a Snow Leopard disc.<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_4">(If you're not sure what version of OSX you're running, see <a title="OSXversion.html" href="OSXversion.html">OSX Versions</a>). <br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">To start up from your OSX Install disc, insert it in the SuperDrive (or insert the Software Reinstall drive on a MacBook Air).   Then:<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 25px; text-indent: -10px; " class="full-width">
+                    <p style="text-indent: -10px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 4px; " class="inline-block"></span>Either wait for the Mac OS X Install DVD window and double-click the <span class="style_8">Install</span> icon;  or power down, then start up while holding down the &quot;C&quot; key.  Either way, that takes a few minutes.<br /><br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 25px; text-indent: -10px; " class="full-width">
+                    <p style="text-indent: -10px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 4px; " class="inline-block"></span>Select your language when prompted.<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <div class="paragraph paragraph_style_3"><div style="height: 198px; width: 495px;  clear: right; float: right; height: 198px; margin: 6px 0px 6px 6px; position: relative; width: 495px; " class="tinyText style_SkipStroke_4 inline-block stroke_3"><img src="DU1_files/DU%201a%20Utilities%20Menu.jpg" alt="" style="border: none; height: 199px; width: 496px; " /></div><br /></div>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 25px; text-indent: -10px; " class="full-width">
+                    <p style="text-indent: -10px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 4px; " class="inline-block"></span>On the next screen, select <span class="style_8">Utilities</span> in the Menubar, then <span class="style_8">Disk Utility</span>.<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_3">  </p>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id6" style="height: 1533px; left: 41px; position: absolute; top: 1205px; width: 720px; z-index: 1; " class="style_SkipStroke_6 shape-with-text stroke_5">
+            <div class="text-content style_External_718_1531" style="padding: 1px; ">
+              <div class="style_9">
+                <p style="padding-top: 0pt; " class="paragraph_style_3">The sample below shows how to format an external HD (a LaCie, in this case).  The same steps are used to format your Startup volume  (internal HD) -- just select the one you want.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3">The sample shows making 2 partitions;  the same steps work for 1, 3, or more.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="1">
+                    <p style="text-indent: -20px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">a.</span><span style="width: 8px; " class="inline-block"></span>When <span class="style_8">Disk Utility</span> starts, select the top line for the drive in the sidebar (the line with the size and make/ID). <br /></p>
+                  </li>
+                </ol>
+                <div class="paragraph paragraph_style_3"><div style="height: 385px; width: 466px;  clear: right; float: right; height: 385px; margin: 6px 0px 6px 6px; position: relative; width: 466px; " class="tinyText style_SkipStroke_4 inline-block stroke_3"><img src="DU1_files/DU%201b%20Disk%20Utility%20Erase.jpg" alt="" style="border: none; height: 386px; width: 466px; " /></div><br /></div>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="2">
+                    <p style="text-indent: -20px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">b.</span><span style="width: 7px; " class="inline-block"></span>Select the <span class="style_8">Erase</span> tab, then confirm.  This will erase the entire disk.  <br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 25px; text-indent: -25px; " class="full-width">
+                    <p style="text-indent: -25px; " class="paragraph_style_8"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 25px; " class="inline-block"></span>If you want, you can select <span class="style_8">Security Options</span> to <span class="style_4">physically</span> erase the entire disk by writing over everything.  This will take quite a while, and usually isn’t necessary, especially on a new disk, and <span class="style_10">can’t </span>be done on an SSD.  See the <span class="style_11">green</span><span class="style_10"> </span>box below for details.  <br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 28px; text-indent: -28px; " class="full-width">
+                    <p style="text-indent: -28px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 28px; " class="inline-block"></span>This may not work if the drive is already set up with a non-Apple <span class="style_4">Partition Map Scheme</span>, such as is used on Windows.  If that happens, just continue with item c.<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <div class="paragraph paragraph_style_3"><div style="height: 385px; width: 466px;  clear: right; float: right; height: 385px; margin: 6px 0px 6px 6px; position: relative; width: 466px; " class="tinyText style_SkipStroke_4 inline-block stroke_3"><img src="DU1_files/DU%201c%20Disk%20Utility%20format.png" alt="" style="border: none; height: 386px; width: 466px; " /></div><br /></div>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="3">
+                    <p style="text-indent: -20px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">c.</span><span style="width: 8px; " class="inline-block"></span>Select the <span class="style_8">Partition</span> tab, then set the number of partitions from the pop-up  menu below <span class="style_4">Volume Scheme</span>  (use 1 partition unless you need more).  <br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 28px; text-indent: -28px; " class="full-width">
+                    <p style="text-indent: -28px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 28px; " class="inline-block"></span><br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 28px; text-indent: -28px; " class="full-width">
+                    <p style="text-indent: -28px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 28px; " class="inline-block"></span>Sometimes you can't change a <span class="style_8">MBR</span> drive to <span class="style_8">GUID</span> or <span class="style_8">APM</span> and change the number of partitions at the same time; if that happens, make a single partition with <span class="style_8">GUID</span> or <span class="style_8">APM</span> first, then re-format with the desired number.<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="4">
+                    <p style="text-indent: -20px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">d.</span><span style="width: 7px; " class="inline-block"></span>For each partition, click on it (it will then be outlined in blue), then supply a name (this is the name that will appear on your desktop and/or Finder sidebar) and size (either by typing in the box or dragging the dividers in the diagram), and select the desired <span class="style_4">Format </span>from the pop-up.  In most cases, you’ll want <span class="style_8">Mac OS Extended (Journaled)</span>.  See <a title="DU8.html" href="DU8.html">Disk Formats</a> for details.<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="5">
+                    <div class="paragraph paragraph_style_7" style="text-indent: -20px; "><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">e.</span><span style="width: 8px; " class="inline-block"></span>Click <span class="style_8">Options,</span> then choose either<div style="height: 303px; width: 396px;  clear: right; float: right; height: 303px; margin: 6px 0px 6px 6px; position: relative; width: 396px; " class="tinyText inline-block stroke_3"><div style="position: relative; width: 396px; "><img src="DU1_files/shapeimage_1.png" alt="" style="height: 303px; left: 0px; position: absolute; top: 0px; width: 396px; " /></div></div> <span class="style_8">GUID</span> or <span class="style_8">Apple Partition Map</span>.  <span class="style_8">GUID</span> is required for an OSX volume on an Intel Mac;  <span class="style_8">Apple Partition Map</span> for a PPC Mac.<br /></div>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 30px; text-indent: -20px; " class="full-width" value="6">
+                    <p style="text-indent: -20px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">f.</span><span style="width: 10px; " class="inline-block"></span>When you've got everything the way you want it, click <span class="style_8">Apply.  </span> You’ll see a confirmation prompt, explaining exactly what’s about to happen.  Read it carefully;  if data is erased, it will be <span class="style_12">very difficult and expensive</span> to get some of it back.  <br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_3"><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 28px; text-indent: -28px; " class="full-width">
+                    <p style="text-indent: -28px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 28px; " class="inline-block"></span>It will only take a few moments for<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 28px; text-indent: -28px; " class="full-width">
+                    <p style="padding-bottom: 0pt; text-indent: -28px; " class="paragraph_style_9"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 28px; " class="inline-block"></span>the process to complete.</p>
+                  </li>
+                </ol>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id7" style="height: 39px; left: 10px; position: absolute; top: 3781px; width: 772px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_6">
+            <div class="text-content style_External_770_37 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style_13 vertical-align-middle-innerbox">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_10"> <span class="style_3">    </span><a title="DU.html" href="DU.html">Previous</a><span class="style_3">              </span><a title="Home.html" href="Home.html">Home</a><span class="style_3">                 </span><a title="DU.html" href="DU.html">Using Disk Utility: Contents</a><span class="style_3">               </span><a title="TipsContact.html" href="TipsContact.html">Contact</a><span class="style_3">               </span><a title="DU2.html" href="DU2.html">Next</a></p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id8" style="height: 262px; left: 43px; position: absolute; top: 3441px; width: 722px; z-index: 1; " class="style_SkipStroke_7 shape-with-text stroke_7">
+            <div class="text-content graphic_textbox_layout_style_default_External_720_260" style="padding: 1px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_11">If your disk doesn't appear at all, see <a title="DU10.html" href="DU10.html">If a disk doesn't appear in the sidebar</a>. <br /></p>
+                <p class="paragraph_style_11">If you get a message saying &quot;<span class="style_8">Could not unmount disk</span>,&quot; some other process is using (or trying to use) the disk:  <br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_12"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>If you're running any anti-virus software, exclude the disk from it or turn it off.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_12"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>Exclude it from Spotlight indexing, via <span class="style_8">System Preferences &gt; Spotlight &gt; Privacy</span>. <br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 25px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_12"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>If you installed any software that came with the disk, uninstall it.<br /></p>
+                  </li>
+                </ol>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_13">If it still won't unmount, start your Mac up from an alternate source, per the yellow box above, and use that copy of Disk Utility.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id9" style="height: 587px; left: 22px; position: absolute; top: 2801px; width: 755px; z-index: 1; " class="style_SkipStroke_3 shape-with-text stroke_8">
+            <div class="text-content style_External_753_585" style="padding: 1px; ">
+              <div class="style_7">
+                <p style="padding-top: 0pt; " class="paragraph_style_14"><span style="line-height: 27px; " class="style_14">Security Options</span> <span class="style_15">can overwrite the disk with zeros, to prevent recovery of erased files.<br /></span></p>
+                <p class="paragraph_style_14"><span class="style_15"><br /></span></p>
+                <p class="paragraph_style_15"><span class="style_15">The windows below are different, but the function is the same.<br /></span></p>
+                <p class="paragraph_style_15"><span class="style_15">In most cases, a single pass is plenty.  <br /></span></p>
+                <p class="paragraph_style_15"><span class="style_15">                </span><span style="line-height: 27px; " class="style_16">Lion 10.7.x and later</span><span class="style_15">                  </span><span style="line-height: 27px; " class="style_16">Snow Leopard 10.6.x and earlier<br /></span></p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 299px; width: 367px;  height: 299px; left: 31px; position: absolute; top: 2997px; width: 367px; z-index: 1; " class="tinyText style_SkipStroke_8 stroke_3">
+            <img src="DU1_files/DU%201e%20Lion+%20security%20options%20.jpg" alt="" style="border: none; height: 300px; width: 367px; " />
+          </div>
+          
+
+
+          <div style="height: 383px; width: 364px;  height: 383px; left: 405px; position: absolute; top: 2997px; width: 364px; z-index: 1; " class="tinyText style_SkipStroke_8 stroke_3">
+            <img src="DU1_files/DU%201f%20SL,%20Leo%20Secure%20Erase%20options.jpg" alt="" style="border: none; height: 384px; width: 364px; " />
+          </div>
+          <div style="height: 3820px; line-height: 3820px; " class="spacer"> </div>
+        </div>
+        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id10" style="height: 27px; left: 727px; position: absolute; top: 8px; width: 58px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_58_27" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_16">4/20/13</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id11" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_17">Copyright © 2013 James Pond.  All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

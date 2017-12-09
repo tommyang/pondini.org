@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20130831" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=800" />
+    <title>How Time Machine Works its Magic</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="Works_files/Works.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Works_files/WorksIE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="Works_files/Works.js"></script>
+  </head>
+  <body style="background: rgb(255, 223, 205); margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 123px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id1" style="height: 73px; left: 1px; position: absolute; top: 50px; width: 783px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
+            <div class="text-content style_External_781_71 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style vertical-align-middle-innerbox">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style">How Time Machine Works its Magic</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id2" style="height: 30px; left: 8px; position: absolute; top: 6px; width: 778px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
+            <div class="text-content graphic_textbox_layout_style_default_External_776_28" style="padding: 1px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_1"> <a title="Clones.html" href="Clones.html">Previous</a>      <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>      <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>      <a title="Works1.html" href="Works1.html">Next</a>  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id3" style="height: 1615px; left: 12px; position: absolute; top: 1047px; width: 772px; z-index: 1; " class="style_SkipStroke_2 shape-with-text stroke_2">
+            <div class="text-content style_External_770_1613" style="padding: 1px; ">
+              <div class="style_1">
+                <p style="padding-top: 0pt; " class="paragraph_style_2"><span style="line-height: 27px; " class="style_2">Hard Links</span><span class="style_3">  act a bit like </span><span class="style_4">aliases</span><span class="style_3">, but much more efficiently, and are the key to how Time Machine can back up only what’s changed, but have each backup be, in effect, a full backup of everything that was on your system at the time.  <br /></span></p>
+                <p class="paragraph_style_2"><span class="style_3">When Time makes your first backup, it copies everything (except some system work files, trash, etc).  It also makes a dated </span>backup folder<span class="style_3">, and places hard links in it to all the backup copies it just made.  Then when Time Machine makes a second backup, it copies everything that changed since the first backup, makes another dated backup folder, and puts hard links in it to the new backup items.  So far, so good.<br /></span></p>
+                <p class="paragraph_style_2"><span class="style_3">But here’s the trick:  it </span>also<span class="style_3"> puts hard links in the second backup folder to the items that </span>didn’t<span class="style_3"> change.  So the folder now contains links to </span><span class="style_5">everything</span><span class="style_3"> that was on your system at the time of the second backup.<br /></span></p>
+                <p class="paragraph_style_2"><span class="style_3">This is greatly oversimplified, but should illustrate how it works:  <br /></span></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 23px; text-indent: -23px; " class="full-width">
+                    <p style="text-indent: -23px; " class="paragraph_style_3"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 23px; " class="inline-block"></span><span class="style_3">Create File A and File B, and run an initial backup (backup folder #1 below).  <br /></span></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 23px; text-indent: -23px; " class="full-width">
+                    <p style="text-indent: -23px; " class="paragraph_style_4"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 23px; " class="inline-block"></span><span class="style_3">Then delete File A, create file C, and run another (backup folder #2 below).<br /></span></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 23px; text-indent: -23px; " class="full-width">
+                    <p style="padding-bottom: 0pt; text-indent: -23px; " class="paragraph_style_4"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 23px; " class="inline-block"></span><span class="style_3">If you look at the</span><span class="style_6"> backup folders </span><span class="style_3">via the Finder, you’ll see a bit of an illusion:</span></p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 38px; left: 5px; position: absolute; top: 2699px; width: 785px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_3">
+            <div class="text-content style_External_783_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style_7 vertical-align-middle-innerbox">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_5">      <a title="Clones.html" href="Clones.html">Previous</a>           <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>          <a title="Home.html" href="Home.html">Home</a>          <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>         <a title="Contact.html" href="Contact.html">Contact</a>     <a title="Works1.html" href="Works1.html">Next</a>         </p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id5" style="height: 270px; left: 45px; position: absolute; top: 42px; width: 706px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_706_270" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_6">There are two main bits of &quot;Magic&quot; behind Time Machine, explained below:<br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 50px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>The <span class="style_8">File System Event Store --</span> How changes are found quickly (<span class="style_9">blue</span> box)<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 50px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_8"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><span class="style_8">Hard Links </span>-- How &quot;incremental&quot; backups are, in effect, full backups (<span class="style_10">tan</span><span class="style_11"> </span>box)<br /></p>
+                  </li>
+                </ol>
+                <p class="paragraph_style_9"><span class="style_12">And some other, more technical, stuff, on separate pages:</span><br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 50px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="Works1.html" href="Works1.html">Backup Structure</a><br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 50px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="Works2.html" href="Works2.html">How Local Backups are Stored</a><br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 50px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="Works3.html" href="Works3.html" class="style_12">How Network Backups are Stored in Sparse Bundles</a><span class="style_12"><br /></span></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 50px; text-indent: -15px; " class="full-width">
+                    <p style="padding-bottom: 0pt; text-indent: -15px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span><a title="Works4.html" href="Works4.html" class="style_12">Inclusion and Exclusion handling and the Preferences file</a> <span class="style_12"> </span></p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id6" style="height: 648px; left: 12px; position: absolute; top: 357px; width: 772px; z-index: 1; " class="style_SkipStroke_4 shape-with-text stroke_4">
+            <div class="text-content style_External_770_646" style="padding: 1px; ">
+              <div class="style_1">
+                <p style="padding-top: 0pt; " class="paragraph_style_12">The <span style="line-height: 27px; " class="style_13">File System Event Store</span>  is a hidden log that OSX keeps on each HFS+ formatted disk/partition of changes made to the data on it.   It doesn’t list every <span class="style_14">file</span> that’s changed, but each <span class="style_14">directory</span> (folder) that’s had anything changed inside it.  That saves lots of space in the log, since often there are multiple changes to the same folder.  Each such change is called an <span class="style_15">event.</span><br /></p>
+                <p class="paragraph_style_12">Any process can use it to find what’s been changed since the last <span class="style_14">event </span>that process handled.  That’s how <span class="style_14">Spotlight</span>, for example, knows when a file has been added or changed and needs to be re-indexed.<br /></p>
+                <p class="paragraph_style_12">Normally, Time Machine can use it to find out what’s changed and needs to be backed-up, since it’s far faster than comparing everything on your system to the backups, as some other backup apps do.  (And it’s the reason that Time Machine can’t back up disks with other formats.)<br /></p>
+                <p class="paragraph_style_12">But OSX can’t keep the log forever, of course, so if you haven’t done a backup in a long time, or there’s been a very large volume of changes (such as installing an OSX upgrade, which will add or change tens of thousands of files), the database won’t be complete.  Or, if your system shuts down abnormally, such as from a software problem, power loss, or forced power-off, it will also be suspect.  OSX will replace the <span class="style_15">Event Store</span> and assign a new &quot;UUID&quot; to it (and send a message to that effect to your logs).<br /></p>
+                <p class="paragraph_style_12">When that happens, the next backup will log a message about an &quot;Event store UUID&quot; not matching, meaning it's not the same one as on the previous backup.   Then Time Machine has to do a &quot;deep scan&quot; (&quot;deep traversal&quot; on Snow Leopard or Leopard), comparing everything on your system to the backups.  If you see a long &quot;Preparing&quot; phase (&quot;Calculating changes&quot; on Snow Leopard), that’s what’s going on.   From 10.6.3 through 10.6.8, you’ll see <span class="style_14">Scanning nnnn files</span> messages on the TM Preferences Window and the TM Menu display from your menubar.<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_12">The time required for this depends on a number of things, but mainly the number of files on your system (more than the total size), and the type of connection to your backups.  So a relatively small system using a FireWire800 external drive will be far faster than a larger system being backed-up wirelessly to a Time Capsule.</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 504px; width: 462px;  height: 504px; left: 165px; position: absolute; top: 1479px; width: 462px; z-index: 1; " class="tinyText stroke_5">
+            <div style="position: relative; width: 462px; ">
+              <img src="Works_files/shapeimage_1.png" alt="" style="height: 504px; left: 0px; position: absolute; top: 0px; width: 462px; " />
+            </div>
+          </div>
+          
+
+
+          <div id="id7" style="height: 169px; left: 51px; position: absolute; top: 2011px; width: 689px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_689_169" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2"><span class="style_3">It </span>appears<span class="style_3"> there are two copies of File B, but there aren’t;  each </span><span class="style_6">Backup Folder</span><span class="style_3"> contains a hard link to a single copy of File B.   <br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_2"><span class="style_3">This also explains how, when it’s out of space, Time Machine can delete your first backup, but all the other backups are still full versions of your system:   the trick is, the </span>backup folder and all its hard links are deleted<span class="style_3">, but the actual </span>backup copies<span class="style_3"> aren’t deleted if there are </span>any<span class="style_3"> remaining hard links to them.  If Backup Folder #1 is deleted, the backup copies of files B and C remain (and you regain only the space used by File A on your backup drive).</span></p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id8" style="height: 168px; left: 79px; position: absolute; top: 2206px; width: 634px; z-index: 1; " class="style_SkipStroke_5 shape-with-text stroke_6">
+            <div class="text-content style_External_632_166" style="padding: 1px; ">
+              <div class="style_1">
+                <ol>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="padding-bottom: 0pt; padding-top: 0pt; text-indent: -15px; " class="paragraph_style_13"><span style="font-size: 0px; position: relative; top: -11px; " class="Bullet"></span><span style="width: 15px; " class="inline-block"></span><span class="style_16">A little &quot;twist&quot; to this is, if you add-up the sizes of the two </span><span class="style_17">Backup Folders</span><span class="style_16">, you’ll count File B </span><span class="style_18">twice!</span><span class="style_16">   This is because, unlike a &quot;normal&quot; file system, the backup copies don’t &quot;belong&quot; to one particular backup folder -- they're in both folders </span><span class="style_17">at the same time.</span><span class="style_16">   That's why you'll get odd figures from the Finder and/or 3rd-party utilities -- sometimes the </span><span class="style_19">Backups.backupdb</span><span class="style_16"> folder is much less than the total of the backup folders;  other times it will be shown as the </span><span class="style_19">sum</span><span class="style_16"> of them, possibly much larger than the backup drive!</span></p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id9" style="height: 257px; left: 55px; position: absolute; top: 2406px; width: 695px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_695_257" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2"><span class="style_3">Now you’re probably thinking, there must be about a zillion of those hard link thingies in every backup folder, taking forever to create and delete.  But Time Machine has yet another trick up it’s sleeve:  If nothing in a folder is changed, Time Machine makes a </span>single<span class="style_3"> hard link for the </span>folder<span class="style_3">, not one for each file inside it.  This is especially slick when you think about your system folders:  they contain tens of thousands of folders and sub-folders several levels deep, that rarely change.  So instead of making a </span><span class="style_4">couple of hundred thousand</span><span class="style_3"> links for every backup, there are often only a few.<br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_2"><span class="style_3">In fact, the OSX File System was </span><span class="style_4">changed</span><span class="style_3"> effective with Leopard to allow these &quot;directory-level&quot; hard links, so Time Machine would work.  That’s one of the reasons why Tiger and earlier versions of OSX (not to mention other operating systems) are </span><span class="style_6">mystified</span><span class="style_3"> by Time Machine backups.  They cannot make any sense of the links that look like folders.</span></p>
+              </div>
+            </div>
+          </div>
+          <div style="height: 2737px; line-height: 2737px; " class="spacer"> </div>
+        </div>
+        <div style="height: 44px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id10" style="height: 27px; left: 729px; position: absolute; top: 8px; width: 63px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_63_27" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_14">8/31/13</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id11" style="height: 23px; left: 242px; position: absolute; top: 21px; width: 326px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_326_23" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_15">Copyright © 2013 James Pond.  All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

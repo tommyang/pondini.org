@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20130822" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=800" />
+    <title>How Time Machine Works its Magic
+How Local Backups are Stored</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="Works2_files/Works2.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Works2_files/Works2IE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="Works2_files/Works2.js"></script>
+  </head>
+  <body style="background: rgb(255, 223, 205); margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 116px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 49px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
+            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style vertical-align-middle-innerbox">
+                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">How Time Machine Works its Magic</span><span style="line-height: 27px; " class="style_2"><br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1">How Local Backups are Stored</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id2" style="height: 30px; left: 14px; position: absolute; top: 6px; width: 772px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
+            <div class="text-content graphic_textbox_layout_style_default_External_770_28" style="padding: 1px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="Works.html" href="Works.html">Previous</a>      <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Works.html" href="Works.html">Works Overview</a>      <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>     <a title="Works3.html" href="Works3.html">Next</a>    </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id3" style="height: 30px; left: 13px; position: absolute; top: 2594px; width: 772px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
+            <div class="text-content graphic_textbox_layout_style_default_External_770_28" style="padding: 1px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="Works.html" href="Works.html">Previous</a>      <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Works.html" href="Works.html">Works Overview</a>      <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>       <a title="Contact.html" href="Contact.html">Contact</a>    <a title="Works3.html" href="Works3.html">Next</a>    </p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 2518px; left: 32px; position: absolute; top: 30px; width: 735px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+            <div class="text-content style_External_735_2518" style="padding: 0px; ">
+              <div class="style_3">
+                <p style="padding-top: 0pt; " class="paragraph_style_3">Since Time Machine has the ability to back up multiple volumes (different disks and/or different partitions on the same disk), and/or multiple Macs, all to the same place, things can get a bit complicated.<br /></p>
+                <p class="paragraph_style_3">Backups made to an internal or directly-connected external HD are stored in a single <span class="style_4">Backups.backupdb</span> folder at the top level of the drive.  If you back up multiple Macs to the same volume (by connecting it to each Mac in turn), they're all in the same Backups.backupdb folder.<br /></p>
+                <p class="paragraph_style_3">However, for <span class="style_4">backups made over a network</span> (Ethernet or wireless), the <span class="style_4">Backups.backupdb</span> folder is <span class="style_5">inside</span> a container called a <span class="style_5">sparse bundle disk image.  </span>See <a title="Works3.html" href="Works3.html">How Network Backups are Stored</a> for details on them.  <br /></p>
+                <p class="paragraph_style_3">Either way, the structure of the <span class="style_4">Backups.backupdb </span>folder is the same (Finder in <span class="style_5">List View)</span>:<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <div class="paragraph paragraph_style_3"><div style="height: 525px; width: 703px;  clear: right; float: right; height: 525px; margin: 6px 0px 6px 6px; position: relative; width: 703px; " class="tinyText style_SkipStroke_2 inline-block stroke_3"><img src="Works2_files/2%20Backup%20Structure.jpg" alt="" style="border: none; height: 525px; width: 703px; " /></div>                                                                    <br /></div>
+                <p class="paragraph_style_3">One folder per Mac (<span class="style_6">blue</span>); within that, one folder per backup (<span class="style_7">green</span>); within each of those, one folder for each volume (drive or partition) (<span class="style_8">red</span>).<br /></p>
+                <p class="paragraph_style_3">However, there's more than meets the eye. While it <span class="style_5">shows</span> the Mac's name and the names of the various partitions, that's not how they're really identified:<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_3"><span class="style_6">Each Mac</span> is identified by a <span class="style_4">hardware address</span> internal to the Mac.   It's embedded in the Logic Board (motherboard).  The hardware address isn't displayed in the backups, but is kept in an <span class="style_5">extended attribute</span> of the folder representing the <span class="style_6">Computer</span>.<br /></p>
+                <p class="paragraph_style_3">That's why when you get a new logic board, Time Machine <span class="style_5">thinks</span> you got a new Mac.  That's also why you can rename your Mac (<span class="style_5">System Preferences &gt; Sharing)</span> and Time Machine will automatically rename the Computer folder on the backups;<span class="style_5">  </span>or you can have two Macs with the same <span class="style_5">name,</span> but Time Machine still knows which backups belong to which Mac.   <br /></p>
+                <p class="paragraph_style_3">On Snow Leopard or later, under some circumstances, if you get a new Mac and transfer your data from the old one, you <span class="style_5">should </span>be asked if you want to &quot;inherit&quot; (or &quot;reuse&quot; on Snow Leopard) the old backups.  See <a title="B5.html" href="B5.html">Troubleshooting item #B5</a> for details.  If you select that option, the name and hardware ID are changed, so the backups appear to have been made from the new Mac.  If you aren't asked, or got a new Logic board, on Lion or later you <span class="style_5">may</span> be able to do that manually, per <a title="B6.html" href="B6.html">Troubleshooting item #B6</a>.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_4">Each Backup <span class="style_9">is placed in a folder named for the date &amp; time of the backup.  Both the start and completion timestamps are kept in </span><span class="style_10">extended attributes,</span><span class="style_9"> among other info.<br /></span></p>
+                <p class="paragraph_style_4"><br /></p>
+                <p class="paragraph_style_3"><span class="style_8">Each volume</span><span class="style_4"> </span>(drive/partition) that was backed-up is represented by a folder.  It contains the same structure of folders, sub-folders, and files as on the original volume.  Most of what you see, however, aren’t really files and folders at all;  they’re those <span class="style_11">hard links</span><span class="style_12"> to</span> the actual files and folders, as detailed in the <span class="style_13">tan</span> box above. <br /></p>
+                <p class="paragraph_style_5"><span class="style_14">For an OSX volume, such as </span><span class="style_15">Macintosh HD </span><span class="style_14">in the sample, user home folders are inside a </span><span class="style_15">Users</span><span class="style_14"> folder (</span><span class="style_16">orange</span><span class="style_14"> arrow). </span><br /></p>
+                <p class="paragraph_style_3">The <span class="style_8">volume </span>folder is also identified by its UUID (Universally Unique IDentifier).  That's not displayed, but is kept in an <span class="style_5">extended attribute</span> on the folder <span class="style_8">for each volume</span>.<br /></p>
+                <p class="paragraph_style_3">That's assigned whenever you erase or reformat a partition, and is shown when you select the volume via Disk Utility (in your Applications/Utilities folder) and click the <span class="style_5">Info</span> icon in the toolbar.   <br /></p>
+                <p class="paragraph_style_3">Similar to the above, that's why you can rename a drive/partition, or have two with the same name, but Time Machine still knows which is which.  It's also why, when you replace or erase your startup drive or do a full restore to it (the installer erases it first), it's treated as a different one.<br /></p>
+                <p class="paragraph_style_3">And it's why, if you replace a drive, and give it the same name as the old one, Time Machine still knows it's a different one.  <br /></p>
+                <p class="paragraph_style_3">On Snow Leopard or later, if you select the &quot;inherit&quot; or &quot;reuse&quot; prompt, that will <span class="style_17">also</span><span class="style_5"> </span>identify the new Mac's startup drive with the backups of the old one, and change both the name of the folder and the UUID(s) of all the old backups, so they appear to have been made from the new one.  <br /></p>
+                <p class="paragraph_style_3">Or, also on Snow Leopard or later, if you replace or erase your startup drive, under some circumstances Time Machine <span class="style_5">should</span> automatically &quot;associate&quot; the new or erased drive with the backups of the old drive.  If it doesn't,  on Lion and later you <span class="style_5">may</span> be able to do that manually, per <a title="B6.html" href="B6.html">Troubleshooting item #B6</a>.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_6"><span class="style_18">The </span>&quot;.inProgress&quot; <span class="style_18">package</span><br /></p>
+                <p class="paragraph_style_3">While a backup is running, the data is collected in a &quot;package&quot; (looks like a file, but is actually a special type of folder).  When the backup completes normally, it's converted into a normal backup folder (like the ones outlined in <span class="style_7">green</span>), so you'll rarely see one.  <br /></p>
+                <p class="paragraph_style_3">If the backup fails or is cancelled, though, it will remain.  On the next backup, Time Machine will &quot;recover&quot; the partial backup and convert it into a normal one.  This means it doesn't have to copy everything all over again;  just new changes and things that weren't copied before.<br /></p>
+                <p class="paragraph_style_3">Since it's not a complete backup, you'll never see this via the Time Machine browser (the &quot;Star Wars&quot; display),  and you can't restore it with a full system restore, or use it with <span class="style_5">Setup Assistant </span>or <span class="style_5">Migration Assistant, </span>as<span class="style_5"> </span>the results would be incomplete at best.  <br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_7">The <span class="style_5">Latest</span> alias<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_3">This points to the latest <span class="style_4">successfully completed</span> backup.  Any left-overs from a failed or cancelled backup is in the &quot;.inProgress&quot; package above.</p>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          <div style="height: 2624px; line-height: 2624px; " class="spacer"> </div>
+        </div>
+        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id5" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; " class="style_SkipStroke_4 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_8">8/22/13</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id6" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_4 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_9">Copyright © 2013 James Pond.  All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

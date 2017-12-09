@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20130320" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=800" />
+    <title>Time Machine - Troubleshooting 
+A10.  Deleting an &quot;inProgress&quot; package</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="A10_files/A10.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='A10_files/A10IE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="A10_files/A10.js"></script>
+  </head>
+  <body style="background: rgb(213, 253, 208); margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 800px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 800px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 118px; margin-left: 0px; position: relative; width: 800px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id1" style="height: 67px; left: 14px; position: absolute; top: 51px; width: 771px; z-index: 1; " class="style_SkipStroke shape-with-text stroke_0">
+            <div class="text-content style_External_769_65 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style vertical-align-middle-innerbox">
+                <p style="padding-top: 0pt; " class="paragraph_style"><span style="line-height: 21px; " class="style_1">Time Machine - Troubleshooting</span><span style="line-height: 27px; " class="style_2"> <br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1">A10.  Deleting an &quot;inProgress&quot; package</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id2" style="height: 30px; left: 37px; position: absolute; top: 9px; width: 718px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_1">
+            <div class="text-content graphic_textbox_layout_style_default_External_716_28" style="padding: 1px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_2"> <a title="A9.html" href="A9.html">Previous</a>        <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>        <a title="Home.html" href="Home.html">Home</a>     <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>      <a title="Contact.html" href="Contact.html">Contact</a>      <a title="A11.html" href="A11.html">Next</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 800px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id3" style="height: 38px; left: 18px; position: absolute; top: 1784px; width: 772px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_2">
+            <div class="text-content style_External_770_36 vertical-align-middle-middlebox" style="padding: 1px; ">
+              <div class="style_3 vertical-align-middle-innerbox">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3">  <a title="A9.html" href="A9.html">Previous</a>           <a title="FAQ.html" href="FAQ.html">Frequently Asked Questions</a>          <a title="Home.html" href="Home.html">Home</a>        <a title="Troubleshooting.html" href="Troubleshooting.html">Troubleshooting</a>         <a title="Contact.html" href="Contact.html">Contact</a>        <a title="A11.html" href="A11.html">Next</a></p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 464px; left: 49px; position: absolute; top: 37px; width: 712px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_712_464" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_4">When a Time Machine backup fails or is cancelled, it leaves a partial backup on the Time Machine drive.  You won't see it via the Time Machine browser (the &quot;Star Wars&quot; display), or when doing a full system restore or using either <span class="style_4">Setup Assistant</span> or <span class="style_4">Migration Assistant</span>.<br /></p>
+                <p class="paragraph_style_4">Ordinarily, on the next backup, Time Machine will use the remains for the new backup, so it doesn't have to copy those files again.   So it's usually not a good idea to delete it.  <br /></p>
+                <p class="paragraph_style_4">But, <span class="style_5">on rare occasions</span>, such as after backup failures where Time Machine was trying to back up something very large that shouldn't have been backed-up, it's advisable to delete the &quot;leftover&quot; partial backup from the Time Machine drive.<br /></p>
+                <p class="paragraph_style_4">The partial backup is in a &quot;package&quot; (a folder that's treated as a single file for most purposes).<br /></p>
+                <p class="paragraph_style_4">The procedure is a bit different depending on where your backups are:<br /></p>
+                <ol>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="text-indent: -15px; " class="paragraph_style_5"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>An external HD connected directly to your Mac <span class="style_6">(or an internal HD).</span><br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 40px; text-indent: -25px; " class="full-width" value="1">
+                    <p style="text-indent: -25px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">1.</span><span style="width: 12px; " class="inline-block"></span>Go to the <span class="style_4">Time Machine Preferences</span> window and turn Time Machine OFF.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 40px; text-indent: -25px; " class="full-width" value="2">
+                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">2.</span><span style="width: 12px; " class="inline-block"></span>Via the Finder, open the HD containing your backups.  <br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 40px; text-indent: -25px; " class="full-width" value="3">
+                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">3.</span><span style="width: 12px; " class="inline-block"></span>See the<span class="style_7"> green</span> box below.  <br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="padding-bottom: 0pt; text-indent: -15px; " class="paragraph_style_8"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>A Time Capsule or 3rd-party NAS <span class="style_6">(&quot;Network Attached Storage&quot; or Network Drive)</span></p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id5" style="height: 142px; left: 49px; position: absolute; top: 1082px; width: 722px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_722_142" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <ol>
+                  <li style="line-height: 21px; padding-left: 15px; text-indent: -15px; " class="full-width">
+                    <p style="padding-top: 0pt; text-indent: -15px; " class="paragraph_style_9"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">•</span><span style="width: 9px; " class="inline-block"></span>An external HD connected to a Time Capsule, other Mac, or Airport Extreme<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 40px; text-indent: -25px; " class="full-width" value="1">
+                    <p style="text-indent: -25px; " class="paragraph_style_6"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">1.</span><span style="width: 12px; " class="inline-block"></span>Go to the <span class="style_4">Time Machine Preferences</span> window and turn Time Machine OFF.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 40px; text-indent: -25px; " class="full-width" value="2">
+                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">2.</span><span style="width: 12px; " class="inline-block"></span>Eject the drive Via the Finder, and connect it directly to your Mac<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 40px; text-indent: -25px; " class="full-width" value="3">
+                    <p style="text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">3.</span><span style="width: 12px; " class="inline-block"></span>Via the Finder, open the HD containing your backups.  <br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 40px; text-indent: -25px; " class="full-width" value="4">
+                    <p style="padding-bottom: 0pt; text-indent: -25px; " class="paragraph_style_7"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">4.</span><span style="width: 12px; " class="inline-block"></span>See the <span class="style_7">green</span> box below: </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id6" style="height: 546px; left: 63px; position: absolute; top: 509px; width: 268px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_268_546" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <ol>
+                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="1">
+                    <p style="padding-top: 0pt; text-indent: -20px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">1.</span><span style="width: 7px; " class="inline-block"></span>Go to the <span class="style_4">Time Machine Preferences</span> window and turn Time Machine OFF.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="2">
+                    <p style="text-indent: -20px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">2.</span><span style="width: 7px; " class="inline-block"></span>Connect to the server by clicking it in a Finder sidebar (the sample has the Finder in <span class="style_4">Column View</span>).<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="3">
+                    <p style="text-indent: -20px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">3.</span><span style="width: 7px; " class="inline-block"></span>Double-click it to open the disk/partition.  That should show the <span class="style_8">sparse bundle </span>your backups are in.  It's named for your Mac, and sometimes doesn't show &quot;.sparsebundle&quot; as part of the name.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="4">
+                    <p style="text-indent: -20px; " class="paragraph_style_10"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">4.</span><span style="width: 7px; " class="inline-block"></span>Double-click the sparse bundle to mount the disk image inside it (usually named <span class="style_4">Time Machine Backups,</span> sometimes <span class="style_4">Backup of &lt;computer name&gt;).</span>  After a moment or two, the disk image (circled in <span class="style_5">green</span>) should appear in the sidebar.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="5">
+                    <p style="text-indent: -20px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">5.</span><span style="width: 7px; " class="inline-block"></span>Double-click the disk image to open it.<br /></p>
+                  </li>
+                  <li style="line-height: 21px; padding-left: 20px; text-indent: -20px; " class="full-width" value="6">
+                    <p style="padding-bottom: 0pt; text-indent: -20px; " class="paragraph_style_11"><span style="font-size: 18px; position: relative; top: 0px; " class="Bullet">6.</span><span style="width: 7px; " class="inline-block"></span>See the <span class="style_7">green</span> box below.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id7" style="height: 417px; left: 37px; position: absolute; top: 1287px; width: 733px; z-index: 1; " class="style_SkipStroke_4 shape-with-text stroke_4">
+            <div class="text-content style_External_731_415" style="padding: 1px; ">
+              <div class="style_9">
+                <p style="padding-top: 0pt; " class="paragraph_style_4">At the top level of the drive (or <span class="style_4">disk image</span> on backups made over a network) is a single <span class="style_5">Backups.backupdb</span> folder.<br /></p>
+                <div class="paragraph paragraph_style_4">Inside that is a folder named <div style="height: 268px; width: 482px;  clear: right; float: right; height: 268px; margin: 6px 0px 6px 6px; position: relative; width: 482px; " class="tinyText style_SkipStroke_3 inline-block stroke_3"><img src="A10_files/A10c%20Backups%20via%20Finder.jpg" alt="" style="border: none; height: 268px; width: 483px; " /></div>for your Mac.<br /></div>
+                <p class="paragraph_style_4">Inside that is a series of date-stamped backup folders, plus a <span class="style_4">Latest</span> alias, plus an &quot;.inProgress&quot; package (looks like a file, but is actually a special type of folder) containing the remains of one or more cancelled or failed backups.  <br /></p>
+                <p class="paragraph_style_4"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_4">Move the &quot;.inProgress&quot; package to the trash.  Hold the <span class="style_4">Alt/Option</span> key while emptying it.  That may take a very long time.  If that fails, use the procedure in <a title="E6.html" href="E6.html">item #E6</a>.</p>
+              </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 194px; width: 451px;  height: 194px; left: 339px; position: absolute; top: 822px; width: 451px; z-index: 1; " class="tinyText style_SkipStroke_5 stroke_3">
+            <img src="A10_files/E2c%20Mounted%20DMG.jpg" alt="" style="border: none; height: 195px; width: 451px; " />
+          </div>
+          
+
+
+          <div style="height: 194px; width: 451px;  height: 194px; left: 339px; position: absolute; top: 583px; width: 451px; z-index: 1; " class="tinyText style_SkipStroke_5 stroke_3">
+            <img src="A10_files/E2b%20Sparse%20Bundles%20via%20Finder.jpg" alt="" style="border: none; height: 194px; width: 451px; " />
+          </div>
+          <div style="height: 1822px; line-height: 1822px; " class="spacer"> </div>
+        </div>
+        <div style="height: 43px; margin-left: 0px; position: relative; width: 800px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id8" style="height: 27px; left: 724px; position: absolute; top: 8px; width: 62px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_62_27" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_12">3/12/13</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id9" style="height: 22px; left: 248px; position: absolute; top: 21px; width: 297px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_297_22" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_13">Copyright © 2013 James Pond.  All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
